@@ -26,7 +26,7 @@ T.d. hvað sé margir hlutir í UL-lista, hversu djúpt fyrirsögnin er o.s.fr.
 
 ## Grunnreglur W3C
 
-W3C mæla með 5 grunnreglum þegar kemur að aðgengi vefsvæða:
+W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar kemur að aðgengi vefsvæða:
 
   1. If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.
   2. Do not change native semantics, unless you really have to.
@@ -34,7 +34,7 @@ W3C mæla með 5 grunnreglum þegar kemur að aðgengi vefsvæða:
   4. Do not use role="presentation" or aria-hidden="true" on a visible focusable element .
   5. All interactive elements must have an accessible name.
 
-Sjá: [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
+> [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
 
 
 ## Hlutir sem er gott að hafa í huga
