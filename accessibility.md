@@ -23,7 +23,6 @@ T.d. hvað sé margir hlutir í UL-lista, hversu djúpt fyrirsögnin er o.s.fr.
 
 Þetta er líka ástæðan fyrir hvers vegna það er mikilvægt að nota native HTML eininga en ekki stíla hlutlaust HTML eins og t.d. DIV sem Heading 1. Vegna þess að Accessibility API veit hvað H1 er en það þarf að útskýra sérstaklega fyrir API-inum hvað DIV sem lítur út eins og heading er.
 
-
 ## Grunnreglur W3C
 
 W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar kemur að aðgengi vefsvæða:
@@ -35,7 +34,6 @@ W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar
   5. All interactive elements must have an accessible name.
 
 > W3C's [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
-
 
 ## Hlutir sem er gott að hafa í huga
 
@@ -58,7 +56,8 @@ Stoðtæki eiga einnig auðveldara með að flakka á milli eininga sem eru í s
 Tómt alt attribute lætur stoðtæki vita að myndin er til skrauts og að því sé óhætt að hlaupa yfir hana.
 
 * alt="" is a indication to screen reader software that the <img> is decorative and can be ignored.
-* Absence of an alt attribute results, in some screen reading screen reader software, not conveying the <img> to users.   
+* Absence of an alt attribute results, in some screen reading screen reader software, not conveying the <img> to users.
+
 > https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/
 
 ### 4. Tab index
@@ -79,21 +78,18 @@ Label með form elements.
   * Placeholder texti er ekki nóg og getur jafnvel ruglað fólk í ríminu. Það er heldur ekki hægt að reiða sig á að stoðtækið lesi placeholder textann.
   * Ef hönnun er án LABEL, þá þarf samt að hafa það með visually hidden stíl.
 
-
-
-
 ---
 
 ## Roles
 
-
 ## Content organisation with HTML5
 
 * The order in which the elements are organised and the region types used is based on your content organisation.
-* If you content organisation is such that a region is nested within another region, go for it.   
+* If you content organisation is such that a region is nested within another region, go for it.
+
 > https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/
 
-> Mynd
+> Mynd vantar
 
 `<header></header>`   
 `<nav></nav>`   
@@ -104,8 +100,6 @@ Label með form elements.
 ---
 
 ## ARIA
- 
-
 
 Joe Dolson: ARIA – Roles, States and Properties
 
