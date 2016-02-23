@@ -284,4 +284,19 @@ The attribute aria-haspopup should only be used on triggering elements that open
 
 When role="presentation" is added to the markup of an element, it manually overrides this role mapping in the browser, and prevents the screen reader from identifying or even interacting with the element in the expected manner.
 
+--- 
+
+http://slides.com/heydon/getting-nowhere-with-css-best-practices/#/41
+
+* aria-busy
+* aria-grabbed
+* aria-invalid
+* aria-checked
+* aria-disabled
+* aria-expanded
+* aria-hidden
+* aria-invalid
+* aria-pressed
+* aria-selected
+
 
