@@ -1,5 +1,6 @@
 # Aðgengi að vefsvæðum
 
+Miscellaneous notes about assistive technologies and webdevelopement
 
 ## Grunnatriði
 
