@@ -13,6 +13,8 @@ Rökrétt uppröðun HTML eininga gerir notendum stoðtækja mögulegt að lesa-
 Þegar stoðtæki opnar vefsíðu, þá les það DOM-tré vefsins í gegnum þar til gerðan Accessibility API sem tilkynnir stoðtækjunum hvaða hlutverki HTML-ið gegnir og hver staðan á því sé.
 T.d. hvað sé margir hlutir í UL-lista, hversu djúpt fyrirsögnin er o.s.fr.
 
+> Semantic html is using html to reinforce structural meaning. It’s about using tags, class names, and ids that reinforce the meaning of the content within the tags.   
+> http://vanseodesign.com/web-design/semantic-html/
 
 ## Accessibility API
 
