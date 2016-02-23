@@ -34,7 +34,7 @@ W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar
   4. Do not use role="presentation" or aria-hidden="true" on a visible focusable element .
   5. All interactive elements must have an accessible name.
 
-> [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
+> W3C's [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
 
 
 ## Hlutir sem er gott að hafa í huga
