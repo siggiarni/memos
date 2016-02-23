@@ -233,7 +233,13 @@ http://maxdesign.com.au/jobs/sample-accessibility/index.html
 
 
 
+# ARIA Memo
 
+## aria-labelledby and describedby
+
+By default, assistive technologies do not relay hidden information, but an author can explicitly override that and include hidden text as part of the accessible name or accessible description by using aria-labelledby or aria-describedby.
+
+Via [Short note on aria-labelledby and aria-describedby](http://www.paciellogroup.com/blog/2015/05/short-note-on-aria-labelledby-and-aria-describedby/)
 
 
 
