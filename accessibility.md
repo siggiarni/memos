@@ -37,21 +37,21 @@ Sjá: [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
 
 ## Hlutir sem er gott að hafa í huga
 
-### 1. *Native HTML*
+### 1. Native HTML
 
 Nota native HTML element þegar það er í boði.
 
 * T.d. er miklu betra að nota BUTTON element-ið í staðin fyrir að útfæra DIV sem takka.
 * Stoðtæki skilja hvað UL LI listi er, en SPAN listi rennur saman í eina klessu af texta.
 
-### 2. *Headings*
+### 2. Headings
 
 Passa að heading séu í skynsamri röð. Stoðtæki nýta sér headings til að fara yfir efni á síðum og gefa til kynna hvernig uppröðun síðunnar er.
 
 Stoðtæki eiga einnig auðveldara með að flakka á milli eininga sem eru í skiljanlegri röð. T.d. er rökrétt að fara frá aðalfyrirsögn í H1 niður í undirfyrirsögn í H2.Ef sama undirfyrirsögnin væri H3, þá væri eins og maður hefði hlaupið yfir H2.
 Þetta ruglar fólk í ríminu.
 
-### 3. *ALT texti*
+### 3. ALT texti
 
 Tómt alt attribute lætur stoðtæki vita að myndin er til skrauts og að því sé óhætt að hlaupa yfir hana.
 
