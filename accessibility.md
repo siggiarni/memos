@@ -244,4 +244,44 @@ Via [Short note on aria-labelledby and aria-describedby](http://www.paciellogrou
 
 
 
+# Webdev memo
+
+## A11y notes
+
+### Required vs. Aria-required
+
+The required attribute and aria-required are not completely equivalent.
+
+### Required attribute
+
+Triggers automatic validation and built-in form submission error messages in browsers – which are currently not 100% accessible
+
+### Aria-required
+
+while the latter only signals that a form field is required to assistive technologies (without any further validation/error bubbles being triggered in browsers). So, the decision is a conscious one. This is a nice example of how accessibility is more than simple adherence to technical standards. Accessible development in the real world requires nuanced, pragmatic decisions on when to apply certain technologies, and when to look for alternatives.
+
+http://www.paciellogroup.com/blog/2015/02/is-accessibility-a-supply-or-demand-issue/#comment-2122
+
+### Empty image alt's
+
+alt="" is a standardised indication to screen reader software that the <img> is decorative and can be safely ignored.
+
+https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/
+
+### aria-hidden="true" and role="presentation"
+
+aria-hidden: Indicates that the element and all of its descendants are not visible or perceivable (i.e.presentable to users in ways they can sense) to any user as implemented by the author.
+
+presentation (role): An element whose implicit native role semantics will not be mapped to the accessibility API.
+
+The attribute role="presentation" should only be used in very limited circumstances, and only when it is desirable to suppress the role of an element for screen reader users.
+
+### aria-haspopup="true"
+
+A popup is generally presented visually as a group of items that appear to be on top of the main page content
+
+The attribute aria-haspopup should only be used on triggering elements that open menus. Otherwise, the presence of the attribute will only misrepresent the popup type to screen reader users.
+
+When role="presentation" is added to the markup of an element, it manually overrides this role mapping in the browser, and prevents the screen reader from identifying or even interacting with the element in the expected manner.
+
 
