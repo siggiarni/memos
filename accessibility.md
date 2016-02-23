@@ -32,38 +32,44 @@ W3C mæla með 5 grunnreglum þegar kemur að aðgengi vefsvæða:
   4. Do not use role="presentation" or aria-hidden="true" on a visible focusable element .
   5. All interactive elements must have an accessible name.
 
-Sjá: Notes on Using ARIA in HTML
-
-> http://w3c.github.io/aria-in-html/
+Sjá: [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
 
 
 ## Hlutir sem er gott að hafa í huga
 
-Native HTML element: Nota native HTML element þegar það er í boði.
+### 1. *Native HTML*
+
+Nota native HTML element þegar það er í boði.
 
 * T.d. er miklu betra að nota BUTTON element-ið í staðin fyrir að útfæra DIV sem takka.
 * Stoðtæki skilja hvað UL LI listi er, en SPAN listi rennur saman í eina klessu af texta.
 
-Headings: Passa að heading séu í skynsamri röð. Stoðtæki nýta sér headings til að fara yfir efni á síðum og gefa til kynna hvernig uppröðun síðunnar er.
+### 2. *Headings*
+
+Passa að heading séu í skynsamri röð. Stoðtæki nýta sér headings til að fara yfir efni á síðum og gefa til kynna hvernig uppröðun síðunnar er.
 
 Stoðtæki eiga einnig auðveldara með að flakka á milli eininga sem eru í skiljanlegri röð. T.d. er rökrétt að fara frá aðalfyrirsögn í H1 niður í undirfyrirsögn í H2.Ef sama undirfyrirsögnin væri H3, þá væri eins og maður hefði hlaupið yfir H2.
 Þetta ruglar fólk í ríminu.
 
-ALT texti: Tómt alt attribute lætur stoðtæki vita að myndin er til skrauts og að því sé óhætt að hlaupa yfir hana.
+### 3. *ALT texti*
+
+Tómt alt attribute lætur stoðtæki vita að myndin er til skrauts og að því sé óhætt að hlaupa yfir hana.
 
 * alt="" is a indication to screen reader software that the <img> is decorative and can be ignored.
 * Absence of an alt attribute results, in some screen reading screen reader software, not conveying the <img> to users.
-
 > https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/
 
+### 4. Tab index
 
 Er hægt að fara um viðmótið frá A til Ö með lyklaborði?
+Þetta er mikilvægt til þess að ARIA merkingar virki sem skildi.
 
-* Þetta er mikilvægt til þess að ARIA merkingar virki sem skildi.
+Tabindex: Ekki eiga við tabindex-inn nema til þessa að gera hluti "virka". Þ.e.a.s. aðgengilega með lyklaborðinu.
+  Sjá grein um tabindex.
 
-Basic screen reader commands for accessibility testing
+[Basic screen reader commands for accessibility testing](https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
 
-> https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/
+### 5. Form labels
 
 Label með form elements.
 
@@ -71,8 +77,7 @@ Label með form elements.
   * Placeholder texti er ekki nóg og getur jafnvel ruglað fólk í ríminu. Það er heldur ekki hægt að reiða sig á að stoðtækið lesi placeholder textann.
   * Ef hönnun er án LABEL, þá þarf samt að hafa það með visually hidden stíl.
 
-Tabindex: Ekki eiga við tabindex-inn nema til þessa að gera hluti "virka". Þ.e.a.s. aðgengilega með lyklaborðinu.
-  Sjá grein um tabindex.
+
 
 
 ---
