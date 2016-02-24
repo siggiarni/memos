@@ -1,6 +1,6 @@
 # Aðgengi að vefsvæðum
 
-Miscellaneous notes about assistive technologies and webdevelopement
+Collection of notes about assistive technologies and webdevelopement
 
 ## Grunnatriði
 
@@ -101,8 +101,13 @@ Label með form elements.
 > http://w3c.github.io/html/sections.html#the-nav-element
 
 **`<main><main>`**   
-> The main element represents the main content of the body of a document or application.   
+> The `main` element represents the main content of the body of a document or application.   
+
+> Authors must **not** include the `main` element as a descendant of an `article`, `aside`, `footer`, `header` or `nav` element.   
 > http://w3c.github.io/html/grouping-content.html#the-main-element
+
+> The `main` element is an exact analogue of ARIA’s `role="main"`, and is designed to show screenreaders and assistive technologies exactly where main content begins.   
+> http://www.brucelawson.co.uk/2013/the-main-element/
 
 **`<aside></aside>`**   
 > The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.   
@@ -110,11 +115,9 @@ Label með form elements.
 
 **`<footer></footer>`**   
 > The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.   
-> Authors must **not** include the main element as a descendant of an `article`, `aside`, `footer`, `header` or `nav` element.   
 > http://w3c.github.io/html/sections.html#the-footer-element   
 
-> The `<main>` element is an exact analogue of ARIA’s `role="main"`, and is designed to show screenreaders and assistive technologies exactly where main content begins.   
-> http://www.brucelawson.co.uk/2013/the-main-element/
+
 
 ## ARIA
 
