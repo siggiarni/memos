@@ -127,11 +127,18 @@ Label með form elements.
 
 **W**eb **A**ccessibility **I**nitiative – **A**ccessible **R**ich **I**nternet **A**pplications
 
+> WAI-ARIA is the Accessible Rich Internet Applications (ARIA) specification from the Web Accessibility Initiative (WAI) at the World Wide Web Consortium (W3C).
+>
 > WAI-ARIA stands for “Web Accessibility Initiative – Accessible Rich Internet Applications”. It is a set of attributes to help enhance the semantics of a web site or web application to help assistive technologies, such as screen readers for the blind, make sense of certain things that are not native to HTML.   
 > https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/
 >
 > Accessible Rich Internet Applications (ARIA) defines ways to make Web content and Web applications (especially those developed with Ajax and JavaScript) more accessible to people with disabilities. For example, ARIA enables accessible navigation landmarks, JavaScript widgets, form hints and error messages, live content updates, and more.   
 > https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+
+### Resources
+
+* [Web Accessibility Initiative (WAI) Home](https://www.w3.org/WAI/)
+* [WAI-ARIA Overview](https://www.w3.org/WAI/intro/aria.php)
 
 ### Specs
 
@@ -145,7 +152,6 @@ Label með form elements.
 * https://dev.opera.com/articles/ux-accessibility-aria-label/
 * https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 * https://www.w3.org/TR/WCAG20-TECHS/
-* https://www.w3.org/TR/html-aria/
 
 ---
 
