@@ -133,6 +133,13 @@ Label með form elements.
 > Accessible Rich Internet Applications (ARIA) defines ways to make Web content and Web applications (especially those developed with Ajax and JavaScript) more accessible to people with disabilities. For example, ARIA enables accessible navigation landmarks, JavaScript widgets, form hints and error messages, live content updates, and more.   
 > https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 
+### Specs
+
+* [Accessible Rich Internet Applications (WAI-ARIA) 1.0](https://www.w3.org/TR/wai-aria/)
+* [ARIA in HTML](https://www.w3.org/TR/html-aria/)
+
+### Useful links
+
 * [Joe Dolson: ARIA – Roles, States and Properties](http://wordpress.tv/2016/01/22/joe-dolson-aria-roles-states-and-properties/)
 * http://tink.uk/using-the-aria-owns-attribute/
 * https://dev.opera.com/articles/ux-accessibility-aria-label/
@@ -193,6 +200,10 @@ ChromeShades - find accessibility problems and experience the web without sight.
 
 **[Color Contrast Analyzer](https://chrome.google.com/webstore/detail/dagdlcijhfbmgkjokkjicnnfimlebcll)**   
 Analyze a web page or portion of a web page for conformance with WCAG 2.0 Color Contrast requirements.
+
+## Dev tól f. Firefox
+
+* [Accessibility features in Firefox - Make Firefox and web content work for all users](https://support.mozilla.org/en-US/kb/accessibility-features-firefox-make-firefox-and-we)
 
 ## More dev tools
 
