@@ -128,7 +128,13 @@ Label með form elements.
 > A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.   
 > http://w3c.github.io/html/sections.html#the-footer-element   
 
+### Useful links
 
+* [HTML5 Accessibility Chops: section elements](https://www.paciellogroup.com/blog/2011/03/html5-accessibility-chops-section-elements)
+* https://dequeuniversity.com/library/
+* http://w3c.github.io/elements-of-html/
+* https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html
+* https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/
 
 ## WAI-ARIA
 
@@ -149,6 +155,20 @@ Accessible Rich Internet Applications (ARIA) defines ways to make Web content an
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 </blockquote>
 
+### Required vs. Aria-required
+
+> The required attribute and aria-required are not completely equivalent.
+
+### Required attribute
+
+> Triggers automatic validation and built-in form submission error messages in browsers – which are currently not 100% accessible
+
+### Aria-required
+
+> while the latter only signals that a form field is required to assistive technologies (without any further validation/error bubbles being triggered in browsers). So, the decision is a conscious one. This is a nice example of how accessibility is more than simple adherence to technical standards. Accessible development in the real world requires nuanced, pragmatic decisions on when to apply certain technologies, and when to look for alternatives.
+> http://www.paciellogroup.com/blog/2015/02/is-accessibility-a-supply-or-demand-issue/#comment-2122
+
+
 ### Resources
 
 * [Web Accessibility Initiative (WAI) Home](https://www.w3.org/WAI/)
@@ -167,26 +187,6 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 * https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 * https://www.w3.org/TR/WCAG20-TECHS/
 
----
-
-## HTML
-
-HTML5 Accessibility Chops: section elements
-
-  > https://www.paciellogroup.com/blog/2011/03/html5-accessibility-chops-section-elements/
-
-
-https://dequeuniversity.com/library/
-
-http://w3c.github.io/elements-of-html/
-
-https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html
-
-https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/
-
-
----
-
 ## Stoðtæki
 
 - [JAWS](http://www.freedomscientific.com/Products/Blindness/JAWS) fyrir Windows.
@@ -198,8 +198,6 @@ https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/
 
 [Aural UI of the Elements of HTML](https://thepaciellogroup.github.io/AT-browser-tests/)   
 How HTML elements are supported by screen readers
-
----
 
 ## DEV tól f. chrome
  
@@ -245,46 +243,21 @@ Warns about potential accessibility issues with your React elements.
 **[IBM Web accessibility checklist](http://www-03.ibm.com/able/guidelines/web/accessweb.html)**   
 Use this checklist for Web sites and Web applications.
 
+### Useful links
 
+* https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/
+* https://blogs.adobe.com/dreamweaver/2015/09/making-your-website-design-accessible.html
+* https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b#.y5lpqhi98
+* http://www.karlgroves.com/2015/08/16/what-happens-when-you-get-sued-for-your-inaccessible-website/
+* https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/
+* https://www.paciellogroup.com/blog/2015/10/notes-on-use-of-multiple-aria-role-attribute-values/
+* https://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/
+* http://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html
+* http://bitsofco.de/the-accessibility-cheatsheet/
+* http://thatjdanisso.cool/a11y/focus-vs-hover/
+* http://maxdesign.com.au/jobs/sample-accessibility/index.html
 
-
-
-
----
-
-
-
-
-
-
-https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/
-
-https://blogs.adobe.com/dreamweaver/2015/09/making-your-website-design-accessible.html
-
-https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b#.y5lpqhi98
-
-http://www.karlgroves.com/2015/08/16/what-happens-when-you-get-sued-for-your-inaccessible-website/
-
-https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/
-
-https://www.paciellogroup.com/blog/2015/10/notes-on-use-of-multiple-aria-role-attribute-values/
-
-https://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/
-
-http://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html
-
-http://bitsofco.de/the-accessibility-cheatsheet/
-
-http://thatjdanisso.cool/a11y/focus-vs-hover/
-
-http://maxdesign.com.au/jobs/sample-accessibility/index.html
-
-
-
-
-
-
-# ARIA Memo
+## ARIA Memo
 
 ## aria-labelledby and describedby
 
@@ -298,19 +271,7 @@ Via [Short note on aria-labelledby and aria-describedby](http://www.paciellogrou
 
 ## A11y notes
 
-### Required vs. Aria-required
 
-The required attribute and aria-required are not completely equivalent.
-
-### Required attribute
-
-Triggers automatic validation and built-in form submission error messages in browsers – which are currently not 100% accessible
-
-### Aria-required
-
-while the latter only signals that a form field is required to assistive technologies (without any further validation/error bubbles being triggered in browsers). So, the decision is a conscious one. This is a nice example of how accessibility is more than simple adherence to technical standards. Accessible development in the real world requires nuanced, pragmatic decisions on when to apply certain technologies, and when to look for alternatives.
-
-http://www.paciellogroup.com/blog/2015/02/is-accessibility-a-supply-or-demand-issue/#comment-2122
 
 ### Empty image alt's
 
