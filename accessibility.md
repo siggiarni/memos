@@ -11,7 +11,7 @@ Rökrétt uppröðun HTML eininga gerir notendum stoðtækja mögulegt að lesa-
 > http://vanseodesign.com/web-design/wai-aria-introduction/
 
 Þegar stoðtæki opnar vefsíðu, þá les það DOM-tré vefsins í gegnum þar til gerðan Accessibility API sem tilkynnir stoðtækjunum hvaða hlutverki HTML-ið gegnir og hver staðan á því sé.
-T.d. hvað sé margir hlutir í UL-lista, hversu djúpt fyrirsögnin er o.s.fr.
+T.d. hvað eru mörg `LI` í `UL`-lista, hversu djúpt fyrirsögnin er o.s.fr.
 
 > Semantic html is using html to reinforce structural meaning. It’s about using tags, class names, and ids that reinforce the meaning of the content within the tags.   
 > http://vanseodesign.com/web-design/semantic-html/
@@ -21,7 +21,8 @@ T.d. hvað sé margir hlutir í UL-lista, hversu djúpt fyrirsögnin er o.s.fr.
 > Operating systems and other platforms provide a set of interfaces that expose information about objects and events to assistive technologies. Assistive technologies use these interfaces to get information about and interact with those widgets.   
 > http://rawgit.com/w3c/aria/master/html-aam/html-aam.html#dfn-accessibility-api
 
-Þetta er líka ástæðan fyrir hvers vegna það er mikilvægt að nota native HTML eininga en ekki stíla hlutlaust HTML eins og t.d. DIV sem Heading 1. Vegna þess að Accessibility API veit hvað H1 er en það þarf að útskýra sérstaklega fyrir API-inum hvað DIV sem lítur út eins og heading er.
+Þetta er líka ástæðan fyrir hvers vegna það er mikilvægt að nota native HTML eininga en ekki stíla hlutlaust HTML eins og t.d. `DIV` sem `H1`.   
+Vegna þess að Accessibility API veit hvað `H1` er en það þarf að útskýra sérstaklega fyrir API-inum hvað `DIV` sem lítur út eins og `H1` er.
 
 ## Grunnreglur W3C
 
@@ -30,7 +31,7 @@ W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar
   1. If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.
   2. Do not change native semantics, unless you really have to.
   3. All interactive ARIA controls must be usable with the keyboard.
-  4. Do not use role="presentation" or aria-hidden="true" on a visible focusable element .
+  4. Do not use `role="presentation"` or `aria-hidden="true"` on a visible focusable element .
   5. All interactive elements must have an accessible name.
 
 > W3C's [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
@@ -41,22 +42,22 @@ W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar
 
 Nota native HTML element þegar það er í boði.
 
-* T.d. er miklu betra að nota BUTTON element-ið í staðin fyrir að útfæra DIV sem takka.
-* Stoðtæki skilja hvað UL LI listi er, en SPAN listi rennur saman í eina klessu af texta.
+* T.d. er miklu betra að nota `BUTTON` element-ið í staðin fyrir að útfæra `DIV` sem takka.
+* Stoðtæki skilja hvað `UL` `LI` listi er, en `SPAN` listi rennur saman í eina klessu af texta.
 
 ### 2. Headings
 
 Passa að heading séu í skynsamri röð. Stoðtæki nýta sér headings til að fara yfir efni á síðum og gefa til kynna hvernig uppröðun síðunnar er.
 
-Stoðtæki eiga einnig auðveldara með að flakka á milli eininga sem eru í skiljanlegri röð. T.d. er rökrétt að fara frá aðalfyrirsögn í H1 niður í undirfyrirsögn í H2.Ef sama undirfyrirsögnin væri H3, þá væri eins og maður hefði hlaupið yfir H2.
+Stoðtæki eiga einnig auðveldara með að flakka á milli eininga sem eru í skiljanlegri röð. T.d. er rökrétt að fara frá aðalfyrirsögn í `H1` niður í undirfyrirsögn í `H2`.Ef sama undirfyrirsögnin væri `H3`, þá væri eins og maður hefði hlaupið yfir `H2`.   
 Þetta ruglar fólk í ríminu.
 
 ### 3. ALT texti
 
 Tómt alt attribute lætur stoðtæki vita að myndin er til skrauts og að því sé óhætt að hlaupa yfir hana.
 
-* alt="" is a indication to screen reader software that the <img> is decorative and can be ignored.
-* Absence of an alt attribute results, in some screen reading screen reader software, not conveying the <img> to users.
+* `alt=""` is a indication to screen reader software that the `IMG` is decorative and can be ignored.
+* Absence of an alt attribute results, in some screen reading screen reader software, not conveying the `IMG` to users.
 
 > https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/
 
@@ -65,8 +66,10 @@ Tómt alt attribute lætur stoðtæki vita að myndin er til skrauts og að þv�
 Er hægt að fara um viðmótið frá A til Ö með lyklaborði?
 Þetta er mikilvægt til þess að ARIA merkingar virki sem skildi.
 
-Tabindex: Ekki eiga við tabindex-inn nema til þessa að gera hluti "virka". Þ.e.a.s. aðgengilega með lyklaborðinu.
+Tabindex: Ekki eiga við tabindex-inn nema til þessa að gera hluti __"virka"__. Þ.e.a.s. aðgengilega með lyklaborðinu.
   Sjá grein um tabindex.
+  
+**Vantar hlekka á grein um tabindex**.
 
 > [Basic screen reader commands for accessibility testing](https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
 
