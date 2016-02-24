@@ -138,69 +138,53 @@ https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/
 
 ## Stoðtæki
 
-- JAWS. Windows. (hlekkur)
-- NVDA. Windows. (hlekkur)
-- Voice Over. Mac OS og iOS. (hlekkur)
-- Talkback. Android. (hlekkur)
+- [JAWS](http://www.freedomscientific.com/Products/Blindness/JAWS) fyrir Windows.
+- [NVDA](http://www.nvaccess.org) fyrir Windows.
+- Voice Over fyrir [Mac OS](http://www.apple.com/accessibility/osx/voiceover) og [iOS](http://www.apple.com/accessibility/ios/voiceover).
+- [Talkback](https://support.google.com/accessibility/android/answer/6283677) fyrir Android.
 
 ---
 
 ## DEV tól f. chrome
  
-Accessibility Developer Tools
+**[Accessibility Developer Tools](https://chrome.google.com/webstore/detail/fpkknkljclfencbdbgkenhalefipecmb)**   
+Accessibility audit and element properties.
 
-  Accessibility audit and element properties.
-  > https://chrome.google.com/webstore/detail/fpkknkljclfencbdbgkenhalefipecmb
-
-
-WAVE Evaluation Tool
-
-  Adds WAVE (Web Accessibility Evaluation Tool) to Google Chrome.
-  > https://chrome.google.com/webstore/detail/jbbplnpkjmmeebjpijfedlgcdilocofh
+**[WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/jbbplnpkjmmeebjpijfedlgcdilocofh)**   
+Adds WAVE (Web Accessibility Evaluation Tool) to Google Chrome.
 
 
-ARIA Validator
+**[ARIA Validator](https://chrome.google.com/webstore/detail/aria-validator/oigghlanfjgnkcndchmnlnmaojahnjoc)**   
+Scans page for WAI-ARIA implementation issues.
 
-  Scans page for WAI-ARIA implementation issues.
-  > https://chrome.google.com/webstore/detail/aria-validator/oigghlanfjgnkcndchmnlnmaojahnjoc
+**[ChromeVox](https://chrome.google.com/webstore/detail/kgejglhpjiefppelpmljglcjbhoiplfn)**   
+ChromeVox - Giving Voice to Chrome
 
+**[ChromeShades](https://chrome.google.com/webstore/detail/hlklboladblmgfpkenhlgbhoojdlfoao)**   
+ChromeShades - find accessibility problems and experience the web without sight.
 
-ChromeVox
+**[Color Contrast Analyzer](https://chrome.google.com/webstore/detail/dagdlcijhfbmgkjokkjicnnfimlebcll)**   
+Analyze a web page or portion of a web page for conformance with WCAG 2.0 Color Contrast requirements.
 
-  ChromeVox - Giving Voice to Chrome
-  > https://chrome.google.com/webstore/detail/kgejglhpjiefppelpmljglcjbhoiplfn
+## More dev tools
 
-
-ChromeShades
-
-  ChromeShades - find accessibility problems and experience the web without sight.
-  > https://chrome.google.com/webstore/detail/hlklboladblmgfpkenhlgbhoojdlfoao
-
-
-Color Contrast Analyzer
-
-  Analyze a web page or portion of a web page for conformance with WCAG 2.0 Color Contrast requirements.
-  > https://chrome.google.com/webstore/detail/dagdlcijhfbmgkjokkjicnnfimlebcll
+* https://khan.github.io/tota11y/
+* http://www.deque.com/products/axe/
+* http://www.karlgroves.com/2013/09/07/diagnostic-css-super-quick-web-accessibility-testing/
+* https://github.com/matatk/landmarks
+* https://github.com/reactjs/react-a11y
+* https://thepaciellogroup.github.io/AT-browser-tests/
 
 
 
-https://khan.github.io/tota11y/
-http://www.deque.com/products/axe/
-http://www.karlgroves.com/2013/09/07/diagnostic-css-super-quick-web-accessibility-testing/
-https://github.com/matatk/landmarks
-https://github.com/reactjs/react-a11y
-https://thepaciellogroup.github.io/AT-browser-tests/
-
-
-
-Web checklist
-
-  > http://www-03.ibm.com/able/guidelines/web/accessweb.html
+[Web checklist](http://www-03.ibm.com/able/guidelines/web/accessweb.html)
 
 
 
 
---- ---  --- ---  --- ---  --- ---  --- ---  --- ---  --- ---  --- ---  --- ---  --- ---  --- ---  --- ---  
+
+
+---
 
 
 
