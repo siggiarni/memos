@@ -83,7 +83,9 @@ Label með form elements.
 
 ## Roles
 
-## Content organisation with HTML5
+## Grouping- and sectioning elements
+
+### Content organisation with HTML5
 
 * The order in which the elements are organised and the region types used is based on your content organisation.
 * If you content organisation is such that a region is nested within another region, go for it.
