@@ -141,7 +141,7 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Web_applications
 
 <blockquote>
 WAI-ARIA stands for “Web Accessibility Initiative – Accessible Rich Internet Applications”. It is a set of attributes to help enhance the semantics of a web site or web application to help assistive technologies, such as screen readers for the blind, make sense of certain things that are not native to HTML.<br>
-> https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/
+https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/
 </blockquote>
 
 <blockquote>
