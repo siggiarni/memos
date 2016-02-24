@@ -71,7 +71,7 @@ Tabindex: Ekki eiga við tabindex-inn nema til þessa að gera hluti __"virka"__
   
 **Vantar hlekka á grein um tabindex**.
 
-> [Basic screen reader commands for accessibility testing](https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
+
 
 ### 5. Form labels
 
@@ -146,6 +146,11 @@ https://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/
 - Voice Over fyrir [Mac OS](http://www.apple.com/accessibility/osx/voiceover) og [iOS](http://www.apple.com/accessibility/ios/voiceover).
 - [Talkback](https://support.google.com/accessibility/android/answer/6283677) fyrir Android.
 
+[Basic screen reader commands for accessibility testing](https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
+
+[Aural UI of the Elements of HTML](https://thepaciellogroup.github.io/AT-browser-tests/)   
+How HTML elements are supported by screen readers
+
 ---
 
 ## DEV tól f. chrome
@@ -155,7 +160,6 @@ Accessibility audit and element properties.
 
 **[WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/jbbplnpkjmmeebjpijfedlgcdilocofh)**   
 Adds WAVE (Web Accessibility Evaluation Tool) to Google Chrome.
-
 
 **[ARIA Validator](https://chrome.google.com/webstore/detail/aria-validator/oigghlanfjgnkcndchmnlnmaojahnjoc)**   
 Scans page for WAI-ARIA implementation issues.
@@ -171,16 +175,23 @@ Analyze a web page or portion of a web page for conformance with WCAG 2.0 Color 
 
 ## More dev tools
 
-* https://khan.github.io/tota11y/
-* http://www.deque.com/products/axe/
-* http://www.karlgroves.com/2013/09/07/diagnostic-css-super-quick-web-accessibility-testing/
-* https://github.com/matatk/landmarks
-* https://github.com/reactjs/react-a11y
-* https://thepaciellogroup.github.io/AT-browser-tests/
+**[tota11y](https://khan.github.io/tota11y/)**   
+tota11y helps visualize how your site performs with assistive technologies.
 
+**[aXe by Deque](http://www.deque.com/products/axe/)**   
+aXe is a portable JavaScript library that executes automated accessibility testing inside your testing framework or browser of choice.
 
+**[Diagnostic.css](http://www.karlgroves.com/2013/09/07/diagnostic-css-super-quick-web-accessibility-testing/)**   
+Diagnostic.css is a CSS file which, when applied to a web page, will highlight accessibility errors in the page.
 
-[Web checklist](http://www-03.ibm.com/able/guidelines/web/accessweb.html)
+**[Landmarks](https://github.com/matatk/landmarks)**   
+A Firefox extension that enables keyboard navigation of WAI-ARIA landmarks
+
+**[React A11y](https://github.com/reactjs/react-a11y)**   
+Warns about potential accessibility issues with your React elements.
+
+**[IBM Web accessibility checklist](http://www-03.ibm.com/able/guidelines/web/accessweb.html)**   
+Use this checklist for Web sites and Web applications.
 
 
 
