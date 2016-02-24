@@ -28,11 +28,11 @@ Vegna þess að Accessibility API veit hvað `H1` er en það þarf að útskýr
 
 W3C mæla með [5 grunnreglum](http://w3c.github.io/aria-in-html/#notes2) þegar kemur að aðgengi vefsvæða:
 
-  [1.](http://w3c.github.io/aria-in-html/#rule1) If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.
-  [2.](http://w3c.github.io/aria-in-html/#rule2) Do not change native semantics, unless you really have to.
-  [3.](http://w3c.github.io/aria-in-html/#rule3) All interactive ARIA controls must be usable with the keyboard.
-  [4.](http://w3c.github.io/aria-in-html/#rule4) Do not use `role="presentation"` or `aria-hidden="true"` on a visible focusable element .
-  [5.](http://w3c.github.io/aria-in-html/#rule5) All interactive elements must have an accessible name.
+  1. If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so. [Link](http://w3c.github.io/aria-in-html/#rule1).
+  2. Do not change native semantics, unless you really have to. [Link](http://w3c.github.io/aria-in-html/#rule2).
+  3. All interactive ARIA controls must be usable with the keyboard. [Link](http://w3c.github.io/aria-in-html/#rule3).
+  4. Do not use `role="presentation"` or `aria-hidden="true"` on a visible focusable element. [Link](http://w3c.github.io/aria-in-html/#rule4).
+  5. All interactive elements must have an accessible name. [Link](http://w3c.github.io/aria-in-html/#rule5).
 
 ## Hlutir sem er gott að hafa í huga
 
