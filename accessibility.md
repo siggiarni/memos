@@ -129,26 +129,16 @@ Label með form elements.
 
 > WAI-ARIA stands for “Web Accessibility Initiative – Accessible Rich Internet Applications”. It is a set of attributes to help enhance the semantics of a web site or web application to help assistive technologies, such as screen readers for the blind, make sense of certain things that are not native to HTML.   
 > https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/
-
----
-
+>
 > Accessible Rich Internet Applications (ARIA) defines ways to make Web content and Web applications (especially those developed with Ajax and JavaScript) more accessible to people with disabilities. For example, ARIA enables accessible navigation landmarks, JavaScript widgets, form hints and error messages, live content updates, and more.   
 > https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 
-Joe Dolson: ARIA – Roles, States and Properties
-
-> http://wordpress.tv/2016/01/22/joe-dolson-aria-roles-states-and-properties/
-
-
-http://tink.uk/using-the-aria-owns-attribute/
-
-https://dev.opera.com/articles/ux-accessibility-aria-label/
-
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
-
-https://www.w3.org/TR/WCAG20-TECHS/
-
-https://www.w3.org/TR/html-aria/
+* [Joe Dolson: ARIA – Roles, States and Properties](http://wordpress.tv/2016/01/22/joe-dolson-aria-roles-states-and-properties/)
+* http://tink.uk/using-the-aria-owns-attribute/
+* https://dev.opera.com/articles/ux-accessibility-aria-label/
+* https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
+* https://www.w3.org/TR/WCAG20-TECHS/
+* https://www.w3.org/TR/html-aria/
 
 ---
 
