@@ -85,6 +85,12 @@ When writing scripts, specify the full path to the executable you’ve installed
 -f Do not prompt before overwriting existing files.
 -v Operate verbosely.
 
+### Ping á vefþjón
+
+<pre>% ping -c 5 192.168.0.1</pre>
+
+-c Count. Stop after sending (and receiving) count ECHO_RESPONSE packets.
+
 ### Prenta lista yfir skrár
 
 <pre>% ls -lshF</pre>
