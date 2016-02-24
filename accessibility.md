@@ -21,7 +21,7 @@ T.d. hvað eru mörg `LI` í `UL`-lista, hversu djúpt fyrirsögnin er o.s.fr.
 > Operating systems and other platforms provide a set of interfaces that expose information about objects and events to assistive technologies. Assistive technologies use these interfaces to get information about and interact with those widgets.   
 > http://rawgit.com/w3c/aria/master/html-aam/html-aam.html#dfn-accessibility-api
 
-> Assistive technologies use an API built into each operating system specifically designed to describe the roles, states, and structure of an application's user interface. For example, a screen reader uses this API to read the user interface with a text-to-speech engine
+> Assistive technologies use an API built into each operating system specifically designed to describe the roles, states, and structure of an application's user interface. For example, a screen reader uses this API to read the user interface with a text-to-speech engine   
 > https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Web_applications_and_ARIA_FAQ#How_do_assistive_technologies_work.3F
 
 Þetta er líka ástæðan fyrir hvers vegna það er mikilvægt að nota native HTML eininga en ekki stíla hlutlaust HTML eins og t.d. `DIV` sem `H1`.   
