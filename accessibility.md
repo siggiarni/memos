@@ -92,7 +92,7 @@ Label með form elements.
 
 > https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/
 
-> Mynd vantar
+![](/images/regions-typical1.png?raw=true "")
 
 **`<header></header>`**   
 > The `header` element represents introductory content for its nearest ancestor sectioning content or sectioning root element.   
