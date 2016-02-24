@@ -95,28 +95,30 @@ Label með form elements.
 > Mynd vantar
 
 **`<header></header>`**   
-> The header element represents introductory content for its nearest ancestor sectioning content or sectioning root element. A header typically contains a group of introductory or navigational aids.   
+> The `header` element represents introductory content for its nearest ancestor sectioning content or sectioning root element.   
+> A header typically contains a group of introductory or navigational aids.   
 > http://w3c.github.io/html/sections.html#the-header-element
 
 **`<nav></nav>`**   
-> The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.   
+> The `nav` element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.   
 > http://w3c.github.io/html/sections.html#the-nav-element
 
 **`<main><main>`**   
 > The `main` element represents the main content of the body of a document or application.   
-
 > Authors must **not** include the `main` element as a descendant of an `article`, `aside`, `footer`, `header` or `nav` element.   
 > http://w3c.github.io/html/grouping-content.html#the-main-element
-
+>
 > The `main` element is an exact analogue of ARIA’s `role="main"`, and is designed to show screenreaders and assistive technologies exactly where main content begins.   
 > http://www.brucelawson.co.uk/2013/the-main-element/
 
 **`<aside></aside>`**   
-> The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.   
+> The `aside` element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.   
+> Such sections are often represented as sidebars in printed typography.   
 > http://w3c.github.io/html/sections.html#the-aside-element
 
 **`<footer></footer>`**   
-> The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.   
+> The `footer` element represents a footer for its nearest ancestor sectioning content or sectioning root element.   
+> A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.   
 > http://w3c.github.io/html/sections.html#the-footer-element   
 
 
