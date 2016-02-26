@@ -90,6 +90,8 @@ Label með form elements.
 
 ## Roles
 
+https://www.w3.org/TR/wai-aria/roles
+
 ## Grouping- and sectioning elements
 
 ### Content organisation with HTML5
@@ -182,22 +184,25 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 ### Useful links
 
 * [Joe Dolson: ARIA – Roles, States and Properties](http://wordpress.tv/2016/01/22/joe-dolson-aria-roles-states-and-properties/)
-* http://tink.uk/using-the-aria-owns-attribute/
-* https://dev.opera.com/articles/ux-accessibility-aria-label/
-* https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
-* https://www.w3.org/TR/WCAG20-TECHS/
+* [Using the aria-owns attribute](http://tink.uk/using-the-aria-owns-attribute/)
+* [UX accessibility with aria-label](https://dev.opera.com/articles/ux-accessibility-aria-label/)
+* [ARIA techniques @ MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
+* [Techniques for WCAG 2.0 @ W3C](https://www.w3.org/TR/WCAG20-TECHS/)
 
 ## Stoðtæki
 
 - [JAWS](http://www.freedomscientific.com/Products/Blindness/JAWS) fyrir Windows.
 - [NVDA](http://www.nvaccess.org) fyrir Windows.
 - Voice Over fyrir [Mac OS](http://www.apple.com/accessibility/osx/voiceover) og [iOS](http://www.apple.com/accessibility/ios/voiceover).
+- [Orca](https://wiki.gnome.org/Projects/Orca) fyrir Linux
 - [Talkback](https://support.google.com/accessibility/android/answer/6283677) fyrir Android.
 
 [Basic screen reader commands for accessibility testing](https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
 
 [Aural UI of the Elements of HTML](https://thepaciellogroup.github.io/AT-browser-tests/)   
 How HTML elements are supported by screen readers
+
+[List of screen readers](https://en.wikipedia.org/wiki/List_of_screen_readers) @ Wikipedia.
 
 ## DEV tól f. chrome
  
@@ -245,17 +250,17 @@ Use this checklist for Web sites and Web applications.
 
 ### Useful links
 
-* https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/
-* https://blogs.adobe.com/dreamweaver/2015/09/making-your-website-design-accessible.html
-* https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b#.y5lpqhi98
-* http://www.karlgroves.com/2015/08/16/what-happens-when-you-get-sued-for-your-inaccessible-website/
-* https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/
-* https://www.paciellogroup.com/blog/2015/10/notes-on-use-of-multiple-aria-role-attribute-values/
-* https://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/
-* http://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html
-* http://bitsofco.de/the-accessibility-cheatsheet/
-* http://thatjdanisso.cool/a11y/focus-vs-hover/
-* http://maxdesign.com.au/jobs/sample-accessibility/index.html
+* [The web accessibility basics](https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/)
+* [Making Your Website Design Accessible – Here’s What a Blind Accessibility Expert Has to Say on the Topic](https://blogs.adobe.com/dreamweaver/2015/09/making-your-website-design-accessible.html)
+* [7 Things Every Designer Needs to Know about Accessibility](https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b#.y5lpqhi98)
+* [What happens when you get sued for your inaccessible website](http://www.karlgroves.com/2015/08/16/what-happens-when-you-get-sued-for-your-inaccessible-website/)
+* [Basic screen reader commands for accessibility testing](https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
+* [Notes on use of multiple ARIA role attribute values](https://www.paciellogroup.com/blog/2015/10/notes-on-use-of-multiple-aria-role-attribute-values/)
+* [Using WAI-ARIA Landmarks – 2013](https://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/)
+* [Links, Buttons, Submits, and Divs, Oh Hell](http://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html)
+* [The Accessibility Cheatsheet](http://bitsofco.de/the-accessibility-cheatsheet/)
+* [Focus vs. Hover ](http://thatjdanisso.cool/a11y/focus-vs-hover/)
+* [Accessibility tests](http://maxdesign.com.au/jobs/sample-accessibility/index.html)
 
 ## ARIA Memo
 
@@ -271,33 +276,26 @@ Via [Short note on aria-labelledby and aria-describedby](http://www.paciellogrou
 
 ## A11y notes
 
-
-
-### Empty image alt's
-
-alt="" is a standardised indication to screen reader software that the <img> is decorative and can be safely ignored.
-
-https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/
-
 ### aria-hidden="true" and role="presentation"
 
-aria-hidden: Indicates that the element and all of its descendants are not visible or perceivable (i.e.presentable to users in ways they can sense) to any user as implemented by the author.
+`aria-hidden` Indicates that the element and all of its descendants are not visible or perceivable _(i.e. presentable to users in ways they can sense)_ to any user as implemented by the author.
 
-presentation (role): An element whose implicit native role semantics will not be mapped to the accessibility API.
+`presentation` An element whose implicit native role semantics will **not** be mapped to the accessibility API.
 
-The attribute role="presentation" should only be used in very limited circumstances, and only when it is desirable to suppress the role of an element for screen reader users.
+The attribute `role="presentation"` should only be used in very limited circumstances, and only when it is desirable to suppress the role of an element for screen reader users.
 
 ### aria-haspopup="true"
 
 A popup is generally presented visually as a group of items that appear to be on top of the main page content
 
-The attribute aria-haspopup should only be used on triggering elements that open menus. Otherwise, the presence of the attribute will only misrepresent the popup type to screen reader users.
+The attribute `aria-haspopup` should only be used on triggering elements that open menus. Otherwise, the presence of the attribute will only misrepresent the popup type to screen reader users.
 
-When role="presentation" is added to the markup of an element, it manually overrides this role mapping in the browser, and prevents the screen reader from identifying or even interacting with the element in the expected manner.
+When `role="presentation"` is added to the markup of an element, it manually overrides this role mapping in the browser, and prevents the screen reader from identifying or even interacting with the element in the expected manner.
 
 --- 
 
-http://slides.com/heydon/getting-nowhere-with-css-best-practices/#/41
+[Getting nowhere with
+CSS best practices](http://slides.com/heydon/getting-nowhere-with-css-best-practices/#/41)
 
 * aria-busy
 * aria-grabbed
