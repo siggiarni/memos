@@ -16,6 +16,8 @@ privacy.trackingprotection.enabled > True
 
 browser.urlbar.trimURLs > false
 
+browser.tabs.remote.autostart > true
+
 ## GCLI
 
 resize to WIDTH HEIGHT
