@@ -6,6 +6,8 @@ Slóð á custom profile
 
 ## Config
 
+about:support
+
 about:config
 
 browser.newtab.url > about:blank
