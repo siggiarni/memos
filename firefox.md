@@ -6,6 +6,10 @@ Slóð á custom profile
 
 ## Config
 
+about:performance
+
+about:debugging
+
 about:support
 
 about:config
