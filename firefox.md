@@ -6,6 +6,12 @@ Slóð á custom profile
 
 ## Config
 
+about:serviceworkers
+
+about:memory
+
+about:plugins
+
 about:performance
 
 about:debugging
