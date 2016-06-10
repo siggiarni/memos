@@ -6,6 +6,8 @@ Slóð á custom profile
 
 ## Config
 
+about:profiles
+
 about:serviceworkers
 
 about:memory
