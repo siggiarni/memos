@@ -11,10 +11,11 @@ Slóð á custom profile
 
 `browser.aboutHomeSnippets.updateUrl` **`blank`**  
 `browser.search.geoip.url` **`blank`**  
-`extensions.getAddons.cache.enabled` **`false`**
-`network.http.pipelining` **`true`** [About pipelining](http://kb.mozillazine.org/Network.http.pipelining)
+`extensions.getAddons.cache.enabled` **`false`**  
+`network.http.pipelining` **`true`**  
 
-[How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections?redirectlocale=en-US&redirectslug=how-stop-firefox-automatically-making-connections)
+[About pipelining](http://kb.mozillazine.org/Network.http.pipelining)  
+[How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections?redirectlocale=en-US&redirectslug=how-stop-firefox-automatically-making-connections)  
 
 ### Disable Telemetry Pings
 
