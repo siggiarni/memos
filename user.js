@@ -2,7 +2,8 @@
 // A comprehensive list of Firefox privacy and security settings by ghacks.net
 // http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/
 
-// Place in ~/Library/Applicaion Support/Firefox/Profiles/XXXXXXXX.default/
+// Place user.js in profile folder
+// http://kb.mozillazine.org/Profile_folder
 
 /*** 0100: STARTUP ***/
 // 0101: disable "slow startup" options
