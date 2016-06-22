@@ -164,3 +164,7 @@ Dæmi:
 ## Validate Filevault recovery key
 
 <pre>% sudo fdesetup validaterecovery</pre>
+
+## Convert mkv to mp4
+
+<pre>% ffmpeg -i video.mkv -c copy video.mp4</pre>
