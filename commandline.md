@@ -165,6 +165,11 @@ Dæmi:
 
 <pre>% sudo fdesetup validaterecovery</pre>
 
+## Install/Reinstall FFMPG
+
+<pre>brew install ffmpeg --with-libvpx</pre>
+<pre>brew reinstall ffmpeg --with-libvpx</pre>
+
 ## Convert mkv to mp4
 
 <pre>% ffmpeg -i video.mkv -c copy video.mp4</pre>
