@@ -2,8 +2,7 @@
 // A comprehensive list of Firefox privacy and security settings by ghacks.net
 // http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/
 
-// Place user.js in profile folder
-// http://kb.mozillazine.org/Profile_folder
+// Place in ~/Library/Applicaion Support/Firefox/Profiles/XXXXXXXX.default/
 
 /*** 0100: STARTUP ***/
 // 0101: disable "slow startup" options
@@ -159,20 +158,24 @@ user_pref("social.share.activationPanelEnabled", false);
 // NOTE: requires extensions.blocklist.url to be set at default
 // https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl
 user_pref("extensions.blocklist.enabled", true);
+
 // 0402: disable "Block reported web forgeries" - PRIVACY
 // If true this compares visited URLs against a blacklist or submits URLs to a third party
 // to determine whether a site is legitimate. This setting is under Options>Security
 user_pref("browser.safebrowsing.enabled", false);
+
 // 0410: disable "Block reported attack sites" - PRIVACY
 // Safebrowsing uses locally stored data, but if the item is not found, then
 // google is contacted. This setting is under Options>Security
 user_pref("browser.safebrowsing.malware.enabled", false);
+
 // 0411: disable safebrowsing urls & download
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.reportMalwareMistakeURL", "");
 user_pref("browser.safebrowsing.reportPhishMistakeURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
+
 // 0411b: disable FF43+ safebrowsing urls
 user_pref("browser.safebrowsing.provider.google.appRepURL", "");
 user_pref("browser.safebrowsing.provider.google.gethashURL", "");
@@ -180,6 +183,7 @@ user_pref("browser.safebrowsing.provider.google.reportURL", "");
 user_pref("browser.safebrowsing.provider.google.updateURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
+
 // 0420: disable tracking protection
 // https://support.mozilla.org/en-US/kb/tracking-protection-firefox
 // I believe there are no privacy concerns here, but you are better off using an
@@ -189,6 +193,7 @@ user_pref("privacy.trackingprotection.enabled", true);
 // user_pref("browser.trackingprotection.gethashURL", "");
 // user_pref("browser.trackingprotection.getupdateURL", "");
 // user_pref("privacy.trackingprotection.pbmode.enabled", false);
+
 // 0421: disable SSL Error Reporting - PRIVACY
 // https://gecko.readthedocs.org/en/latest/browser/base/sslerrorreport/preferences.html
 user_pref("security.ssl.errorReporting.automatic", false);
@@ -198,24 +203,32 @@ user_pref("security.ssl.errorReporting.url", "");
 
 /*** 0600: BLOCK IMPLICIT OUTBOUND [not explicitly asked for - eg clicked on] ***/
 // 0601: disable link prefetching
+// Default: True
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ
 user_pref("network.prefetch-next", false);
+
 // 0602: disable dns prefetching
+// Default: False
 // http://www.ghacks.net/2013/04/27/firefox-prefetching-what-you-need-to-know/
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
+
 // 0603: disable Seer/Necko
 user_pref("network.predictor.enabled", false);
+
 // 0603a: disable more Necko stuff (not sure what this will do but so far no ill effects)
 // https://wiki.mozilla.org/Necko/CaptivePortal
 user_pref("captivedetect.canonicalURL", "");
+
 // 0604: disable search suggestions
 user_pref("browser.search.suggest.enabled", false);
+
 // 0605: disable link-mouseover opening connection to linked server
 // http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
 // http://www.ghacks.net/2015/08/16/block-firefox-from-connecting-to-sites-when-you-hover-over-links
 user_pref("network.http.speculative-parallel-limit", 0);
+
 // 0606: disable pings (but enforce same host in case)
 // http://kb.mozillazine.org/Browser.send_pings
 // http://kb.mozillazine.org/Browser.send_pings.require_same_host
@@ -226,9 +239,13 @@ user_pref("browser.send_pings.require_same_host", true);
 /*** 0800: LOCATION BAR / SEARCH / AUTO SUGGESTIONS / HISTORY / FORMS etc
 // Not ALL of these are strictly needed, some are for the truly paranoid, but
 // included for a more comprehensive list (see comments on each one) ***/
+
 // 0801: disable location bar using search - PRIVACY
+// Default: True
 // don't leak typos to a search engine, give an error message instead
-user_pref("keyword.enabled", false);
+user_pref("keyword.enabled", true);
+// user_pref("keyword.enabled", false);
+
 // 0802: disable location bar domain guessing - PRIVACY/SECURITY
 // domain guessing intercepts DNS "hostname not found errors" and resends a
 // request (eg by adding www or .com). This is inconsistent use (eg FQDNs), does not work
@@ -237,53 +254,73 @@ user_pref("keyword.enabled", false);
 // intend to), can leak sensitive data (eg query strings: eg Princeton attack),
 // and is a security risk (eg common typos & malicious sites set up to exploit this)
 user_pref("browser.fixup.alternate.enabled", false);
+
 // 0803: disable locationbar dropdown - PRIVACY (shoulder surfers,forensics/unattended browser)
-user_pref("browser.urlbar.maxRichResults", 0);
+// Default: 12
+// user_pref("browser.urlbar.maxRichResults", 0);
+user_pref("browser.urlbar.maxRichResults", 12);
+
 // 0804: display all parts of the url
 // why rely on just a visual clue - helps SECURITY
 user_pref("browser.urlbar.trimURLs", false);
+
 // 0805: disable URLbar autofill - PRIVACY (shoulder surfers, forensics/unattended browser)
 // http://kb.mozillazine.org/Inline_autocomplete
-user_pref("browser.urlbar.autoFill", false);
-user_pref("browser.urlbar.autoFill.typed", false);
+// user_pref("browser.urlbar.autoFill", false);
+user_pref("browser.urlbar.autoFill", true);
+// user_pref("browser.urlbar.autoFill.typed", false);
+user_pref("browser.urlbar.autoFill.typed", true);
+
 // 0806: disable autocomplete - PRIVACY (shoulder surfers, forensics/unattended browser)
-user_pref("browser.urlbar.autocomplete.enabled", false);
-user_pref("browser.urlbar.unifiedcomplete", false);
+// user_pref("browser.urlbar.autocomplete.enabled", false);
+user_pref("browser.urlbar.autocomplete.enabled", true);
+// user_pref("browser.urlbar.unifiedcomplete", false);
+user_pref("browser.urlbar.unifiedcomplete", true);
+
 // 0807: disable history manipulation - SECURITY
 // https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history
 // WARNING: if set to false it breaks some sites (youtube) ability to correctly show the
 // url in location bar and for the forward/back tab history to work
-user_pref("browser.history.allowPopState", false);
-user_pref("browser.history.allowPushState", false);
-user_pref("browser.history.allowReplaceState", false);
+// user_pref("browser.history.allowPopState", false);
+// user_pref("browser.history.allowPushState", false);
+// user_pref("browser.history.allowReplaceState", false);
+
 // 0808: disable history suggestions - PRIVACY (shoulder surfers, forensics/unattended browser)
-user_pref("browser.urlbar.suggest.history", false);
+// user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.history", true);
+
 // 0809: limit history leaks via enumeration (PER TAB: back/forward) - PRIVACY
 // This is a PER TAB session history. You still have a full history stored under all history
 // default=50, minimum=1=currentpage, 2 is the recommended minimum as some pages
 // use it as a means of referral (eg hotlinking), 4 or 6 may be more practical
 user_pref("browser.sessionhistory.max_entries", 4);
+
 // 0810: disable css querying page history - css history leak - PRIVACY
 user_pref("layout.css.visited_links_enabled", false);
+
 // 0811: disable displaying Javascript in history URLs - SECURITY
 user_pref("browser.urlbar.filter.javascript", true);
+
 // 0812: disable saving info entered in web forms & the search bar - PRIVACY
 // For convenience & functionality, this is best left at default true.
 // You can clear formdata on exiting firefox
 // user_pref("browser.formfill. enable", false);
+
 // 0813: disable saving form data on secure websites - PRIVACY (shoulder surfers etc)
 // For convenience & functionality, this is best left at default true.
 // You can clear formdata on exiting firefox
 // user_pref("browser.formfill.saveHttpsForms", false);
+
 // 0814: disable auto-filling username & password form fields - SECURITY
 // can leak in cross-site forms AND be spoofed
 // http://kb.mozillazine.org/Signon.autofillForms
 // password will still be auto-filled after a user name is manually entered
 user_pref("signon.autofillForms", false);
+
 // 0815 disable live search suggestions in the urlbar and toggle off the Opt-In prompt: FF41+
 // Setting: Options>Privacy>Location Bar>Related searches from the default search engine
-user_pref("browser.urlbar.suggest.searches", false);
-user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
+// user_pref("browser.urlbar.suggest.searches", false);
+// user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
 
 
 /*** 1000: CACHE ***/
@@ -313,35 +350,43 @@ user_pref("browser.sessionstore.privacy_level_deferred", 2);
 // 1203: enable OCSP stapling
 // https://blog.mozilla.org/security/2013/07/29/ocsp-stapling-in-firefox/
 user_pref("security.ssl.enable_ocsp_stapling", true);
+
 // 1204: reject communication with servers using old SSL/TLS - vulnerable to a MiTM attack
 // https://wiki.mozilla.org/Security:Renegotiation
 // WARNING: leave commented out for now, as when set to true it breaks too many sites
-user_pref("security.ssl.require_safe_negotiation", true);
+// user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.ssl.require_safe_negotiation", false);
+
 // 1205: display warning (red padlock) for "broken security"
 // https://wiki.mozilla.org/Security:Renegotiation
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
+
 // 1206: require certificate revocation check through OCSP protocol
 // This leaks information about the sites you visit to the CA (cert authority)
 // It's a trade-off between security (checking) and privacy (leaking info to the CA)
 // WARNING: Since FF43 the default is now true. If set to true, this may/will cause some
 // site breakage. Some users have previously mentioned issues with youtube, microsoft etc
 user_pref("security.OCSP.require", true);
+
 // 1207: query OCSP responder servers to confirm current validity of certificates (default=1)
 // 0=disable, 1=validate only certificates that specify an OCSP service URL
 // 2=enable and use values in security.OCSP.URL and security.OCSP.signing
 user_pref("security.OCSP.enabled", 1);
+
 // 1208: enforce strict pinning
 // https://trac.torproject.org/projects/tor/ticket/16206
 // PKP (public key pinning) 0-disabled 1=allow user MITM (such as your antivirus), 2=strict
 // WARNING: If you rely on an AV (antivirus) to protect your web browsing
 // by inspecting ALL your web traffic, then leave at default =1
 user_pref("security.cert_pinning.enforcement_level", 2);
+
 // 1209: disable TLS 1.0
 // 1=min version of TLS 1.0, 2-min version of TLS 1.1, 3=min version of TLS 1.2
 // WARNING: FF/chrome currently allow TLS 1.0 by default, so this is your call.
 // http://kb.mozillazine.org/Security.tls.version.*
 // https://www.ssl.com/how-to/turn-off-ssl-3-0-and-tls-1-0-in-your-browser/
 user_pref("security.tls.version.min", 2);
+
 // 1210: disable 1024-DH Encryption
 // https://www.eff.org/deeplinks/2015/10/how-to-protect-yourself-from-nsa-attacks-1024-bit-DH
 // WARNING: may break obscure sites, but not major sites, which should support ECDH over DHE
@@ -707,7 +752,7 @@ user_pref("browser.tabs.warnOnOpen", false);
 // user_pref("full-screen-api.warning.delay", 0);
 // user_pref("full-screen-api.warning.timeout", 0);
 // 3002: disable closing browser with last tab
-user_pref("browser.tabs.closeWindowWithLastTab", false);
+// user_pref("browser.tabs.closeWindowWithLastTab", false);
 // 3004: disable backspace
 user_pref("browser.backspace_action", 2);
 // 3005: disable autocopy default (use extensions autocopy 2 & copy plain text 2)
