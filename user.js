@@ -491,7 +491,9 @@ user_pref("browser.sessionstore.privacy_level", 2);
    // WARNING: This also disables the the "Recently Closed Tabs" feature
    // It does not affect "Recently Closed Windows" or any history.
 // user_pref("browser.sessionstore.max_tabs_undo", 0);
+user_pref("browser.sessionstore.max_tabs_undo", 10);
 // usesr_pref("browser.sessionstore.max_windows_undo", 0);
+usesr_pref("browser.sessionstore.max_windows_undo", 10);
 
 // 1008: IF you use session restore (see 1007 above), increasing the minimal interval between
    // two session save operations can help on older machines and some websites.
