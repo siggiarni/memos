@@ -173,3 +173,7 @@ Dæmi:
 ## Convert mkv to mp4
 
 <pre>% ffmpeg -i video.mkv -c copy video.mp4</pre>
+
+## Force eject CD
+
+<pre>% /usr/bin/drutil eject</pre>
