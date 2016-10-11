@@ -91,6 +91,12 @@ When writing scripts, specify the full path to the executable you’ve installed
 
 -c Count. Stop after sending (and receiving) count ECHO_RESPONSE packets.
 
+### Fá HTTP svar fá skrá á vefþjóni
+
+curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
+
+-I Fetch the HTTP-header only
+
 ### Prenta lista yfir skrár
 
 <pre>% ls -lshF</pre>
