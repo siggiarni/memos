@@ -191,3 +191,13 @@ Dæmi:
 ## Force eject CD
 
 <pre>% /usr/bin/drutil eject</pre>
+
+
+### MISC
+
+To check the CLI and local version run: gulp -v
+To check the Installed project version via npm run: npm ls and look for gulp
+
+Update the project specific version to 3.3.4 to solve that issue.
+From a terminal in your project folder: 
+npm install gulp@3.3.4 --save
