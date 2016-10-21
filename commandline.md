@@ -85,6 +85,14 @@ When writing scripts, specify the full path to the executable you’ve installed
 -f Do not prompt before overwriting existing files.
 -v Operate verbosely.
 
+### Copy the content of a folder another
+
+You can copy the content of a folder /source to another existing folder /dest with the command
+
+<pre>% cp -a /source/. /dest/</pre>
+
+-a    Same as -pPR options. Preserves structure and attributes of files but not directory structure.
+
 ### Ping á vefþjón
 
 <pre>% ping -c 5 192.168.0.1</pre>
