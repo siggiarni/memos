@@ -80,7 +80,7 @@ When writing scripts, specify the full path to the executable you’ve installed
 
 ### Færa möppu
 
-<pre>% mv -fv SOURCE DEST</pre>
+<pre>$ mv -fv SOURCE DEST</pre>
 
 -f Do not prompt before overwriting existing files.
 -v Operate verbosely.
@@ -89,13 +89,13 @@ When writing scripts, specify the full path to the executable you’ve installed
 
 You can copy the content of a folder /source to another existing folder /dest with the command
 
-<pre>% cp -a /source/. /dest/</pre>
+<pre>$ cp -a /source/. /dest/</pre>
 
 -a    Same as -pPR options. Preserves structure and attributes of files but not directory structure.
 
 ### Ping á vefþjón
 
-<pre>% ping -c 5 192.168.0.1</pre>
+<pre>$ ping -c 5 192.168.0.1</pre>
 
 -c Count. Stop after sending (and receiving) count ECHO_RESPONSE packets.
 
@@ -107,7 +107,7 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 
 ### Prenta lista yfir skrár
 
-<pre>% ls -lshF</pre>
+<pre>$ ls -lshF</pre>
 
 -l er use a long listing format.
 -s er print the allocated size of each file, in blocks.
@@ -116,68 +116,68 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 
 ### Upplýsingar um nettenginu
 
-<pre>% ifconfig</pre><pre>% ifconfig en1</pre>
+<pre>$ ifconfig</pre><pre>$ ifconfig en1</pre>
 
 ### Upplýsingar um process
 
-<pre>% top</pre>
-<pre>% top -U <notandi></pre>
-<pre>% top -ocpu</pre>
-<pre>% top -n #</pre>
-<pre>% top -ocpu -O+rsize -s 5 -n 20</pre>
+<pre>$ top</pre>
+<pre>$ top -U <notandi></pre>
+<pre>$ top -ocpu</pre>
+<pre>$ top -n #</pre>
+<pre>$ top -ocpu -O+rsize -s 5 -n 20</pre>
 
 ### Aftengja disk
 
-<pre>% diskutil eject /Volumes/Nafn-a-disk</pre>
+<pre>$ diskutil eject /Volumes/Nafn-a-disk</pre>
 
 ### Opna DMG
 
-<pre>% hdid stuff.dmg</pre>
+<pre>$ hdid stuff.dmg</pre>
 
 ## SSH
 
 ### Tengjast vél
 
-<pre>% ssh <user>@<host></pre>
+<pre>$ ssh <user>@<host></pre>
 
 ### Aftengjast vél
 
-<pre>% logout</pre>
+<pre>$ logout</pre>
 
 ### Færa skrá á remote vél
 
-<pre>% scp <filename> <user>@<host>:<path><filename></pre>
+<pre>$ scp <filename> <user>@<host>:<path><filename></pre>
 
 ### Sækja skrá af remote vél
 
-<pre>% scp <user>@<host>:<path><filename>. ("." þýðir mappan sem maður er í)</pre>
+<pre>$ scp <user>@<host>:<path><filename>. ("." þýðir mappan sem maður er í)</pre>
 
 ## DVD
 
 ### Búa til .iso
 
-<pre>% hdiutil makehybrid -o mappa-með-VIDEO_TS/ mappa-með-VIDEO_TS/</pre>
+<pre>$ hdiutil makehybrid -o mappa-með-VIDEO_TS/ mappa-með-VIDEO_TS/</pre>
 
 ## Póstur
 
 ### Sjá stærð á pósthólfi:
 
-<pre>% du -ks Library/Mail</pre>
+<pre>$ du -ks Library/Mail</pre>
 
 ## Symbolic link
 
-<pre>% ln -s SOURCE TARGET</pre>
+<pre>$ ln -s SOURCE TARGET</pre>
 
 Note: Hvað er -s flag-ið? Eru til fleiri flögg?
 
 Gott að vera í möppunni sem target-ið á að enda í.
 
 Dæmi:
-<pre>% ln -s /Volumes/HDD/"Creative Cloud Files/" "Creative Cloud Files"</pre>
+<pre>$ ln -s /Volumes/HDD/"Creative Cloud Files/" "Creative Cloud Files"</pre>
 
 ## Validate Filevault recovery key
 
-<pre>% sudo fdesetup validaterecovery</pre>
+<pre>$ sudo fdesetup validaterecovery</pre>
 
 ## Install/Reinstall FFMPG
 
@@ -186,11 +186,11 @@ Dæmi:
 
 ## Convert mkv to mp4
 
-<pre>% ffmpeg -i video.mkv -c copy video.mp4</pre>
+<pre>$ ffmpeg -i video.mkv -c copy video.mp4</pre>
 
 ## Force eject CD
 
-<pre>% /usr/bin/drutil eject</pre>
+<pre>$ /usr/bin/drutil eject</pre>
 
 
 ### MISC
@@ -201,3 +201,7 @@ To check the Installed project version via npm run: npm ls and look for gulp
 Update the project specific version to 3.3.4 to solve that issue.
 From a terminal in your project folder: 
 npm install gulp@3.3.4 --save
+
+### Delete all .DS_store files
+
+<pre>$ sudo find / -name ".DS_Store" -depth -exec rm {} \;</pre>
