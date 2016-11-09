@@ -592,12 +592,12 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 // 1404: use more legible default fonts
    // WARNING: These are the author's settings, comment out if you do not require them
    // Been using this for over half a year, it really grows on you
-user_pref("font.name.serif.x-unicode", "Georgia");
-user_pref("font.name.serif.x-western", "Georgia"); // default Times New Roman
-user_pref("font.name.sans-serif.x-unicode", "Arial");
-user_pref("font.name.sans-serif.x-western", "Arial");  // default Arial
-user_pref("font.name.monospace.x-unicode", "Lucida Console");
-user_pref("font.name.monospace.x-western", "Lucida Console"); // default Courier New
+// user_pref("font.name.serif.x-unicode", "Georgia");
+// user_pref("font.name.serif.x-western", "Georgia"); // default Times New Roman
+// user_pref("font.name.sans-serif.x-unicode", "Arial");
+// user_pref("font.name.sans-serif.x-western", "Arial");  // default Arial
+// user_pref("font.name.monospace.x-unicode", "Lucida Console");
+// user_pref("font.name.monospace.x-western", "Lucida Console"); // default Courier New
 // 1405: disable woff2
 user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 // 1406: disable CSS Font Loading API
@@ -1028,26 +1028,26 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 // 2803: what to clear on shutdown
    // These settings are under Options>Privacy>Clear history when firefox closes>Settings
    // These are the settings of the author of this user.js, chose your own
-user_pref("privacy.clearOnShutdown.cache", true);
-user_pref("privacy.clearOnShutdown.cookies", false);
+// user_pref("privacy.clearOnShutdown.cache", false);
+// user_pref("privacy.clearOnShutdown.cookies", false);
 user_pref("privacy.clearOnShutdown.downloads", true);
 user_pref("privacy.clearOnShutdown.formdata", true);
 // user_pref("privacy.clearOnShutdown.history", true);
-user_pref("privacy.clearOnShutdown.history", false);
+// user_pref("privacy.clearOnShutdown.history", false);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
-user_pref("privacy.clearOnShutdown.sessions", false); // active logins
-user_pref("privacy.clearOnShutdown.siteSettings", false);
+// user_pref("privacy.clearOnShutdown.sessions", false); // active logins
+// user_pref("privacy.clearOnShutdown.siteSettings", false);
 // 2804: (to match above) - auto selection of items to delete with Ctrl-Shift-Del
 user_pref("privacy.cpd.cache", true);
-user_pref("privacy.cpd.cookies", false);
+// user_pref("privacy.cpd.cookies", false);
 user_pref("privacy.cpd.downloads", true);
 user_pref("privacy.cpd.formdata", true);
 // user_pref("privacy.cpd.history", true);
-user_pref("privacy.cpd.history", false);
+// user_pref("privacy.cpd.history", false);
 user_pref("privacy.cpd.offlineApps", true);
-user_pref("privacy.cpd.passwords", false);
-user_pref("privacy.cpd.sessions", false);
-user_pref("privacy.cpd.siteSettings", false);
+// user_pref("privacy.cpd.passwords", false);
+// user_pref("privacy.cpd.sessions", false);
+// user_pref("privacy.cpd.siteSettings", false);
 
 /*** 3000: PERSONAL SETTINGS
      Settings that are handy to migrate and/or are not in the Options interface. Users
@@ -1088,9 +1088,9 @@ user_pref("dom.disable_beforeunload", true);
 user_pref("browser.ctrlTab.previews", false);
 // 3011: don't open "page/selection source" in a tab. The window used instead is cleaner
    // and easier to use and move around (eg developers/multi-screen).
-user_pref("view_source.tab", false);
+// user_pref("view_source.tab", false);
 // 3012: spellchecking: 0=none, 1-multi-line controls, 2=multi-line & single-line controls
-user_pref("layout.spellcheckDefault", 1);
+user_pref("layout.spellcheckDefault", 0);
 // 3013: disable automatic "Work Offline" status
    // https://bugzilla.mozilla.org/show_bug.cgi?id=620472
    // https://developer.mozilla.org/en-US/docs/Online_and_offline_events
