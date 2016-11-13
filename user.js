@@ -8,9 +8,9 @@
 * required reading: http://kb.mozillazine.org/User.js_file
 
 * README/IMPORTANT:
-  End users of this list/file are expected to know what they are doing. These are the author's
+  <font color=#ff3333>End users of this list/file are expected to know what they are doing. These are the author's
   settings. The author does NOT expect (or indeed want) end users to just run with it as is.
-  Use it as a comprehensive list, or as a template for your own. Extensive links and comments
+  Use it as a comprehensive list, or as a template for your own.</font> Extensive links and comments
   have been added to help. Before using this user.js, if necessary, you should change, remove or
   comment out with two forward slashes any preferences you're not happy with or not sure about.
   The settings in this file (user.js) OVERWRITE the ones in your prefs (prefs.js - these are
@@ -33,9 +33,9 @@
   Some prefs will break some sites (it's inevitable). If you are having issues search for
   "WARNING:" in this document, especially the ones listed just below.
 
-  This user.js uses the author's settings, so you need to check these EACH release because
+  <font color=#ff3333>This user.js uses the author's settings, so you need to check these EACH release because
   the author prefers anonymity, security, and privacy over functionality [eg being able to
-  paste in Facebook, downloadable fonts, and other minor inconveniences]. You have been warned.
+  paste in Facebook, downloadable fonts, and other minor inconveniences]. You have been warned.</font>
 
    0202 & 0204 & 0207 & 0208: search, language and locale settings
    0807: disable history manipulation
@@ -48,16 +48,16 @@
    1210: disable 1024-DH Encryption
    1211: disable SHA-1
    1212: disable SSL session tracking
-   1401 & 1406: browser.display.use_document_fonts [author blocked fonts]
-   1404: default fonts [author changed default fonts]
-   1805: plugin.scan.plid.all [author blocked all plugins]
+   1401 & 1406: browser.display.use_document_fonts <font color=#ff3333>[author blocked fonts]</font>
+   1404: default fonts <font color=#ff3333>[author changed default fonts]</font>
+   1805: plugin.scan.plid.all <font color=#ff3333>[author blocked all plugins]</font>
    1807: disable auto-play of HTML5 media (breaks youtube playback)
    2201: dom.event.contextmenu.enabled
    2402: dom.event.clipboardevents.enabled
    2404: dom.indexedDB.enabled
    2507: keyboard fingerprinting (android + physical keyboard)
    2508: hardware acceleration (performance vs lots of video, also fonts render differently)
-         [author killed hardware acceleration]
+         <font color=#ff3333>[author killed hardware acceleration]</font>
    2509: dom.w3c_touch_events.enabled (you will want to change this if you use touch)
    2619: network.http.redirection-limit
    2705: dom.storage.enabled
@@ -250,7 +250,7 @@ user_pref("reader.parse-on-load.enabled", false);
 /*** 0400: QUIET FOX [PART 2]
      This section has security & tracking protection implications vs privacy concerns.
      These settings are geared up to make FF "quiet" & private.
-     IMPORTANT: This entire section is rather contentious. Safebrowsing is designed to protect
+     <font color=#ff3333>IMPORTANT: This entire section is rather contentious. Safebrowsing is designed to protect
      users from malicious sites. Tracking protection is designed to lessen the impact of third
      parties on websites to reduce tracking and to speed up your browsing experience. These are
      both very good features provided by Mozilla. They do rely on third parties: Google for
@@ -258,7 +258,7 @@ user_pref("reader.parse-on-load.enabled", false);
      Additionally, SSL Error Reporting helps makes the internet more secure for everyone.
      If you do not understand the ramifications of disabling all of these, then it is advised that
      you enable them by commenting out the preferences and saving the changes, and then in
-     about:config find each entry and right-click and reset the preference's value. ***/
+     about:config find each entry and right-click and reset the preference's value.</font> ***/
 // 0401: DON'T disable extension blocklist, but sanitize blocklist url - SECURITY
    // It now includes updates for "revoked certificates" - security trumps privacy here
    // https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl
@@ -327,7 +327,7 @@ user_pref("network.predictor.enabled", false);
    // https://wiki.mozilla.org/Necko/CaptivePortal
 user_pref("captivedetect.canonicalURL", "");
 // 0604: disable search suggestions
-user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.search.suggest.enabled", true);
 // 0605: disable link-mouseover opening connection to linked server
    // http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
    // http://www.ghacks.net/2015/08/16/block-firefox-from-connecting-to-sites-when-you-hover-over-links
@@ -341,17 +341,12 @@ user_pref("browser.send_pings.require_same_host", true);
    // http://www.ghacks.net/2016/03/25/block-firefox-chrome-windows-store/
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 
-
-
 /*** 0800: LOCATION BAR / SEARCH / AUTO SUGGESTIONS / HISTORY / FORMS etc
      Not ALL of these are strictly needed, some are for the truly paranoid, but
      included for a more comprehensive list (see comments on each one) ***/
-
 // 0801: disable location bar using search - PRIVACY
    // don't leak typos to a search engine, give an error message instead
-// user_pref("keyword.enabled", false);
 user_pref("keyword.enabled", true);
-
 // 0802: disable location bar domain guessing - PRIVACY/SECURITY
    // domain guessing intercepts DNS "hostname not found errors" and resends a
    // request (eg by adding www or .com). This is inconsistent use (eg FQDNs), does not work
@@ -360,28 +355,18 @@ user_pref("keyword.enabled", true);
    // intend to), can leak sensitive data (eg query strings: eg Princeton attack),
    // and is a security risk (eg common typos & malicious sites set up to exploit this)
 user_pref("browser.fixup.alternate.enabled", false);
-
 // 0803: disable locationbar dropdown - PRIVACY (shoulder surfers,forensics/unattended browser)
 // user_pref("browser.urlbar.maxRichResults", 0);
-user_pref("browser.urlbar.maxRichResults", 12);
-
 // 0804: display all parts of the url
    // why rely on just a visual clue - helps SECURITY
 user_pref("browser.urlbar.trimURLs", false);
-
 // 0805: disable URLbar autofill -  PRIVACY (shoulder surfers, forensics/unattended browser)
    // http://kb.mozillazine.org/Inline_autocomplete
 // user_pref("browser.urlbar.autoFill", false);
-user_pref("browser.urlbar.autoFill", true);
 // user_pref("browser.urlbar.autoFill.typed", false);
-user_pref("browser.urlbar.autoFill.typed", true);
-
 // 0806: disable autocomplete - PRIVACY (shoulder surfers, forensics/unattended browser)
 // user_pref("browser.urlbar.autocomplete.enabled", false);
-user_pref("browser.urlbar.autocomplete.enabled", true);
 // user_pref("browser.urlbar.unifiedcomplete", false);
-user_pref("browser.urlbar.unifiedcomplete", true);
-
 // 0807: disable history manipulation - SECURITY
    // https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history
    // WARNING: if set to false it breaks some sites (youtube) ability to correctly show the
@@ -389,17 +374,13 @@ user_pref("browser.urlbar.unifiedcomplete", true);
    // user_pref("browser.history.allowPopState", false);
    // user_pref("browser.history.allowPushState", false);
    // user_pref("browser.history.allowReplaceState", false);
-
 // 0808: disable history suggestions - PRIVACY (shoulder surfers, forensics/unattended browser)
 // user_pref("browser.urlbar.suggest.history", false);
-user_pref("browser.urlbar.suggest.history", true);
-
 // 0809: limit history leaks via enumeration (PER TAB: back/forward) - PRIVACY
    // This is a PER TAB session history. You still have a full history stored under all history
    // default=50, minimum=1=currentpage, 2 is the recommended minimum as some pages
    // use it as a means of referral (eg hotlinking), 4 or 6 may be more practical
-user_pref("browser.sessionhistory.max_entries", 4);
-
+// user_pref("browser.sessionhistory.max_entries", 4);
 // 0810: disable css querying page history - css history leak - PRIVACY
    // NOTE: this has NEVER been fully "resolved": in mozilla/docs it is stated it's only in
    // 'certain circumstances', also see latest comments in the bug link
@@ -407,27 +388,21 @@ user_pref("browser.sessionhistory.max_entries", 4);
    // https://bugzilla.mozilla.org/show_bug.cgi?id=147777
    // https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector
 user_pref("layout.css.visited_links_enabled", false);
-
 // 0811: disable displaying Javascript in history URLs - SECURITY
 user_pref("browser.urlbar.filter.javascript", true);
-
 // 0812: disable search and form history
    // Under Options>Privacy> if you set Firefox to "use custom settings" there will be a
    // setting called "remember search and form history".
    // You can clear formdata on exiting firefox (see section 2803)
    // user_pref("browser.formfill.enable", false);
-
 // 0813: disable saving form data on secure websites - PRIVACY (shoulder surfers etc)
    // For convenience & functionality, this is best left at default true.
    // You can clear formdata on exiting firefox
    // user_pref("browser.formfill.saveHttpsForms", false);
-
 // 0815: disable live search suggestions in the urlbar and toggle off the Opt-In prompt: FF41+
    // Setting: Options>Privacy>Location Bar>Related searches from the default search engine
 // user_pref("browser.urlbar.suggest.searches", false);
-user_pref("browser.urlbar.suggest.searches", true);
-user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
-
+// user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
 // 0816: disable browsing and download history
    // Under Options>Privacy> if you set Firefox to "use custom settings" there will be a
    // setting called "remember my browsing and download history"
@@ -486,23 +461,18 @@ user_pref("browser.sessionstore.privacy_level", 2);
    // 0=none, -1=auto (that's minus 1), or any other positive integer
    // http://kb.mozillazine.org/Browser.sessionhistory.max_total_viewers
    // user_pref("browser.sessionhistory.max_total_viewers", 0);
-
 // 1007: disable the Session Restore service completely
    // WARNING: This also disables the the "Recently Closed Tabs" feature
    // It does not affect "Recently Closed Windows" or any history.
-// user_pref("browser.sessionstore.max_tabs_undo", 0);
-user_pref("browser.sessionstore.max_tabs_undo", 10);
-// usesr_pref("browser.sessionstore.max_windows_undo", 0);
-usesr_pref("browser.sessionstore.max_windows_undo", 10);
-
+user_pref("browser.sessionstore.max_tabs_undo", 0);
+user_pref("browser.sessionstore.max_windows_undo", 0);
 // 1008: IF you use session restore (see 1007 above), increasing the minimal interval between
    // two session save operations can help on older machines and some websites.
    // Default is 15000 (15 secs). Try 30000 (30sec), 60000 (1min) etc - your choice.
    // WARNING: This can also affect entries in the "Recently Closed Tabs" feature:
    // i.e the longer the interval the more chance a quick tab open/close won't be captured
    // this longer interval *MAY* affect history but I cannot replicate any history not recorded
-user_pref("browser.sessionstore.interval", 15000);
-
+user_pref("browser.sessionstore.interval", 60000);
 // 1009: DNS cache and expiration time (default 400 and 60 - same as TBB)
    // user_pref("network.dnsCacheEntries", 400);
    // user_pref("network.dnsCacheExpiration", 60);
@@ -592,12 +562,12 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 // 1404: use more legible default fonts
    // WARNING: These are the author's settings, comment out if you do not require them
    // Been using this for over half a year, it really grows on you
-// user_pref("font.name.serif.x-unicode", "Georgia");
-// user_pref("font.name.serif.x-western", "Georgia"); // default Times New Roman
-// user_pref("font.name.sans-serif.x-unicode", "Arial");
-// user_pref("font.name.sans-serif.x-western", "Arial");  // default Arial
-// user_pref("font.name.monospace.x-unicode", "Lucida Console");
-// user_pref("font.name.monospace.x-western", "Lucida Console"); // default Courier New
+user_pref("font.name.serif.x-unicode", "Georgia");
+user_pref("font.name.serif.x-western", "Georgia"); // default Times New Roman
+user_pref("font.name.sans-serif.x-unicode", "Arial");
+user_pref("font.name.sans-serif.x-western", "Arial");  // default Arial
+user_pref("font.name.monospace.x-unicode", "Lucida Console");
+user_pref("font.name.monospace.x-western", "Lucida Console"); // default Courier New
 // 1405: disable woff2
 user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 // 1406: disable CSS Font Loading API
@@ -996,15 +966,15 @@ user_pref("privacy.resistFingerprinting", true); // (hidden pref)
    // After restarting the browser, you can check whether it's enabled by visiting
    // about:support and checking that "Multiprocess Windows" = 1
    // use force-enable and extensions.e10sblocksenabling if you have add-ons
-   // user_pref("browser.tabs.remote.autostart", true);
-   // user_pref("browser.tabs.remote.force-enable", true); // (hidden pref)
-   // user_pref("extensions.e10sBlocksEnabling", false);
+   user_pref("browser.tabs.remote.autostart", true);
+   user_pref("browser.tabs.remote.force-enable", true); // (hidden pref)
+   user_pref("extensions.e10sBlocksEnabling", false);
 
 /*** 2700: COOKIES & DOM STORAGE ***/
 // 2701: disable cookies on all sites
    // you can set exceptions under site permissions or use an extension (eg Cookie Controller)
    // 0=allow all 1=allow same host 2=disallow all 3=allow 3rd party if it already set a cookie
-user_pref("network.cookie.cookieBehavior", 2);
+// user_pref("network.cookie.cookieBehavior", 2);
 // 2702: ensure that third-party cookies (if enabled, see above pref) are session-only
    // https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/
    // http://kb.mozillazine.org/Network.cookie.thirdparty.sessionOnly
@@ -1012,7 +982,7 @@ user_pref("network.cookie.thirdparty.sessionOnly", true);
 // 2703: set cookie lifetime policy
    // 0=until they expire (default), 2=until you close firefox, 3=for n days (see next pref)
    // If you use custom settings for History in Options, this is the setting under
-   // Privacy>Accept cookies from sites>Keep until
+   // Privacy>Accept cookies from sites>Keep until <they expire/I close firefox>
    // user_pref("network.cookie.lifetimePolicy", 0);
 // 2704: set cookie lifetime in days (see above pref) - default is 90 days
    // user_pref("network.cookie.lifetime.days", 90);
@@ -1028,26 +998,24 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 // 2803: what to clear on shutdown
    // These settings are under Options>Privacy>Clear history when firefox closes>Settings
    // These are the settings of the author of this user.js, chose your own
-// user_pref("privacy.clearOnShutdown.cache", false);
-// user_pref("privacy.clearOnShutdown.cookies", false);
+// user_pref("privacy.clearOnShutdown.cache", true);
+user_pref("privacy.clearOnShutdown.cookies", false);
 user_pref("privacy.clearOnShutdown.downloads", true);
 user_pref("privacy.clearOnShutdown.formdata", true);
 // user_pref("privacy.clearOnShutdown.history", true);
-// user_pref("privacy.clearOnShutdown.history", false);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
-// user_pref("privacy.clearOnShutdown.sessions", false); // active logins
+// user_pref("privacy.clearOnShutdown.sessions", false);
 // user_pref("privacy.clearOnShutdown.siteSettings", false);
 // 2804: (to match above) - auto selection of items to delete with Ctrl-Shift-Del
 user_pref("privacy.cpd.cache", true);
-// user_pref("privacy.cpd.cookies", false);
+user_pref("privacy.cpd.cookies", false);
 user_pref("privacy.cpd.downloads", true);
 user_pref("privacy.cpd.formdata", true);
-// user_pref("privacy.cpd.history", true);
-// user_pref("privacy.cpd.history", false);
+user_pref("privacy.cpd.history", true);
 user_pref("privacy.cpd.offlineApps", true);
-// user_pref("privacy.cpd.passwords", false);
-// user_pref("privacy.cpd.sessions", false);
-// user_pref("privacy.cpd.siteSettings", false);
+user_pref("privacy.cpd.passwords", false);
+user_pref("privacy.cpd.sessions", false);
+user_pref("privacy.cpd.siteSettings", false);
 
 /*** 3000: PERSONAL SETTINGS
      Settings that are handy to migrate and/or are not in the Options interface. Users
@@ -1067,7 +1035,6 @@ user_pref("browser.tabs.warnOnOpen", false);
 user_pref("browser.backspace_action", 2);
 // 3005: disable autocopy default (use extensions autocopy 2 & copy plain text 2)
 // user_pref("clipboard.autocopy", false);
-user_pref("clipboard.autocopy", true);
 // 3006: disable enforced addon signing: FF43 turned on signatures required,
    // you can disable this to buy some time for any addons you need to replace
    // or get signed. It will be deprecated in FF48 most likely, but will still
@@ -1082,10 +1049,9 @@ user_pref("browser.link.open_newwindow", 3);
 user_pref("dom.disable_beforeunload", true);
 // 3009: turn on APZ (Async Pan/Zoom) - requires e10s
    // http://www.ghacks.net/2015/07/28/scrolling-in-firefox-to-get-a-lot-better-thanks-to-apz/
-   // user_pref("layers.async-pan-zoom.enabled", true);
+   user_pref("layers.async-pan-zoom.enabled", true);
 // 3010: enable ctrl-tab previews
-// user_pref("browser.ctrlTab.previews", true);
-user_pref("browser.ctrlTab.previews", false);
+user_pref("browser.ctrlTab.previews", true);
 // 3011: don't open "page/selection source" in a tab. The window used instead is cleaner
    // and easier to use and move around (eg developers/multi-screen).
 // user_pref("view_source.tab", false);
@@ -1278,7 +1244,7 @@ user_pref("pants.testing", 9999);
 // 2600's: isolate favicons to 1st party
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1264564
 // 2600's: isolate DOM storage to 1st party
-   // https://bugzilla.mozilla.org/show_bug.cgi?id=1264564
+   // https://bugzilla.mozilla.org/show_bug.cgi?id=744466
 
 /**- APPENDIX A: TEST SITES
    Here is an exhaustive list of various websites in which to test your browser. You should enable
@@ -1327,7 +1293,6 @@ user_pref("pants.testing", 9999);
    WebRTC IP Leak    https://www.privacytools.io/webrtc.html
 ***/
 
-/**-/**- APPENDIX B: FIREFOX ADDONS
+/**- APPENDIX B: FIREFOX ADDONS
    Maybe next time :)
 ***/
-
