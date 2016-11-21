@@ -2,28 +2,34 @@
 
 ## about pages
 
-about:profiles
+`about:profiles`
 
-about:serviceworkers
+`about:serviceworkers`
 
-about:memory
+`about:memory`
 
-about:plugins
+`about:plugins`
 
-about:performance
+`about:performance`
 
-about:debugging
+`about:debugging`
 
-about:support
+`about:support`
 
-about:config
+`about:config`
 
-about:networking
+`about:networking`
 
 ## GCLI
 
-resize to WIDTH HEIGHT
+`resize to` `WIDTH HEIGHT`
 
-csscoverage start, stop, report
+`media emulate` `print`
 
-https://developer.mozilla.org/en-US/docs/Tools/CSS_Coverage
+### CSS Coverage
+
+[CSS Coverage](https://developer.mozilla.org/en-US/docs/Tools/CSS_Coverage)
+
+> CSS Coverage is a set of commands for Firefox Developer tools that help untangle messy CSS by pointing out the CSS that isn't "used", and indicating the parts of your CSS files that are needed for initial rendering.
+
+`csscoverage` `start` `stop` `report`
