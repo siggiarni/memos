@@ -16,4 +16,4 @@
 * Blue lines show the payload size. One long blue line by itself can be a sign of one request blocking others.
 * Multiple orange bars show differing connections, which can be wasteful. This can be improved by enabling connection keep-alive.
 
-(Performance Analysis Tips Using WebPageTest)[http://loadstorm.com/2014/02/performance-analysis-tips-using-webpagetest/]  
+[Performance Analysis Tips Using WebPageTest](http://loadstorm.com/2014/02/performance-analysis-tips-using-webpagetest/) 
