@@ -1,0 +1,15 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* Place in ~/Library/Application Support/Firefox/Profiles/PROFILE/chrome */
+/* Restart Firefox developer edition */
+
+.CodeMirror,
+.devtools-monospace {
+    font-family: "Hack", "melno", "monaco", monospace !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+}
+
+@-moz-document url-prefix(about:blank) { *
+    {background-color:#000000;}
+}   
