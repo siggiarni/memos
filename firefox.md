@@ -22,6 +22,8 @@
 
 ## GCLI
 
+`screenshot --fullpage nightly_test.png`
+
 `resize to` `WIDTH HEIGHT`
 
 `media emulate` `print`
