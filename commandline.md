@@ -208,3 +208,17 @@ From a terminal in your project folder:
 ### Delete all .DS_store files
 
 <pre>$ sudo find / -name ".DS_Store" -depth -exec rm {} \;</pre>
+
+### How to tell a progressive JPEG
+
+<pre>$ brew install imagemagick</pre>
+<pre>
+$ identify -verbose baseline.jpg | grep Interlace
+  Interlace: None
+</pre>
+<pre>
+$ identify -verbose progressive.jpg | grep Interlace
+  Interlace: JPEG
+</pre>
+
+`Interlace: JPEG` is progressive.
