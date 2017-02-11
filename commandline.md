@@ -188,6 +188,10 @@ Dæmi:
 
 <pre>$ ffmpeg -i video.mkv -c copy video.mp4</pre>
 
+## Capture stream to mp4
+
+<pre>ffmpeg -i rtsp://source_url_full_file_name -acodec copy -vcodec copy local_target_file_name.mp4</pre>
+
 ## Force eject CD
 
 <pre>$ /usr/bin/drutil eject</pre>
