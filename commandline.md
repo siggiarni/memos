@@ -222,3 +222,14 @@ $ identify -verbose progressive.jpg | grep Interlace
 </pre>
 
 `Interlace: JPEG` is progressive.
+
+### Linkchecker
+
+<pre>linkchecker -F csv/UTF-8/results.csv -r 1 https://www.example.com/</pre>
+
+### Python stuff
+
+<pre>
+python setup.py build
+python setup.py install
+</pre>
