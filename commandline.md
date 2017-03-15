@@ -239,5 +239,19 @@ $ python setup.py install
 </pre>
 
 <pre>
-$ pip install --user <package name>
+$ pip install --user [package name]
+</pre>
+
+<pre>
+# install command line tools
+$ xcode-select --install
+
+# if pip not installed
+$ sudo easy_install pip
+
+# show current pip version
+$ pip --version
+
+# upgrade pip
+$ sudo pip install --upgrade pip
 </pre>
