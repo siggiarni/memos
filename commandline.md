@@ -234,6 +234,10 @@ $ identify -verbose progressive.jpg | grep Interlace
 ### Python stuff
 
 <pre>
-python setup.py build
-python setup.py install
+$ python setup.py build
+$ python setup.py install
+</pre>
+
+<pre>
+$ pip install --user <package name>
 </pre>
