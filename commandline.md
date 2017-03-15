@@ -243,6 +243,10 @@ $ pip install --user [package name]
 </pre>
 
 <pre>
+$ pip install --user [package name]
+</pre>
+
+<pre>
 # install command line tools
 $ xcode-select --install
 
