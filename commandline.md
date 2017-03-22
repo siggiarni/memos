@@ -259,3 +259,44 @@ $ pip --version
 # upgrade pip
 $ sudo pip install --upgrade pip
 </pre>
+
+### MOZjpeg
+
+1. Install Docker
+
+https://ariya.io/2016/02/easy-docker-on-os-x
+
+2. Get MozJPEG
+
+<pre>
+git clone git://github.com/mozilla/mozjpeg.git
+cd mozjpeg
+git checkout v3.1
+</pre>
+
+3. In the current directory, create a `Dockerfile` with the following content
+
+<pre>
+FROM alpine:3.3 
+ADD . /source 
+RUN apk --update add autoconf automake build-base libtool nasm 
+RUN cd /source && autoreconf -fiv && ./configure --prefix=/opt/mozjpeg && make install
+</pre>
+
+4. Fire up docker and build MozJPEG
+
+<pre>
+docker build -t mozjpeg .
+</pre>
+
+#### Using MozJPEG in Docker
+
+1. CD to the JPEG.  
+2. Use the command below to compress.
+
+`docker run -v $PWD:/img mozjpeg sh -c "/opt/mozjpeg/bin/cjpeg -quality 80 /img/INPUT.jpg > /img/OUTPUT.jpg”`
+
+Do not change the INPUT/OUTPUT `/img/` path to the current dir you are in.
+
+For details, see:  
+https://ariya.io/2016/03/using-mozjpeg-via-docker
