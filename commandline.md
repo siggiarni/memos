@@ -192,6 +192,15 @@ Dæmi:
 
 <pre>ffmpeg -i rtsp://source_url_full_file_name -acodec copy -vcodec copy local_target_file_name.mp4</pre>
 
+<pre>
+ffmpeg -i input.m3u8 -acodec copy -vcodec copy output.mp4
+
+ffmpeg -i input.m3u8 -b 900k -vcodec copy -r 60 -y output.mp4
+
+ffmpeg -i input.m3u8 -c copy -map 0 -f segment -segment_time 600 -segment_format mp4 -bsf:a aac_adtstoasc "output.mp4"
+</pre>
+
+
 ## Force eject CD
 
 <pre>$ /usr/bin/drutil eject</pre>
