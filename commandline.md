@@ -183,6 +183,7 @@ Dæmi:
 
 <pre>brew install ffmpeg --with-libvpx</pre>
 <pre>brew reinstall ffmpeg --with-libvpx</pre>
+<pre>brew install ffmpeg --with-libass --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265</pre>
 
 ## Convert mkv to mp4
 
