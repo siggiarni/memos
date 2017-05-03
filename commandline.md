@@ -310,3 +310,28 @@ Do not change the INPUT/OUTPUT `/img/` path to the current dir you are in.
 
 For details, see:  
 https://ariya.io/2016/03/using-mozjpeg-via-docker
+
+
+### Check for CORS
+
+#### Sending a regular CORS request using cUrl
+
+<pre>
+curl -H "Origin: http://example.com" --verbose https://www.googleapis.com/discovery/v1/apis?fields=
+</pre>
+
+The response should include the `Access-Control-Allow-Origin` header.
+
+#### Sending a preflight request using cUrl
+
+<pre>
+curl -H "Origin: http://example.com" \
+  -H "Access-Control-Request-Method: POST" \
+  -H "Access-Control-Request-Headers: X-Requested-With" \
+  -X OPTIONS --verbose \
+  https://www.googleapis.com/discovery/v1/apis?fields=
+</pre>
+
+If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers. 
+
+[How can you debug a CORS request with cURL?](http://stackoverflow.com/a/12179364/7616345)
