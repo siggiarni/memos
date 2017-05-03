@@ -335,3 +335,10 @@ curl -H "Origin: http://example.com" \
 If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers. 
 
 [How can you debug a CORS request with cURL?](http://stackoverflow.com/a/12179364/7616345)
+
+### Change default screenshots directory
+
+<pre>
+$ defaults write com.apple.screencapture location ~/Downloads/
+$  killall SystemUIServer
+</pre>
