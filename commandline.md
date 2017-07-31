@@ -342,3 +342,10 @@ If the preflight request is successful, the response should include the `Access-
 $ defaults write com.apple.screencapture location ~/Downloads/
 $  killall SystemUIServer
 </pre>
+
+### Update brew
+
+<pre>
+$ brew update
+$ brew upgrade --all
+</pre>
