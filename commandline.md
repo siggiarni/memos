@@ -349,3 +349,21 @@ $  killall SystemUIServer
 $ brew update
 $ brew upgrade --all
 </pre>
+
+
+### Windows Virtual machine activation
+
+**Show current licence**
+
+<pre>
+$ slmgr /dlv
+</pre>
+
+**Re-arm**
+
+<pre>
+$ slmgr /rearm
+</pre>
+
+* Requires reboot.
+* Does not work on WinXP.

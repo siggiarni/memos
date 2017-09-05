@@ -63,16 +63,20 @@ The best part is that the commands you write in a Dockerfile are almost identica
 
 ---
 
-* `COPY` copies local files into the container.
-
----
-
 * `EXPOSE` creates a hint for users of an image which ports provide services.
 * It is included in the information which can be retrieved via `$ docker inspect <container-id>`.
 
 ---
 
 * `PUSH` pushes your image to Docker Cloud, or alternately to a private registry.	
+---
+
+* `ADD` The `ADD` instruction **copies** new files, directories or remote file URLs from `<src>` and adds them to the filesystem of the image at the path `<dest>`.
+
+---
+
+* `COPY` copies local files into the container.
+* `COPY` The `COPY` instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.
 
 ---
 
