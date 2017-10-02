@@ -4,7 +4,7 @@
 
 ## Root
 
-<pre>/bin/</pre> 
+<pre>/bin/</pre>
 
 ### Essential command binaries
 
@@ -15,11 +15,11 @@
 
 Host-specific system-wide configuration files
 
-<pre>/etc/</pre> 
+<pre>/etc/</pre>
 
 Secondary hierarchy for read-only user data
 
-<pre>/usr/</pre> 
+<pre>/usr/</pre>
 
 Variable files
 
@@ -209,14 +209,14 @@ ffmpeg -i input.m3u8 -c copy -map 0 -f segment -segment_time 600 -segment_format
 
 ### Gulp
 
-To check the CLI and local version 
+To check the CLI and local version
 <pre>$ gulp -v</pre>
 
 To check the Installed project version run: `npm ls` and look for gulp
 <pre>$ npm ls</pre>
 
 Update the project specific version to 3.3.4 to solve that issue.
-From a terminal in your project folder: 
+From a terminal in your project folder:
 <pre>$ npm install gulp@3.3.4 --save</pre>
 
 ### Delete all .DS_store files
@@ -287,9 +287,9 @@ git checkout v3.1
 3. In the current directory, create a `Dockerfile` with the following content
 
 <pre>
-FROM alpine:3.3 
-ADD . /source 
-RUN apk --update add autoconf automake build-base libtool nasm 
+FROM alpine:3.3
+ADD . /source
+RUN apk --update add autoconf automake build-base libtool nasm
 RUN cd /source && autoreconf -fiv && ./configure --prefix=/opt/mozjpeg && make install
 </pre>
 
@@ -332,7 +332,7 @@ curl -H "Origin: http://example.com" \
   https://www.googleapis.com/discovery/v1/apis?fields=
 </pre>
 
-If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers. 
+If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers.
 
 [How can you debug a CORS request with cURL?](http://stackoverflow.com/a/12179364/7616345)
 
@@ -367,3 +367,7 @@ $ slmgr /rearm
 
 * Requires reboot.
 * Does not work on WinXP.
+
+Find PID name
+
+ps -p [PID] -o comm=

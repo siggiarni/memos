@@ -43,3 +43,15 @@ transform-origin (default value)
 * **Using absolute values** The origin is set relative to the SVG canvas.
 
 The sizes specified in the media queries refer to the size of the SVG viewport, not to the size of the page viewport.
+
+## preserveAspectRatio
+
+### The meet Attribute
+
+meet (the default) - Scale the graphic such that:
+
+* Aspect ratio is preserved.
+* The entire viewBox is visible within the viewport.
+* The viewBox is scaled up as much as possible, while still meeting the other criteria.
+
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
