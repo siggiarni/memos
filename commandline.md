@@ -112,7 +112,7 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 -l er use a long listing format.
 -s er print the allocated size of each file, in blocks.
 -h er with -l, print sizes in human-readable format (e.g., 1K, 234M, 2G).
--F append indicator (one of */=>@|) to entries.
+-F append indicator to entries.
 
 ### Upplýsingar um nettenginu
 
