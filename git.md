@@ -1,18 +1,20 @@
 
-git pull
+`$ git pull`
 
-git status
+`$ git status`
 
-git log
+`$ git log`
 
-git checkout -b feature_branch
+`$ git checkout -b feature_branch`
 
-git add file.name
+`$ git diff file.name`
 
-git add *
+`$ git add file.name`
 
-git commit -m "Commit message"
+`$ git add *`
 
-git push origin feature_branch
+`$ git commit -m "Commit message"`
 
-git branch -d feature_branch
+`$ git push origin feature_branch`
+
+`$ git branch -d feature_branch`
