@@ -2,20 +2,38 @@
 * L: Landscape
 * P: Portrait.
 
+## iPhone SE
 
-* iPhone SE L
-* iPhone SE P
+| Viewport  | Width | Height|
+| --------- |-------|-------|
+| Portrait  |       |       |
+| Landscape |       |       |
 
-* iPhone L
-* iPhone P
-* iPhone P with bookmarks menu open
+# iPhone
 
-* iPhone Plus L
-* iPhone Plus P
-* iPhone Plus P with bookmarks menu open
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Portrait           | 375px | 553px |
+| Landscape          | 667px | 375px |
+| Bookmarks bar open | 347px | 375px |
+
+# iPhone X
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Portrait           |       |       |
+| Landscape          |       |       |
+| Bookmarks bar open |       |       |
+
+# iPhone Plus
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Portrait           |       |       |
+| Landscape          |       |       |
+| Bookmarks bar open |       |       |
 
 ## iPad 9.7"
-With browser chrome
 
 ### Landscape
 
