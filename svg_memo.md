@@ -52,7 +52,7 @@ The viewBox attribute takes four parameters as a value: <min-x>, <min-y>, width 
 
 The `<min-x>` and `<min-y>` values determine the upper left corner of the viewbox, and the width and height determine the width and height of that viewBox.
 
-Note here that the width and height of the viewBox need not be the same as the width and height set on the parent <svg> element. A negative value for <width> or <height> is invalid. A value of zero disables rendering of the element.
+Note here that the width and height of the viewBox need *not* be the same as the width and height set on the parent <svg> element. A negative value for <width> or <height> is invalid. A value of zero disables rendering of the element.
 
 https://www.sarasoueidan.com/blog/svg-coordinate-systems/
 
