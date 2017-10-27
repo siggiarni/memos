@@ -371,3 +371,12 @@ $ slmgr /rearm
 Find PID name
 
 ps -p [PID] -o comm=
+
+
+## iOS Simulator
+
+### Open URL
+
+<pre>
+xcrun simctl openurl booted https://www.apple.com
+</pre>
