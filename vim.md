@@ -37,19 +37,21 @@ When you open a file using any of the Vim commands, a buffer is automatically cr
 
 ## Commands
 
-The dot command lets us repeat the last change.
+The dot command lets us repeat the last change.   
 
-“The x command deletes the character under the cursor. ”
+The `x` command deletes the character under the cursor.   
 
-“The dd command also performs a deletion, but this one acts on the current line as a whole.”
+The `dd` command also performs a deletion, but this one acts on the current line as a whole.   
 
-“the >G command increases the indentation from the current line until the end of the file. ”
+The `>G` command increases the indentation from the current line until the end of the file.   
 
-“The x, dd, and > commands are all executed from Normal mode,”
+The `x`, `dd`, and `>` commands are all executed from Normal mode.   
 
-C = c$    = change (replace) to the end of the line.
-s = sl    = delete character and substitute text– and move cursor right.
-I = ^i    = jump to the first non-blank character of the line– and insert before the cursor.
-A = $a    = jump to the end of the line– and insert (append) after the cursor.
-o = A<CR> = insert (append) at the end of the line– and ?
-O = ko    = move cursor up– and append (open) a new line below the current line.
+`<CR>` = Press the carriage return key (also known as `<Enter>`).   
+
+* C = c$    = change (replace) to the end of the line.
+* s = sl    = delete character and substitute text– and move cursor right.
+* I = ^i    = jump to the first non-blank character of the line– and insert before the cursor.
+* A = $a    = jump to the end of the line– and insert (append) after the cursor.
+* o = A<CR> = insert (append) at the end of the line– and ?
+* O = ko    = move cursor up– and append (open) a new line below the current line.
