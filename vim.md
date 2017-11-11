@@ -75,15 +75,27 @@ The `x`, `dd`, and `>` commands are all executed from Normal mode.
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
 
+* `db` = Delete backward.
+* `dw` = Delete forward.
+* `daw` = Delete an Entire Word.
 
+* `yyp` = Duplicate line.
+* `cW` = Change word.
+* `<C-a>` command will look ahead for a digit on the current line.
 
+* `d2w` Invoke delete command and give `2w` as the motion. Deletes 2 words.
 
+* `Shift-V j >` Mark a block and indent it.
 
+If you notice that you have to make the same small change in a handful of places, you can attempt to compose your changes in such a way that they can be repeated with the dot command.
 
+Summary:
+   A buffer is the in-memory text of a file.
+   A window is a viewport on a buffer.
+   A tab page is a collection of windows.
 
+A window is a viewport onto a buffer.  You can use multiple windows on one
+buffer, or several windows on different buffers.
 
-
-
-
-
-
+A buffer is a file loaded into memory for editing.  The original file remains
+unchanged until you write the buffer to the file.
