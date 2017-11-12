@@ -136,9 +136,12 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 
 ## SSH
 
+https://stackoverflow.com/questions/3710946/copying-files-across-computers-using-ssh-and-mac-os-x-terminal#3710966  
+https://garron.me/en/articles/scp.html
+
 ### Tengjast vél
 
-<pre>$ ssh <user>@<host></pre>
+<pre>$ ssh user@host</pre>
 
 ### Aftengjast vél
 
@@ -147,6 +150,10 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 ### Færa skrá á remote vél
 
 <pre>$ scp <filename> <user>@<host>:<path><filename></pre>
+
+### Copy all files in a folder to a remote server
+
+<pre>scp /path/to/folder/* user@server:/path/to/folder/</pre>
 
 ### Sækja skrá af remote vél
 
