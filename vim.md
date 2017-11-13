@@ -75,6 +75,12 @@ The `x`, `dd`, and `>` commands are all executed from Normal mode.
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
 
+* `shift` + `v` = Select using visual line.
+* `dd` = Delete line.
+* `p` = paste test.
+
+
+
 
 
 
