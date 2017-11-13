@@ -75,21 +75,45 @@ The `x`, `dd`, and `>` commands are all executed from Normal mode.
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
 
+* `db` = Delete backward.
+* `dw` = Delete forward.
+* `daw` = Delete an Entire Word.
+
 * `shift` + `v` = Select using visual line.
 * `dd` = Delete line.
 * `p` = paste test.
 
+* `yyp` = Duplicate line.
+* `cW` = Change word.
+* `<C-a>` command will look ahead for a digit on the current line.
 
+* `d2w` Invoke delete command and give `2w` as the motion. Deletes 2 words.
 
+* `Shift-V j >` Mark a block and indent it.
+* To indent a curly-braces block, put your cursor on one of the curly braces and use >%.
+* If you’re copying blocks of text around and need to align the indent of a block in its new location, use ]p instead of just p. This aligns the pasted block with the surrounding text.
 
+* `zc` close fold.
+* `zo` open fold.
+* `>i}` indent inner block.
 
+* `zm` = increases the foldlevel by one.
+* `zr` = decreases the foldlevel by one.
+* `z Shift + o` opens all folds at the cursor.
+* `z Shift + m` closes all open folds.
 
+https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi  
+https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim  
 
+If you notice that you have to make the same small change in a handful of places, you can attempt to compose your changes in such a way that they can be repeated with the dot command.
 
+Summary:
+   A buffer is the in-memory text of a file.
+   A window is a viewport on a buffer.
+   A tab page is a collection of windows.
 
+A window is a viewport onto a buffer.  You can use multiple windows on one
+buffer, or several windows on different buffers.
 
-
-
-
-
-
+A buffer is a file loaded into memory for editing.  The original file remains
+unchanged until you write the buffer to the file.
