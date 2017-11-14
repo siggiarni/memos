@@ -102,6 +102,18 @@ The `x`, `dd`, and `>` commands are all executed from Normal mode.
 * `z Shift + o` opens all folds at the cursor.
 * `z Shift + m` closes all open folds.
 
+* `<C-h>` = Delete back one *character*.
+* `<C-w>` = Delete back one *word*.
+* `<C-u>` = Delete back to *start of line*.
+
+* `Esc` = Switch to Normal mode.
+* `C-[` = Switch to Normal mode.
+* `C-o` = Switch ot Insert Normal mode.
+
+* `zz` = Redraws the screen with the current line in the middle of the window.
+* `<C-e>` = Move screen up one line.
+* `<C-y>` = Move screen down one line.
+
 https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi  
 https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim  
 
@@ -117,3 +129,4 @@ buffer, or several windows on different buffers.
 
 A buffer is a file loaded into memory for editing.  The original file remains
 unchanged until you write the buffer to the file.
+
