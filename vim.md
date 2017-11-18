@@ -1,6 +1,6 @@
-# Vim memo
+h1.Vim memo
 
-## vimrc file
+h2.vimrc file
 
 The vimrc file contains optional runtime configuration settings to initialize Vim when it starts.
 
@@ -26,7 +26,7 @@ the `!` at the end of the command in vim toggles the command on and off.
 `C` or `c$` will delete the rest of the line and put you in *insert mode*, and new text will be appended to the line.
 
 
-## Buffers
+h2.Buffers
 
 A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
 
@@ -34,15 +34,15 @@ Vim buffers are identified using a name and a number. The name of the buffer is 
 
 When you open a file using any of the Vim commands, a buffer is automatically created.
 
-## Register
+h2.Register
 
 todo
 
-## Commands
+h2.Commands
 
 `<CR>` = Press the carriage return key also known as `<Enter>`.   
 
-### Normal mode
+h3.Normal mode
 
 #### Movement
 
@@ -62,6 +62,10 @@ todo
 * `H` = Go to top of screen.
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
+
+* `zz` = Redraws the screen with the current line in the middle of the window.
+* `<C-e>` = Move screen up one line.
+* `<C-y>` = Move screen down one line.
 
 ###### Folding blocks
 
@@ -96,10 +100,10 @@ todo
 
 * `cW` = Change word.
 
-### Insert mode
+h3.Insert mode
 
 
-### Visual mode 
+h3.Visual mode 
 
 * `shift` + `v` = Select using visual line.
 * `viw` = visually select word under cursor.
@@ -108,7 +112,7 @@ todo
 
 * `c` = Changes word. Use with visual mode.
 
-### Compound commands
+h3.Compound commands
 
 * `C` = `c$`    = change (replace) to the end of the line.
 * `s` = `sl`    = delete character and substitute text– and move cursor right.
@@ -125,16 +129,10 @@ todo
 * To indent a curly-braces block, put your cursor on one of the curly braces and use `>%`.
 * If you’re copying blocks of text around and need to align the indent of a block in its new location, use `]p` instead of just `p`. This aligns the pasted block with the surrounding text.
 
-
-
-
 * `Esc` = Switch to Normal mode.
 * `C-[` = Switch to Normal mode.
 * `C-o` = Switch ot Insert Normal mode.
 
-* `zz` = Redraws the screen with the current line in the middle of the window.
-* `<C-e>` = Move screen up one line.
-* `<C-y>` = Move screen down one line.
 
 * `yy` = Yank the line.
 * `<C-r><C-p>`{register} = Inserts text literally and fixes any unintended indentation
@@ -173,9 +171,9 @@ We can jump to the top of the file by run”ning the following `:1`
 
 If we wanted to jump to the end of the file, we could enter :5 or we could use the special $ symbol `:$`
 
-:{start},{end}
+`:{start},{end}`
 
-We can use the . symbol as an address to represent the current line.
+We can use the `.` symbol as an address to represent the current line.
 
 So, we can easily compose a range representing everything from here to the end of the file: `.,$p`
 
