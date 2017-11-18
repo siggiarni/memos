@@ -1,4 +1,3 @@
-
 # Vim memo
 
 ## vimrc file
@@ -117,7 +116,7 @@ The `x`, `dd`, and `>` commands are all executed from Normal mode.
 * `<C-y>` = Move screen down one line.
 
 * `yy` = Yank the line.
-* `<C-r><C-p>{register} = Inserts text literally and fixes any unintended indentation”
+* `<C-r><C-p>`{register} = Inserts text literally and fixes any unintended indentation
 
 * `R` = Replace character.
 * `f` = Find in line.
@@ -133,43 +132,32 @@ The expression register is addressed by the `=` symbol. From Insert mode we can 
 * `o` “Go to other end of highlighted text”
 
 
-“When we use the dot command to repeat a Visual mode command, it acts on the same amount of text as was marked by the most recent visual selection. ”
+When we use the dot command to repeat a Visual mode command, it acts on the same amount of text as was marked by the most recent visual selection.
 
+The gv command is a useful little shortcut. It reselects the range of text that was last selected in Visual mode
 
-“The gv command is a useful little shortcut. It reselects the range of text that was last selected in Visual mode”
+As a general rule, we should prefer operator commands over their Visual mode equivalents when working through a repetitive set of changes.
 
-“As a general rule, we should prefer operator commands over their Visual mode equivalents when working through a repetitive set of changes.”
+sometimes we need to modify a range of text whose structure is difficult to trace. In these cases, Visual mode is the right tool for thejob.
 
-“sometimes we need to modify a range of text whose structure is difficult to trace. In these cases, Visual mode is the right tool for the job.”
+We can use Visual-Block mode to insert text into several lines of text simultaneously.
 
-“We can use Visual-Block mode to insert text into several lines of text simultaneously.”
+* `vit` = select the inner contents of a tag
+* `U` = converts the selected characters to uppercase
 
+Command-Line mode prompts us to enter an Ex command, a search pattern, or an expression.
 
+we press / to bring up a search prompt or <C-r>= to access the expression register
 
-* `vit` = “select the inner contents of a tag”
-* `U` = “converts the selected characters to uppercase”
-
-
-
-“Command-Line mode prompts us to enter an Ex command, a search pattern, or an expression.”
-
-“we press / to bring up a search prompt or <C-r>= to access the expression register”
-
-“We can jump to the top of the file by run”ning the following `:1`
-
+We can jump to the top of the file by run”ning the following `:1`
 
 If we wanted to jump to the end of the file, we could enter :5 or we could use the special $ symbol `:$`
 
-
 :{start},{end}
 
-“We can use the . symbol as an address to represent the current line. ”
+We can use the . symbol as an address to represent the current line.
 
-
-“So, we can easily compose a range representing everything from here to the end of the file: `.,$p`
-
-
-
+So, we can easily compose a range representing everything from here to the end of the file: `.,$p`
 
 https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi  
 https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim  
