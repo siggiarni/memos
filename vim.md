@@ -34,28 +34,17 @@ Vim buffers are identified using a name and a number. The name of the buffer is 
 
 When you open a file using any of the Vim commands, a buffer is automatically created.
 
+## Register
+
+todo
+
 ## Commands
-
-The dot command lets us repeat the last change.   
-
-The `x` command deletes the character under the cursor.   
-
-The `dd` command also performs a deletion, but this one acts on the current line as a whole.   
-
-The `>G` command increases the indentation from the current line until the end of the file.   
-
-The `x`, `dd`, and `>` commands are all executed from Normal mode.   
 
 `<CR>` = Press the carriage return key also known as `<Enter>`.   
 
-### Compound commands
+### Normal mode
 
-* `C` = `c$`    = change (replace) to the end of the line.
-* `s` = `sl`    = delete character and substitute text– and move cursor right.
-* `I` = `^i`    = jump to the first non-blank character of the line– and insert before the cursor.
-* `A` = `$a`    = jump to the end of the line– and insert (append) after the cursor.
-* `o` = `A<CR>` = insert (append) at the end of the line– and ?
-* `O` = `ko`    = move cursor up– and append (open) a new line below the current line.
+#### Movement
 
 * `h`, `j`, `k`, `l` = move around.
 * `W`, `w` = Move forward.
@@ -74,17 +63,41 @@ The `x`, `dd`, and `>` commands are all executed from Normal mode.
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
 
+#### Edit
+
+* `x` deletes the character under the cursor.   
+* `dd` also performs a deletion, but this one acts on the current line as a whole.   
+* `>G` increases the indentation from the current line until the end of the file.   
+* `.` The dot  command lets us repeat the last change.   
+
 * `db` = Delete backward.
 * `dw` = Delete forward.
 * `daw` = Delete an Entire Word.
 
-* `shift` + `v` = Select using visual line.
-* `viw` = visually select word under cursor.
-* `dd` = Delete line.
 * `p` = paste test.
 
-* `yyp` = Duplicate line.
+### Insert mode
+
+
+### Visual mode 
+
+* `shift` + `v` = Select using visual line.
+* `viw` = visually select word under cursor.
+
+#### Edit
 * `c` = Changes word. Use with visual mode.
+
+### Compound commands
+
+* `C` = `c$`    = change (replace) to the end of the line.
+* `s` = `sl`    = delete character and substitute text– and move cursor right.
+* `I` = `^i`    = jump to the first non-blank character of the line– and insert before the cursor.
+* `A` = `$a`    = jump to the end of the line– and insert (append) after the cursor.
+* `o` = `A<CR>` = insert (append) at the end of the line– and ?
+* `O` = `ko`    = move cursor up– and append (open) a new line below the current line.
+
+
+* `yyp` = Duplicate line.
 * `cW` = Change word.
 * `<C-a>` command will look ahead for a digit on the current line.
 
