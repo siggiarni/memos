@@ -63,6 +63,19 @@ todo
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
 
+###### Folding blocks
+
+* `zc` close fold.
+* `zo` open fold.
+* `>i}` indent inner block.
+
+###### Indentation
+
+* `zm` = increases the foldlevel by one.
+* `zr` = decreases the foldlevel by one.
+* `z Shift + o` opens all folds at the cursor.
+* `z Shift + m` closes all open folds.
+
 #### Edit
 
 * `x` deletes the character under the cursor.   
@@ -75,6 +88,13 @@ todo
 * `daw` = Delete an Entire Word.
 
 * `p` = paste test.
+* `R` = Replace character.
+
+* `<C-h>` = Delete back one *character*.
+* `<C-w>` = Delete back one *word*.
+* `<C-u>` = Delete back to *start of line*.
+
+* `cW` = Change word.
 
 ### Insert mode
 
@@ -85,6 +105,7 @@ todo
 * `viw` = visually select word under cursor.
 
 #### Edit
+
 * `c` = Changes word. Use with visual mode.
 
 ### Compound commands
@@ -96,29 +117,16 @@ todo
 * `o` = `A<CR>` = insert (append) at the end of the line– and ?
 * `O` = `ko`    = move cursor up– and append (open) a new line below the current line.
 
+#### Misc
 
-* `yyp` = Duplicate line.
-* `cW` = Change word.
 * `<C-a>` command will look ahead for a digit on the current line.
-
 * `d2w` Invoke delete command and give `2w` as the motion. Deletes 2 words.
 
-* `Shift-V j >` Mark a block and indent it.
-* To indent a curly-braces block, put your cursor on one of the curly braces and use >%.
-* If you’re copying blocks of text around and need to align the indent of a block in its new location, use ]p instead of just p. This aligns the pasted block with the surrounding text.
+* To indent a curly-braces block, put your cursor on one of the curly braces and use `>%`.
+* If you’re copying blocks of text around and need to align the indent of a block in its new location, use `]p` instead of just `p`. This aligns the pasted block with the surrounding text.
 
-* `zc` close fold.
-* `zo` open fold.
-* `>i}` indent inner block.
 
-* `zm` = increases the foldlevel by one.
-* `zr` = decreases the foldlevel by one.
-* `z Shift + o` opens all folds at the cursor.
-* `z Shift + m` closes all open folds.
 
-* `<C-h>` = Delete back one *character*.
-* `<C-w>` = Delete back one *word*.
-* `<C-u>` = Delete back to *start of line*.
 
 * `Esc` = Switch to Normal mode.
 * `C-[` = Switch to Normal mode.
@@ -131,7 +139,6 @@ todo
 * `yy` = Yank the line.
 * `<C-r><C-p>`{register} = Inserts text literally and fixes any unintended indentation
 
-* `R` = Replace character.
 * `f` = Find in line.
 * `/`{pattern} = Find pattern.
 * `n/N` = Jump to pattern match.
