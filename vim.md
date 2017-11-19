@@ -1,6 +1,6 @@
-h1. Vim memo
+# Vim memo
 
-h2. vimrc file
+## vimrc file
 
 The vimrc file contains optional runtime configuration settings to initialize Vim when it starts.
 
@@ -26,7 +26,7 @@ the `!` at the end of the command in vim toggles the command on and off.
 `C` or `c$` will delete the rest of the line and put you in *insert mode*, and new text will be appended to the line.
 
 
-h2. Buffers
+## Buffers
 
 A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
 
@@ -34,11 +34,11 @@ Vim buffers are identified using a name and a number. The name of the buffer is 
 
 When you open a file using any of the Vim commands, a buffer is automatically created.
 
-h2. Register
+## Register
 
 todo
 
-h2.Commands
+## Commands
 
 `<CR>` = Press the carriage return key also known as `<Enter>`.   
 
@@ -47,7 +47,7 @@ h2.Commands
 * `C-o` = Switch ot Insert Normal mode.
 h3. Normal mode
 
-#### Movement
+### Movement
 
 * `h`, `j`, `k`, `l` = move around.
 * `W`, `w` = Move forward.
@@ -70,20 +70,20 @@ h3. Normal mode
 * `<C-e>` = Move screen up one line.
 * `<C-y>` = Move screen down one line.
 
-###### Folding blocks
+### Folding blocks
 
 * `zc` close fold.
 * `zo` open fold.
 * `>i}` indent inner block.
 
-###### Indentation
+### Indentation
 
 * `zm` = increases the foldlevel by one.
 * `zr` = decreases the foldlevel by one.
 * `z Shift + o` opens all folds at the cursor.
 * `z Shift + m` closes all open folds.
 
-#### Edit
+### Edit
 
 * `x` deletes the character under the cursor.   
 * `dd` also performs a deletion, but this one acts on the current line as a whole.   
@@ -103,17 +103,17 @@ h3. Normal mode
 
 * `cW` = Change word.
 
-h5. Search
+### Search
 
 * `f` = Find in line.
 * `/`{pattern} = Find pattern.
 * `n/N` = Jump to pattern match.
 * `<C-a>` command will look ahead for a digit on the current line.
 
-h3. Insert mode
+### Insert mode
 
 
-h3.Visual mode 
+### Visual mode 
 
 * `shift` + `v` = Select using visual line.
 * `viw` = visually select word under cursor.
@@ -122,7 +122,7 @@ h3.Visual mode
 
 * `c` = Changes word. Use with visual mode.
 
-h3.Compound commands
+### Compound commands
 
 * `C` = `c$`    = change (replace) to the end of the line.
 * `s` = `sl`    = delete character and substitute text– and move cursor right.
@@ -131,7 +131,7 @@ h3.Compound commands
 * `o` = `A<CR>` = insert (append) at the end of the line– and ?
 * `O` = `ko`    = move cursor up– and append (open) a new line below the current line.
 
-#### Misc
+### Misc
 
 * `d2w` Invoke delete command and give `2w` as the motion. Deletes 2 words.
 
