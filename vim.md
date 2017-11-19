@@ -1,6 +1,6 @@
-h1.Vim memo
+h1. Vim memo
 
-h2.vimrc file
+h2. vimrc file
 
 The vimrc file contains optional runtime configuration settings to initialize Vim when it starts.
 
@@ -26,7 +26,7 @@ the `!` at the end of the command in vim toggles the command on and off.
 `C` or `c$` will delete the rest of the line and put you in *insert mode*, and new text will be appended to the line.
 
 
-h2.Buffers
+h2. Buffers
 
 A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
 
@@ -34,7 +34,7 @@ Vim buffers are identified using a name and a number. The name of the buffer is 
 
 When you open a file using any of the Vim commands, a buffer is automatically created.
 
-h2.Register
+h2. Register
 
 todo
 
@@ -42,7 +42,10 @@ h2.Commands
 
 `<CR>` = Press the carriage return key also known as `<Enter>`.   
 
-h3.Normal mode
+* `Esc` = Switch to Normal mode.
+* `C-[` = Switch to Normal mode.
+* `C-o` = Switch ot Insert Normal mode.
+h3. Normal mode
 
 #### Movement
 
@@ -100,7 +103,14 @@ h3.Normal mode
 
 * `cW` = Change word.
 
-h3.Insert mode
+h5. Search
+
+* `f` = Find in line.
+* `/`{pattern} = Find pattern.
+* `n/N` = Jump to pattern match.
+* `<C-a>` command will look ahead for a digit on the current line.
+
+h3. Insert mode
 
 
 h3.Visual mode 
@@ -123,23 +133,16 @@ h3.Compound commands
 
 #### Misc
 
-* `<C-a>` command will look ahead for a digit on the current line.
 * `d2w` Invoke delete command and give `2w` as the motion. Deletes 2 words.
 
-* To indent a curly-braces block, put your cursor on one of the curly braces and use `>%`.
-* If you’re copying blocks of text around and need to align the indent of a block in its new location, use `]p` instead of just `p`. This aligns the pasted block with the surrounding text.
 
-* `Esc` = Switch to Normal mode.
-* `C-[` = Switch to Normal mode.
-* `C-o` = Switch ot Insert Normal mode.
 
 
 * `yy` = Yank the line.
 * `<C-r><C-p>`{register} = Inserts text literally and fixes any unintended indentation
+* To indent a curly-braces block, put your cursor on one of the curly braces and use `>%`.
+* If you’re copying blocks of text around and need to align the indent of a block in its new location, use `]p` instead of just `p`. This aligns the pasted block with the surrounding text.
 
-* `f` = Find in line.
-* `/`{pattern} = Find pattern.
-* `n/N` = Jump to pattern match.
 
 The expression register is addressed by the `=` symbol. From Insert mode we can access it by typing `<C-r>=`.
 
