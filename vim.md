@@ -56,12 +56,20 @@ todo
 * `W`, `w` = Move forward.
 * `B`, `b` = Move backward.
 
-#### Go to
+#### Go to...
 
-* `$` = Move to end of line.
-* `0` = Move to start of line.
+##### Line
+
+* `$` = Go to end of line.
+* `0` = Go to start of line.
+
+##### Document
+
 * `gg` = Go to top of document.
 * `G`  = Go to end of document.
+
+##### Screen
+
 * `H` = Go to top of screen.
 * `M` = Go to middle of screen.
 * `L` = Go to bottom of screen.
@@ -79,10 +87,17 @@ todo
 
 ### Folding blocks
 
-* `zc` close fold.
-* `zo` open fold.
+* `zi` Switch folding on/off.
+* `za` Toggle current fold on/off.
+* `zc` Close current fold.
+* `zR` Open  all folds.
+* `zM` Close all folds.
+* `zv` Expand folds to reveal cursor.
+* `zo` Open fold.
 * `>i}` indent inner block.
 * `>G` increases the indentation from the current line until the end of the file.   
+
+http://vimcasts.org/episodes/how-to-fold/
 
 ### Indentation
 
