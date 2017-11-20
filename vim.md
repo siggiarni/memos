@@ -50,7 +50,7 @@ todo
 
 ### Movement
 
-#### Directional movment
+#### Directional movement
 
 * `h`, `j`, `k`, `l` = move around.
 * `W`, `w` = Move forward.
