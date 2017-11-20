@@ -45,26 +45,33 @@ todo
 * `Esc` = Switch to Normal mode.
 * `C-[` = Switch to Normal mode.
 * `C-o` = Switch ot Insert Normal mode.
-h3. Normal mode
+
+## Normal mode
 
 ### Movement
+
+#### Directional movment
 
 * `h`, `j`, `k`, `l` = move around.
 * `W`, `w` = Move forward.
 * `B`, `b` = Move backward.
 
+#### Go to
+
 * `$` = Move to end of line.
 * `0` = Move to start of line.
-
 * `gg` = Go to top of document.
 * `G`  = Go to end of document.
+* `H` = Go to top of screen.
+* `M` = Go to middle of screen.
+* `L` = Go to bottom of screen.
+
+#### Jump to
 
 * `^`  = jump to the first non-blank character of the line.
 * `g_` = jump to the last non-blank character of the line.
 
-* `H` = Go to top of screen.
-* `M` = Go to middle of screen.
-* `L` = Go to bottom of screen.
+#### Scroll
 
 * `zz` = Redraws the screen with the current line in the middle of the window.
 * `<C-e>` = Move screen up one line.
@@ -75,6 +82,7 @@ h3. Normal mode
 * `zc` close fold.
 * `zo` open fold.
 * `>i}` indent inner block.
+* `>G` increases the indentation from the current line until the end of the file.   
 
 ### Indentation
 
@@ -85,44 +93,42 @@ h3. Normal mode
 
 ### Edit
 
-* `x` deletes the character under the cursor.   
-* `dd` also performs a deletion, but this one acts on the current line as a whole.   
-* `>G` increases the indentation from the current line until the end of the file.   
 * `.` The dot  command lets us repeat the last change.   
+* `cW` = Change word.
 
+* `x` deletes the character under the cursor. 
+* `dd` Deletes the current line. 
 * `db` = Delete backward.
 * `dw` = Delete forward.
 * `daw` = Delete an Entire Word.
 
-* `p` = paste test.
+* `p` = paste text.
 * `R` = Replace character.
 
 * `<C-h>` = Delete back one *character*.
 * `<C-w>` = Delete back one *word*.
 * `<C-u>` = Delete back to *start of line*.
 
-* `cW` = Change word.
-
-### Search
+#### Search
 
 * `f` = Find in line.
 * `/`{pattern} = Find pattern.
 * `n/N` = Jump to pattern match.
 * `<C-a>` command will look ahead for a digit on the current line.
 
-### Insert mode
-
-
 ### Visual mode 
 
 * `shift` + `v` = Select using visual line.
 * `viw` = visually select word under cursor.
 
+### Insert mode
+
+
 #### Edit
 
 * `c` = Changes word. Use with visual mode.
 
-### Compound commands
+## Compound commands
 
 * `C` = `c$`    = change (replace) to the end of the line.
 * `s` = `sl`    = delete character and substitute text– and move cursor right.
@@ -134,10 +140,6 @@ h3. Normal mode
 ### Misc
 
 * `d2w` Invoke delete command and give `2w` as the motion. Deletes 2 words.
-
-
-
-
 * `yy` = Yank the line.
 * `<C-r><C-p>`{register} = Inserts text literally and fixes any unintended indentation
 * To indent a curly-braces block, put your cursor on one of the curly braces and use `>%`.
