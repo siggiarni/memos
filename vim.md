@@ -183,6 +183,19 @@ We can use Visual-Block mode to insert text into several lines of text simultane
 * `vit` = select the inner contents of a tag
 * `U` = converts the selected characters to uppercase
 
+
+##### Ex commands
+
+
+* `:1` = First line of the file.
+* `:$` = Last line of the file.
+* `:0` = Virtual line above the first line of the file.
+* `:.` = Current line.
+* `:'m` = Line containing mark `m`.
+* `:'<` = Start of visual selection.
+* `:'>` = End of visiual selection.
+* `:%` = The entire file. Shorthand for `:1,$`.
+
 Command-Line mode prompts us to enter an Ex command, a search pattern, or an expression.
 
 we press / to bring up a search prompt or <C-r>= to access the expression register
