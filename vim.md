@@ -184,8 +184,7 @@ We can use Visual-Block mode to insert text into several lines of text simultane
 * `U` = converts the selected characters to uppercase
 
 
-##### Ex commands
-
+## Ex commands
 
 * `:1` = First line of the file.
 * `:$` = Last line of the file.
@@ -195,6 +194,26 @@ We can use Visual-Block mode to insert text into several lines of text simultane
 * `:'<` = Start of visual selection.
 * `:'>` = End of visiual selection.
 * `:%` = The entire file. Shorthand for `:1,$`.
+
+Repeat the last Ex command with `@:`.
+
+### Duplicate lines
+
+`:[range]copy {address}`
+
+Make a copy of line 6 and put it below the current line.
+
+* `:6copy`
+* `:6co`
+* `:6t.`
+
+### Moving lines
+
+`:[range]move {address}`
+
+We can shorten it to a single letter: `:m`.
+
+---
 
 Command-Line mode prompts us to enter an Ex command, a search pattern, or an expression.
 
