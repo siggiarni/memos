@@ -36,7 +36,11 @@ When you open a file using any of the Vim commands, a buffer is automatically cr
 
 ## Register
 
-todo
+In Vim’s terminology, we don’t deal with a clipboard but instead with registers.
+
+* Vim’s `put` command is effectively identical to the `paste`.
+* Vim’s `yank` command is equivalent to the `copy` operation.
+* Vim’s `delete` command is equivalent to the standard `cut`.
 
 ## Commands
 
