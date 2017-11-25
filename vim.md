@@ -197,6 +197,23 @@ We can use the `.` symbol as an address to represent the current line.
 
 So, we can easily compose a range representing everything from here to the end of the file: `.,$p`
 
+The `%` stands for all the lines in the current file
+
+##### Copy
+
+* `:6t.` = Copy line 6 to just below the current line.
+* `:t6` = Copy the current line to just below line 6
+
+##### Move
+
+* `:’<,’>m6` = Move visual selection to line 6.
+
+With the ‘wildmenu’ option enabled, Vim provides a navigable list of suggestions.
+
+try opening your vimrc file, place your cursor on a setting, and then type `:help <C-r><C-w>`.
+
+
+
 https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi  
 https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim  
 
