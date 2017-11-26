@@ -52,7 +52,29 @@ In Vim’s terminology, we don’t deal with a clipboard but instead with regist
 
 “The x, s, d{motion}, c{motion}, and y{motion} commands (and their uppercase equivalents) all set the contents of the unnamed register.”
 
-The Yank register
+### The Yank register
+
+When we use the `y{motion}` command, the specified text is copied not only into the unnamed register but also into the yank register, which is addressed by the `0` symbol.
+
+We can safely paste from the yank register by pressing `"0P`.
+
+### The Named register
+
+Vim has one named register for each letter of the alphabet.
+
+### The Black Hole Register
+
+The black hole register is a place from which nothing returns.
+
+We run the command `_d{motion}`, then Vim deletes the specified text without saving a copy of it.
+
+Vim’s plus register references the system clipboard and is addressed by the + symbol”
+If we use the cut or copy command to capture text in an external application, then we can paste it inside Vim using "+p”
+prefix Vim’s yank or delete commands with "+, the specified text will be captured in the system clipboard”
+Vim’s registers can be thought of simply as containers that hold a block of text.”
+From Insert mode, we can insert the contents of the unnamed register by pressing <C-r>", or we can insert the contents of the yank register by pressing <C-r>0”
+
+
 
 
 
