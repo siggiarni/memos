@@ -42,6 +42,20 @@ In Vim’s terminology, we don’t deal with a clipboard but instead with regist
 * Vim’s `yank` command is equivalent to the `copy` operation.
 * Vim’s `delete` command is equivalent to the standard `cut`.
 
+“We can specify which register we want to use by prefixing the command with "{register}. If we don’t specify a register, then Vim will use the unnamed register.”
+
+“For example, if we wanted to yank the current word into register a, we could run "ayiw”
+
+### The Unnamed Register
+
+“If we don’t specify which register we want to interact with, then Vim will use the unnamed register, which is addressed by the " symbol”
+
+“The x, s, d{motion}, c{motion}, and y{motion} commands (and their uppercase equivalents) all set the contents of the unnamed register.”
+
+The Yank register
+
+
+
 ## Commands
 
 `<CR>` = Press the carriage return key also known as `<Enter>`.   
@@ -248,6 +262,53 @@ With the ‘wildmenu’ option enabled, Vim provides a navigable list of suggest
 
 try opening your vimrc file, place your cursor on a setting, and then type `:help <C-r><C-w>`.
 
+## Files
+
+The :edit command allows us to open files from within Vim.
+
+The % symbol is a shorthand for the filepath of the active buffer.
+
+“The :h modifier removes the filename while preserving the rest of the path”
+
+“The ‘path’ option allows us to specify a set of directories inside of which Vim will search when the :find command is invoked”
+
+:set path+=app/**
+
+“We can open the file explorer window with the :edit {path} command by supplying a directory name”
+
+“:e.
+Open file explorer for current working directory”
+
+“:E
+Open file explorer for the directory of the active buffe”
+
+
+
+## Window management
+
+### Windows
+
+http://vimcasts.org/episodes/working-with-windows/
+
+### Tabs
+
+We can open a new tab page with the `:tabedit {filename}` command. If we omit the `{filename}` argument, then Vim creates a new tab page containing an empty buffer.
+
+The :lcd {path} command lets us set the working directory locally for the current window
+
+if the current tab page contains more than one window, we can use the <C-w>T command, which moves the current window into a new tab page
+
+If the active tab page contains only a single window, the :close command will close the window and the tab page with it.
+
+we can use the :tabclose command, which closes the current tab page no matter how many windows it contains.
+
+if we want to close all tab pages except for the current one, we can use the :tabonly command.
+
+Tabs are numbered starting from 1. We can switch between tabs with the {N}gt command
+
+if the number is omitted, Vim advances to the next tab. The gT command does the same but in reverse.
+
+    http://vimcasts.org/episodes/how-to-use-tabs/
 
 
 https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi  
