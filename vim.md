@@ -314,6 +314,11 @@ http://vimcasts.org/episodes/working-with-windows/
 
 ### Tabs
 
+`tab sball` = open current buffer in tab.
+
+`:edit` to reload the current file
+
+
 We can open a new tab page with the `:tabedit {filename}` command. If we omit the `{filename}` argument, then Vim creates a new tab page containing an empty buffer.
 
 The :lcd {path} command lets us set the working directory locally for the current window
