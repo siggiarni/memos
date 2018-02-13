@@ -157,7 +157,8 @@ http://vimcasts.org/episodes/how-to-fold/
 * `dw` = Delete forward.
 * `daw` = Delete an Entire Word.
 
-* `p` = paste text.
+* `p` = Paste text.
+* `"+p` = Paste text from an external application.
 * `R` = Replace character.
 
 * `<C-h>` = Delete back one *character*.
