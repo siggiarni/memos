@@ -1,7 +1,11 @@
 
 # CSS Scroll snap
 
-* https://www.w3.org/TR/css-scroll-snap-1/
+Popular UX paradigms for scrollable content frequently employ paging through content, or sectioning into logical divisions.
+
+To this end, we introduce scroll snap positions which enforce the scroll positions that a scroll container’s scrollport may end at after a scrolling operation has completed.
+
+* https://www.w3.org/TR/css-scroll-snap-1/#intro
 
 ## scroll-snap-type
 
