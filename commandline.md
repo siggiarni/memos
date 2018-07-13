@@ -4,7 +4,7 @@
 
 ## Root
 
-<pre>/bin/</pre> 
+<pre>/bin/</pre>
 
 ### Essential command binaries
 
@@ -15,11 +15,11 @@
 
 Host-specific system-wide configuration files
 
-<pre>/etc/</pre> 
+<pre>/etc/</pre>
 
 Secondary hierarchy for read-only user data
 
-<pre>/usr/</pre> 
+<pre>/usr/</pre>
 
 Variable files
 
@@ -112,7 +112,7 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 -l er use a long listing format.
 -s er print the allocated size of each file, in blocks.
 -h er with -l, print sizes in human-readable format (e.g., 1K, 234M, 2G).
--F append indicator (one of */=>@|) to entries.
+-F append indicator to entries.
 
 ### Upplýsingar um nettenginu
 
@@ -136,9 +136,12 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 
 ## SSH
 
+https://stackoverflow.com/questions/3710946/copying-files-across-computers-using-ssh-and-mac-os-x-terminal#3710966  
+https://garron.me/en/articles/scp.html
+
 ### Tengjast vél
 
-<pre>$ ssh <user>@<host></pre>
+<pre>$ ssh user@host</pre>
 
 ### Aftengjast vél
 
@@ -147,6 +150,10 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 ### Færa skrá á remote vél
 
 <pre>$ scp <filename> <user>@<host>:<path><filename></pre>
+
+### Copy all files in a folder to a remote server
+
+<pre>scp /path/to/folder/* user@server:/path/to/folder/</pre>
 
 ### Sækja skrá af remote vél
 
@@ -201,6 +208,14 @@ ffmpeg -i input.m3u8 -b 900k -vcodec copy -r 60 -y output.mp4
 ffmpeg -i input.m3u8 -c copy -map 0 -f segment -segment_time 600 -segment_format mp4 -bsf:a aac_adtstoasc "output.mp4"
 </pre>
 
+## MKV to mp3
+
+Find all mkv files that are in the current directory and in all sub-folders and extract the audio to mp3 format.
+
+<pre>
+find . -type f -name "*.mkv" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -c:a libmp3lame -y "${FILE%.mkv}.mp3";' _ '{}' \;
+</pre>
+
 
 ## Force eject CD
 
@@ -209,14 +224,14 @@ ffmpeg -i input.m3u8 -c copy -map 0 -f segment -segment_time 600 -segment_format
 
 ### Gulp
 
-To check the CLI and local version 
+To check the CLI and local version
 <pre>$ gulp -v</pre>
 
 To check the Installed project version run: `npm ls` and look for gulp
 <pre>$ npm ls</pre>
 
 Update the project specific version to 3.3.4 to solve that issue.
-From a terminal in your project folder: 
+From a terminal in your project folder:
 <pre>$ npm install gulp@3.3.4 --save</pre>
 
 ### Delete all .DS_store files
@@ -287,9 +302,9 @@ git checkout v3.1
 3. In the current directory, create a `Dockerfile` with the following content
 
 <pre>
-FROM alpine:3.3 
-ADD . /source 
-RUN apk --update add autoconf automake build-base libtool nasm 
+FROM alpine:3.3
+ADD . /source
+RUN apk --update add autoconf automake build-base libtool nasm
 RUN cd /source && autoreconf -fiv && ./configure --prefix=/opt/mozjpeg && make install
 </pre>
 
@@ -332,7 +347,7 @@ curl -H "Origin: http://example.com" \
   https://www.googleapis.com/discovery/v1/apis?fields=
 </pre>
 
-If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers. 
+If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers.
 
 [How can you debug a CORS request with cURL?](http://stackoverflow.com/a/12179364/7616345)
 
@@ -367,3 +382,16 @@ $ slmgr /rearm
 
 * Requires reboot.
 * Does not work on WinXP.
+
+Find PID name
+
+ps -p [PID] -o comm=
+
+
+## iOS Simulator
+
+### Open URL
+
+<pre>
+xcrun simctl openurl booted https://www.apple.com
+</pre>
