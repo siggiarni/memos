@@ -17,6 +17,5 @@ A value of 10vmax would be equal to 10vh if the viewport was **taller** than it 
 | --- | --- |
 | `vw` | viewport width |
 | `vh` | viewport height |
-| `vh` | viewport height |
 | `vmin` | viewport height or width, whichever is smaller |
 | `vmax` | viewport height or width, whichever is larger |
