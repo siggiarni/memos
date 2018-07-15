@@ -7,3 +7,7 @@ But, once you apply display: contents to a child, its children become flex ite
 https://developers.google.com/web/updates/2018/03/nic65#display-contents
 
 https://bitsofco.de/how-display-contents-works/
+
+http://adrianroselli.com/2018/05/display-contents-is-not-a-css-reset.html
+
+https://rachelandrew.co.uk/archives/2017/07/20/why-display-contents-is-not-css-grid-layout-subgrid/
