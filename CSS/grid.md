@@ -25,3 +25,12 @@ The `grid-auto-flow` CSS property controls how the auto-placement algorithm work
 If you're using auto-fit, the content will stretch to fill the entire row width. Whereas with auto-fill, the browser will allow empty columns to occupy space in the row like their non-empty neighbors.
 
 * https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+
+
+## Misc notes
+
+width block vs width track
+
+* shop talk show 262 18:50
+* minmax 28:16
+* autofill 36:14
