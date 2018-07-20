@@ -34,3 +34,5 @@ width block vs width track
 * shop talk show 262 18:50
 * minmax 28:16
 * autofill 36:14
+
+<http://shoptalkshow.com/episodes/262-css-grid-rachel-andrew-jen-simmons/>
