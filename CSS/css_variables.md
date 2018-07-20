@@ -38,6 +38,21 @@ media all and (max-width: 600px) {
 }
 ```
 
+## js
+
+```
+var root = document.querySelector(':root');
+var rootStyles = getComputedStyle(root);
+var mainColor = rootStyles.getPropertyValue('--main-color');
+console.log(mainColor); 
+--> '#ffeead'
+```
+
+Update var using:
+```
+root.style.setProperty('--main-color', '#88d8b0')
+```
+
 
 If you want it to be available globally, simply define it on the :root pseudo class.
 
