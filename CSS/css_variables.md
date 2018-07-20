@@ -1,5 +1,7 @@
 # CSS Variables
 
+## Global var
+
 ```
 :root {
   --font-size: 20px
@@ -9,6 +11,33 @@
   font-size: var(--font-size)
 }
 ```
+
+## Local var
+
+```
+.alert {
+  --alert-color: #ff6f69;
+}
+
+.alert p {
+  color: var(--alert-color);
+  border: 1px solid var(--alert-color);
+}
+```
+
+## resp var
+
+```
+:root {
+  --main-font-size: 16px;
+}
+media all and (max-width: 600px) {
+  :root {
+    --main-font-size: 12px;
+  }
+}
+```
+
 
 If you want it to be available globally, simply define it on the :root pseudo class.
 
