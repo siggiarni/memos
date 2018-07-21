@@ -4,6 +4,10 @@
 
 * https://pineco.de/the-relative-units-of-css/
 
+## FR Unit
+
+https://ethanmarcotte.com/wrote/fractional/
+
 ## CH Unit
 
 Equal to the used advance measure of the `“0”` _(ZERO, U+0030)_ glyph found in the font used to render it.  
