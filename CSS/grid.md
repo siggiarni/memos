@@ -4,7 +4,9 @@
 
 When we use `grid-template-columns` and `grid-template-rows` we create an Explicit Grid. However if we try and place an item outside of that grid the browser will create an Implicit Grid line or lines in order to hold that item.
 
-* https://gridbyexample.com/examples/example10/
+* <https://gridbyexample.com/examples/example10/>
+* <https://www.youtube.com/watch?v=FEnRpy9Xfes&t=12m14s>
+* <https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=22s>
 
 ## Grid auto flow
 
@@ -24,7 +26,8 @@ The `grid-auto-flow` CSS property controls how the auto-placement algorithm work
 
 If you're using auto-fit, the content will stretch to fill the entire row width. Whereas with auto-fill, the browser will allow empty columns to occupy space in the row like their non-empty neighbors.
 
-* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+* <https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/>
+* <https://www.youtube.com/watch?v=2zxWEeBkjk0>
 
 
 ## Misc notes
