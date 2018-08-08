@@ -6,6 +6,7 @@ Popular UX paradigms for scrollable content frequently employ paging through con
 To this end, we introduce scroll snap positions which enforce the scroll positions that a scroll container’s scrollport may end at after a scrolling operation has completed.
 
 * https://www.w3.org/TR/css-scroll-snap-1/#intro
+* https://developers.google.com/web/updates/2018/07/css-scroll-snap
 
 ## scroll-snap-type
 
