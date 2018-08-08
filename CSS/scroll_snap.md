@@ -15,6 +15,14 @@ To this end, we introduce scroll snap positions which enforce the scroll positio
 
 The scroll-snap-type property specifies whether a scroll container is a scroll snap container, how strictly it snaps, and which axes are considered. If no strictness value is specified, proximity is assumed.
 
+## Scroll Snap Strictness
+
+* <https://www.w3.org/TR/css-scroll-snap-1/#snap-strictness>
+
+* `none` <br> If specified on a scroll container, the scroll container must not snap.
+* `mandatory` <br> If specified on a scroll container, the scroll container is required to be snapped to a snap position when there are no active scrolling operations. If a reachable snap position exists then the scroll container must snap at the termination of a scroll _(if none exist then no snapping occurs)_.
+* `proximity` <br> If specified on a scroll container, the scroll container may snap to a snap position at the termination of a scroll, at the discretion of the UA given the parameters of the scroll.
+
 ### Example
 
 Requires that the scroll position always be at a snap position when the scrolling operation completes.
