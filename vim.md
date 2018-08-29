@@ -354,3 +354,4 @@ buffer, or several windows on different buffers.
 A buffer is a file loaded into memory for editing.  The original file remains
 unchanged until you write the buffer to the file.
 
+https://imgur.com/fujVeHM
