@@ -1,6 +1,12 @@
 
 # iOS screen sizes
 
+## WatchOS
+
+| Viewport | Width | Height |
+|----------|-------|--------|
+| Default  | 320px | 357px  |
+
 ## iPhone SE
 
 | Viewport  | Width | Height|

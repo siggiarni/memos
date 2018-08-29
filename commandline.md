@@ -208,6 +208,14 @@ ffmpeg -i input.m3u8 -b 900k -vcodec copy -r 60 -y output.mp4
 ffmpeg -i input.m3u8 -c copy -map 0 -f segment -segment_time 600 -segment_format mp4 -bsf:a aac_adtstoasc "output.mp4"
 </pre>
 
+## MKV to mp3
+
+Find all mkv files that are in the current directory and in all sub-folders and extract the audio to mp3 format.
+
+<pre>
+find . -type f -name "*.mkv" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -c:a libmp3lame -y "${FILE%.mkv}.mp3";' _ '{}' \;
+</pre>
+
 
 ## Force eject CD
 
