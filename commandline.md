@@ -192,6 +192,24 @@ Dæmi:
 <pre>brew reinstall ffmpeg --with-libvpx</pre>
 <pre>brew install ffmpeg --with-libass --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265</pre>
 
+## Extract MP3 from MP4
+
+### Usin Constant Bitrate Encoding (CBR)g 
+
+<pre>
+ffmpeg -i video.mp4 -vn \
+       -acodec libmp3lame -ac 2 -ab 160k -ar 48000 \
+        audio.mp3
+</pre>
+
+### Using Variable Bitrate Encoding (VBR) 
+
+<pre>
+ffmpeg -i video.mp4 -vn \
+       -acodec libmp3lame -ac 2 -qscale:a 4 -ar 48000 \
+        audio.mp3
+</pre>
+
 ## Convert mkv to mp4
 
 <pre>$ ffmpeg -i video.mkv -c copy video.mp4</pre>
