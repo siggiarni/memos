@@ -17,3 +17,6 @@
 * Multiple orange bars show differing connections, which can be wasteful. This can be improved by enabling connection keep-alive.
 
 [Performance Analysis Tips Using WebPageTest](http://loadstorm.com/2014/02/performance-analysis-tips-using-webpagetest/) 
+
+
+https://frontendnews.io/editions/2018-08-22-a-brief-guide-to-webpagetest
