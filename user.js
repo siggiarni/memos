@@ -189,7 +189,7 @@ user_pref("dom.ipc.plugins.reportCrashURL", false);
 // user_pref("datareporting.policy.dataSubmissionEnabled.v2", false);
 // 0335: remove a telemetry clientID
   // if you haven't got one, be proactive and set it now for future proofing
-// user_pref("toolkit.telemetry.cachedClientID", "");
+user_pref("toolkit.telemetry.cachedClientID", "");
 // 0340: disable experiments
    // https://wiki.mozilla.org/Telemetry/Experiments
 // user_pref("experiments.enabled", false);
@@ -336,8 +336,8 @@ user_pref("network.prefetch-next", false);
 // 0606: disable pings (but enforce same host in case)
    // http://kb.mozillazine.org/Browser.send_pings
    // http://kb.mozillazine.org/Browser.send_pings.require_same_host
-// user_pref("browser.send_pings", false);
-// user_pref("browser.send_pings.require_same_host", true);
+user_pref("browser.send_pings", false);
+user_pref("browser.send_pings.require_same_host", true);
 // 0607: stop links launching Windows Store on Windows 8/8.1/10
    // http://www.ghacks.net/2016/03/25/block-firefox-chrome-windows-store/
 // user_pref("network.protocol-handler.external.ms-windows-store", false);
@@ -419,24 +419,24 @@ user_pref("browser.urlbar.filter.javascript", true);
 // 0901: disable saving passwords
    // Options>Security>Logins>Remember logins for sites
    // NOTE: this does not clear any passwords already saved
-   // user_pref("signon.rememberSignons", false);
+   user_pref("signon.rememberSignons", false);
 // 0902: use a master password (recommended if you save passwords)
    // There are no preferences for this. It is all handled internally.
    // https://support.mozilla.org/en-US/kb/use-master-password-protect-stored-logins
 // 0903: set how often mozilla should ask for the master password
    // 0=the first time, 1=every time it's needed, 2=every n minutes (as per the next pref)
    // WARNING: the default is 0, author changed his settings
-user_pref("security.ask_for_password", 2);
+    user_pref("security.ask_for_password", 2);
 // 0904: how often in minutes mozilla should ask for the master password (see pref above)
    // in minutes, default is 30
-user_pref("security.password_lifetime", 5);
+    user_pref("security.password_lifetime", 5);
 // 0905: disable auto-filling username & password form fields - SECURITY
    // can leak in cross-site forms AND be spoofed
    // http://kb.mozillazine.org/Signon.autofillForms
    // password will still be auto-filled after a user name is manually entered
-// user_pref("signon.autofillForms", false);
+    user_pref("signon.autofillForms", false);
 // 0906: ignore websites' autocomplete="off" (FF30+)
-user_pref("signon.storeWhenAutocompleteOff", true);
+    user_pref("signon.storeWhenAutocompleteOff", true);
 
 /*** 1000: CACHE ***/
 // 1001: disable disk cache
@@ -475,8 +475,8 @@ user_pref("signon.storeWhenAutocompleteOff", true);
    // this longer interval *MAY* affect history but I cannot replicate any history not recorded
 // user_pref("browser.sessionstore.interval", 60000);
 // 1009: DNS cache and expiration time (default 400 and 60 - same as TBB)
-   // user_pref("network.dnsCacheEntries", 400);
-   // user_pref("network.dnsCacheExpiration", 60);
+user_pref("network.dnsCacheEntries", 400);
+user_pref("network.dnsCacheExpiration", 60);
 // 1010: disable randomized FF HTTP cache decay experiments
    // https://trac.torproject.org/projects/tor/ticket/13575
 // user_pref("browser.cache.frecency_experiment", -1);
@@ -489,6 +489,8 @@ user_pref("signon.storeWhenAutocompleteOff", true);
 /*** 1200: SSL / OCSP / CERTS / ENCRYPTION ***/
 // 1201: block rc4 fallback (default is now false as of at least FF45)
 user_pref("security.tls.unrestricted_rc4_fallback", false);
+user_pref("security.tls.version.max", "4");
+user_pref("security.tls.enable_0rtt_data", true);
 // 1202: disable rc4 ciphers
    // https://trac.torproject.org/projects/tor/ticket/17369
 user_pref("security.ssl3.ecdhe_ecdsa_rc4_128_sha", false);
@@ -587,9 +589,9 @@ user_pref("font.blacklist.underline_offset", "");
 user_pref("network.http.sendSecureXSiteReferrer", false);
 // 1603: referer, WHEN to send
    // 0=never, 1=send only when links are clicked, 2=for links and images (default)
-   // user_pref("network.http.sendRefererHeader", 2);
+user_pref("network.http.sendRefererHeader", 0);
 // 1604: referer, SPOOF or NOT (default=false)
-   // user_pref("network.http.referer.spoofSource", false);
+user_pref("network.http.referer.spoofSource", true);
 // 1605: referer, HOW to handle cross origins
    // 0=always (default), 1=only if base domains match, 2=only if hosts match
    // user_pref("network.http.referer.XOriginPolicy", 0);
@@ -682,7 +684,7 @@ user_pref("camera.control.face_detection.enabled", false);
    see http://kb.mozillazine.org/Prevent_websites_from_disabling_new_window_features ***/
 // 2201: disable website control over right click context menu
    // WARNING: This will break some sites eg Dropbox, Google Docs?
-   // user_pref("dom.event.contextmenu.enabled", false);
+user_pref("dom.event.contextmenu.enabled", false);
 // 2202: UI SPOOFING: disable scripts hiding or disabling the following on new windows
 user_pref("dom.disable_window_open_feature.location", true);
 user_pref("dom.disable_window_open_feature.menubar", true);
@@ -705,7 +707,7 @@ user_pref("dom.allow_scripts_to_close_windows", false);
    // You can still right click a link and select open in a new window
    // This is to stop malicious window sizes and screen res leaks etc in conjunction
    // with 2203 dom.disable_window_move_resize=true | 2418 full-screen-api.enabled=false
-   // user_pref("browser.link.open_newwindow.restriction", 0);
+user_pref("browser.link.open_newwindow.restriction", 0);
 
 /*** 2400: DOM & JAVASCRIPT ***/
 // 2402: disable website access to clipboard events/content
@@ -713,7 +715,7 @@ user_pref("dom.allow_scripts_to_close_windows", false);
    // WARNING: This will break some sites functionality such as pasting into Facebook
    // this applies to onCut, onCopy, onPaste events - i.e is you have to interact with
    // the website for it to look at the clipboard
-// user_pref("dom.event.clipboardevents.enabled", false);
+user_pref("dom.event.clipboardevents.enabled", false);
 // 2404: disable JS storing data permanently
    // This setting WAS under about:permissions>All Sites>Maintain Offline Storage
    // Note: about:permissions is no longer available since FF46 but you can still override
@@ -943,6 +945,7 @@ user_pref("general.useragent.compatMode.firefox", false);
    // https://bugzilla.mozilla.org/show_bug.cgi?id=583181
    // test: http://browserspy.dk/showprop.php (see buildID)
 user_pref("general.buildID.override", "20100101"); // (hidden pref)
+user_pref("browser.startup.homepage_override.buildID", ""); // (hidden pref)
 // 2628: disable UITour backend so there is no chance that a remote page can use it
 user_pref("browser.uitour.enabled", false);
 // 2629: disable remote JAR files being opened, regardless of content type
@@ -962,24 +965,24 @@ user_pref("network.jar.block-remote-files", true);
    // NOTE: This also spoofs screen orientation - https://bugzilla.mozilla.org/show_bug.cgi?id=1281949
    // NOTE: This will also SOON hide the contents of navigator.plugins and navigator.mimeTypes
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1281963
-user_pref("privacy.resistFingerprinting", true); // (hidden pref)
+    user_pref("privacy.resistFingerprinting", true); // (hidden pref)
 // 2650: start the browser in e10s mode (48+)
    // After restarting the browser, you can check whether it's enabled by visiting
    // about:support and checking that "Multiprocess Windows" = 1
    // use force-enable and extensions.e10sblocksenabling if you have add-ons
-   user_pref("browser.tabs.remote.autostart", true);
-   user_pref("browser.tabs.remote.force-enable", true); // (hidden pref)
-   user_pref("extensions.e10sBlocksEnabling", false);
+   //user_pref("browser.tabs.remote.autostart", true);
+   //user_pref("browser.tabs.remote.force-enable", true); // (hidden pref)
+   //user_pref("extensions.e10sBlocksEnabling", false);
 
 /*** 2700: COOKIES & DOM STORAGE ***/
 // 2701: disable cookies on all sites
    // you can set exceptions under site permissions or use an extension (eg Cookie Controller)
    // 0=allow all 1=allow same host 2=disallow all 3=allow 3rd party if it already set a cookie
-user_pref("network.cookie.cookieBehavior", 2);
+    user_pref("network.cookie.cookieBehavior", 1);
 // 2702: ensure that third-party cookies (if enabled, see above pref) are session-only
    // https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/
    // http://kb.mozillazine.org/Network.cookie.thirdparty.sessionOnly
-user_pref("network.cookie.thirdparty.sessionOnly", true);
+    user_pref("network.cookie.thirdparty.sessionOnly", true);
 // 2703: set cookie lifetime policy
    // 0=until they expire (default), 2=until you close firefox, 3=for n days (see next pref)
    // If you use custom settings for History in Options, this is the setting under
@@ -1145,15 +1148,45 @@ user_pref("browser.tabs.loadDivertedInBackground", false);
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1102184#c23
    // user_pref("privacy.clearOnShutdown.passwords", false);
 // 0411: (43+) disable safebrowsing urls & download
-   // user_pref("browser.safebrowsing.gethashURL", "");
-   // user_pref("browser.safebrowsing.malware.reportURL", "");
-   // user_pref("browser.safebrowsing.provider.google.appRepURL", "");
-   // user_pref("browser.safebrowsing.reportErrorURL", "");
-   // user_pref("browser.safebrowsing.reportGenericURL", "");
-   // user_pref("browser.safebrowsing.reportMalwareErrorURL", "");
-   // user_pref("browser.safebrowsing.reportMalwareURL", "");
-   // user_pref("browser.safebrowsing.reportURL", "");
-   // user_pref("browser.safebrowsing.updateURL", "");
+user_pref("browser.safebrowsing.gethashURL", "");
+user_pref("browser.safebrowsing.malware.reportURL", "");
+user_pref("browser.safebrowsing.provider.google.appRepURL", "");
+user_pref("browser.safebrowsing.reportErrorURL", "");
+user_pref("browser.safebrowsing.reportGenericURL", "");
+user_pref("browser.safebrowsing.reportMalwareErrorURL", "");
+user_pref("browser.safebrowsing.reportMalwareURL", "");
+user_pref("browser.safebrowsing.reportURL", "");
+user_pref("browser.safebrowsing.updateURL", "");
+user_pref("browser.safebrowsing.enabled", false);
+user_pref("browser.safebrowsing.phishing.enabled", "");
+user_pref("browser.safebrowsing.malware.enabled", "");
+user_pref("browser.safebrowsing.downloads.enabled", "");
+user_pref("browser.safebrowsing.provider.google4.dataSharing.enabled", "");
+user_pref("browser.safebrowsing.provider.google4.updateURL", "");
+user_pref("browser.safebrowsing.provider.google4.reportURL", "");
+user_pref("browser.safebrowsing.provider.google4.reportPhishMistakeURL", "");
+user_pref("browser.safebrowsing.provider.google4.reportMalwareMistakeURL");
+user_pref("browser.safebrowsing.provider.google4.lists", "");
+user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
+user_pref("browser.safebrowsing.provider.google4.advisoryURL", "");
+user_pref("browser.safebrowsing.provider.google4.advisoryName", "");
+user_pref("browser.safebrowsing.provider.google.updateURL", "");
+user_pref("browser.safebrowsing.provider.google.reportURL", "");
+user_pref("browser.safebrowsing.provider.google.reportPhishMistakeURL", "");
+user_pref("browser.safebrowsing.provider.google.reportMalwareMistakeURL", "");
+user_pref("browser.safebrowsing.provider.google.pver", "");
+user_pref("browser.safebrowsing.provider.google.lists", "");
+user_pref("browser.safebrowsing.provider.google.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google.advisoryURL", "");
+user_pref("browser.safebrowsing.downloads.remote.url", "");
+user_pref("", "");
+user_pref("", "");
+user_pref("", "");
+user_pref("", "");
+user_pref("", "");
+user_pref("", "");
+user_pref("", "");
 // 0420: (43+) disable tracking protection. FF43+ URLs are now part of safebrowsing
    // https://wiki.mozilla.org/Security/Tracking_protection (look under Prefs)
    // NOTE: getupdateURL = WRONG / never existed. updateURL = CORRECT and has been added FYI
@@ -1201,6 +1234,10 @@ user_pref("browser.tabs.loadDivertedInBackground", false);
    // user_pref("browser.pocket.oAuthConsumerKey", "");
 
 // END: internal custom pref to test for syntax errors
+
+user_pref("layout.frame_rate.precise", true);
+
+
 user_pref("pants.testing", 9999);
 
 /*** 9999: TO INVESTIGATE ***/
@@ -1241,7 +1278,7 @@ user_pref("pants.testing", 9999);
    // user_pref("browser.download.forbid_open_with", true);
 // 2600's: add first party isolation pref and OriginAttribute
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1260931
-   // user_pref("privacy.firstparty.isolate", true);
+user_pref("privacy.firstparty.isolate", true);
 // 2600's: isolate favicons to 1st party
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1264564
 // 2600's: isolate DOM storage to 1st party
