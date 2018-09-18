@@ -153,6 +153,8 @@ http://vimcasts.org/episodes/how-to-fold/
 
 * `yy` or `Y` = Jank the line.
 * `dd` = Cut the line.
+* `"*yy` = Yank selection into system clipboard.
+* `"+yy` = Yank selection into system clipboard.
 
 * `p` = paste the copied or deleted text __after__ the current line.
 * `P` = paste the copied or deleted text __before__ the current line.

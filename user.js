@@ -966,7 +966,8 @@ user_pref("network.jar.block-remote-files", true);
    // NOTE: This also spoofs screen orientation - https://bugzilla.mozilla.org/show_bug.cgi?id=1281949
    // NOTE: This will also SOON hide the contents of navigator.plugins and navigator.mimeTypes
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1281963
-    user_pref("privacy.resistFingerprinting", true); // (hidden pref)
+    // resistFingerprint breaks site specific zoom
+    // user_pref("privacy.resistFingerprinting", true); // (hidden pref)
 // 2650: start the browser in e10s mode (48+)
    // After restarting the browser, you can check whether it's enabled by visiting
    // about:support and checking that "Multiprocess Windows" = 1
