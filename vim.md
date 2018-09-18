@@ -151,6 +151,14 @@ http://vimcasts.org/episodes/how-to-fold/
 * `.` The dot  command lets us repeat the last change.   
 * `cW` = Change word.
 
+* `yy` or `Y` = Jank the line.
+* `dd` = Cut the line.
+* `"*yy` = Yank selection into system clipboard.
+* `"+yy` = Yank selection into system clipboard.
+
+* `p` = paste the copied or deleted text __after__ the current line.
+* `P` = paste the copied or deleted text __before__ the current line.
+
 * `x` deletes the character under the cursor. 
 * `dd` Deletes the current line. 
 * `db` = Delete backward.
@@ -165,12 +173,15 @@ http://vimcasts.org/episodes/how-to-fold/
 * `<C-w>` = Delete back one *word*.
 * `<C-u>` = Delete back to *start of line*.
 
+
 #### Search
 
 * `f` = Find in line.
 * `/`{pattern} = Find pattern.
 * `n/N` = Jump to pattern match.
 * `<C-a>` command will look ahead for a digit on the current line.
+* `*` and/or `#` to search for the word under the cursor.
+* `noh` Turn off highlighting until the next search.
 
 ### Visual mode 
 
@@ -355,4 +366,5 @@ buffer, or several windows on different buffers.
 A buffer is a file loaded into memory for editing.  The original file remains
 unchanged until you write the buffer to the file.
 
-https://imgur.com/fujVeHM
+* https://imgur.com/fujVeHM
+* https://vim.rtorr.com/
