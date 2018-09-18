@@ -181,6 +181,7 @@ http://vimcasts.org/episodes/how-to-fold/
 * `n/N` = Jump to pattern match.
 * `<C-a>` command will look ahead for a digit on the current line.
 * `*` and/or `#` to search for the word under the cursor.
+* `noh` Turn off highlighting until the next search.
 
 ### Visual mode 
 
