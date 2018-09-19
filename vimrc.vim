@@ -39,6 +39,8 @@ set title
 set showcmd
 set number
 set cursorline
+set hidden
+set linebreak
 "set textwidth=80
 set backspace=2
 set nrformats-=octal
