@@ -17,14 +17,19 @@ execute pathogen#infect()
     call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     "Add your bundles here
+    Plugin 'https://github.com/sickill/vim-monokai'
     Plugin 'Syntastic'
+    Plugin 'https://github.com/tpope/vim-sensible'
     Plugin 'https://github.com/tpope/vim-fugitive'
+    Plugin 'https://github.com/tpope/vim-surround'
+    Plugin 'https://github.com/tpope/vim-commentary'
     Plugin 'https://github.com/airblade/vim-gitgutter'
-    "Plugin 'https://github.com/valloric/youcompleteme'
-    Plugin 'https://github.com/pangloss/vim-javascript'
+    Plugin 'https://github.com/vim-syntastic/syntastic'
     Plugin 'vim-airline/vim-airline'
     Plugin 'scrooloose/nerdcommenter'
+    Plugin 'scrooloose/nerdtree'
     Plugin 'davidhalter/jedi-vim'
+    Plugin 'https://github.com/pangloss/vim-javascript'
     "...All your other bundles...
     if iCanHazVundle == 0
         echo "Installing Vundles, please ignore key map error messages"
@@ -97,6 +102,7 @@ highlight SpecialKey ctermfg=LightGray
 "highlight Special ctermfg=Green
 
 " Custom shortcuts
+map <C-n> :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
