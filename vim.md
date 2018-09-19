@@ -25,14 +25,21 @@ the `!` at the end of the command in vim toggles the command on and off.
 `D` or its equivalent `d$` will delete the rest of the line and leave you in *command mode*. 
 `C` or `c$` will delete the rest of the line and put you in *insert mode*, and new text will be appended to the line.
 
-
 ## Buffers
 
-A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
+* A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
+* Vim buffers are identified using a name and a number. The name of the buffer is the name of the file associated with that buffer. 
+* The buffer number is a unique sequential number assigned by Vim. This buffer number will not change in a single Vim session. 
+* When you open a file using any of the Vim commands, a buffer is automatically created.
 
-Vim buffers are identified using a name and a number. The name of the buffer is the name of the file associated with that buffer. The buffer number is a unique sequential number assigned by Vim. This buffer number will not change in a single Vim session. 
+* :set hidden. = have edited buffers that aren't visible in a window somewhere.
+* Use `:bn`, `:bp`, `:b #`, `:b name`, and `ctrl-6` to switch between buffers. 
+* Use `:ls` to list buffers.
 
-When you open a file using any of the Vim commands, a buffer is automatically created.
+* https://stackoverflow.com/a/26710166
+* https://stackoverflow.com/a/103590
+* https://stackoverflow.com/a/21338192
+
 
 ## Register
 
@@ -74,7 +81,7 @@ Vim has one named register for each letter of the alphabet.
 
 ## Commands
 
-`<CR>` = Press the carriage return key also known as `<Enter>`.   
+`<CR>` = Press the carriage return key also known as `<Enter>`.
 
 * `Esc` = Switch to Normal mode.
 * `C-[` = Switch to Normal mode.
