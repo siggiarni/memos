@@ -64,19 +64,13 @@ Vim has one named register for each letter of the alphabet.
 
 ### The Black Hole Register
 
-The black hole register is a place from which nothing returns.
-
-We run the command `_d{motion}`, then Vim deletes the specified text without saving a copy of it.
-
-Vim’s plus register references the system clipboard and is addressed by the + symbol”
-If we use the cut or copy command to capture text in an external application, then we can paste it inside Vim using "+p”
-prefix Vim’s yank or delete commands with "+, the specified text will be captured in the system clipboard”
-Vim’s registers can be thought of simply as containers that hold a block of text.”
-From Insert mode, we can insert the contents of the unnamed register by pressing <C-r>", or we can insert the contents of the yank register by pressing <C-r>0”
-
-
-
-
+* The black hole register is a place from which nothing returns.
+* We run the command `_d{motion}`, then Vim deletes the specified text without saving a copy of it.
+* Vim’s plus register references the system clipboard and is addressed by the `+` symbol.
+* If we use the cut or copy command to capture text in an external application, then we can paste it inside Vim using `"+p`.
+* prefix Vim’s yank or delete commands with `"+`, the specified text will be captured in the system clipboard.
+* Vim’s registers can be thought of simply as containers that hold a block of text.
+* From Insert mode, we can insert the contents of the unnamed register by pressing `<C-r>"`, or we can insert the contents of the yank register by pressing `<C-r>0`.
 
 ## Commands
 
@@ -187,6 +181,7 @@ http://vimcasts.org/episodes/how-to-fold/
 
 * `shift` + `v` = Select using visual line.
 * `viw` = visually select word under cursor.
+* `vaw` = Visually select word under cursor using around.
 
 ### Insert mode
 
