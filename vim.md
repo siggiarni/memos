@@ -190,6 +190,9 @@ http://vimcasts.org/episodes/how-to-fold/
 `set omnifunc=syntaxcomplete#Complete`
 http://vim.wikia.com/wiki/Omni_completion
 
+To use omni completion, type `<C-X><C-O>` while open in Insert mode. If matching names are found, a pop-up menu opens which can be navigated using the `<C-N>` and `<C-P>` keys. 
+
+
 ### Visual mode 
 
 * `shift` + `v` = Select using visual line.
