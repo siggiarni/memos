@@ -692,7 +692,7 @@ user_pref("network.http.sendSecureXSiteReferrer", false);
 // 0=never, 1=send only when links are clicked, 2=for links and images (default)
 // Setting it to 0 breaks Twitter.
 // Setting it to 1 breaks Codepen.
-user_pref("network.http.sendRefererHeader", 1);
+user_pref("network.http.sendRefererHeader", 2);
 // 1604: referer, SPOOF or NOT (default=false)
 user_pref("network.http.referer.spoofSource", true);
 // 1605: referer, HOW to handle cross origins

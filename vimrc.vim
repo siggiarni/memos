@@ -18,18 +18,20 @@ execute pathogen#infect()
     Plugin 'VundleVim/Vundle.vim'
     "Add your bundles here
     Plugin 'https://github.com/sickill/vim-monokai'
-    Plugin 'Syntastic'
     Plugin 'https://github.com/tpope/vim-sensible'
     Plugin 'https://github.com/tpope/vim-fugitive'
     Plugin 'https://github.com/tpope/vim-surround'
     Plugin 'https://github.com/tpope/vim-commentary'
     Plugin 'https://github.com/airblade/vim-gitgutter'
     Plugin 'https://github.com/vim-syntastic/syntastic'
-    Plugin 'vim-airline/vim-airline'
+    "Plugin 'vim-airline/vim-airline'
+    Plugin 'itchyny/lightline.vim'
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'scrooloose/nerdtree'
     Plugin 'davidhalter/jedi-vim'
+    Plugin 'plasticboy/vim-markdown'
     Plugin 'https://github.com/pangloss/vim-javascript'
+    Plugin 'ctrlpvim/ctrlp.vim'
     "...All your other bundles...
     if iCanHazVundle == 0
         echo "Installing Vundles, please ignore key map error messages"
@@ -46,6 +48,7 @@ set number
 set cursorline
 set hidden
 set linebreak
+set omnifunc=syntaxcomplete#Complete
 "set textwidth=80
 set backspace=2
 set nrformats-=octal

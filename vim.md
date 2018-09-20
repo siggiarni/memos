@@ -184,6 +184,12 @@ http://vimcasts.org/episodes/how-to-fold/
 * `*` and/or `#` to search for the word under the cursor.
 * `noh` Turn off highlighting until the next search.
 
+### Omni stuff
+
+`filetype plugin on`
+`set omnifunc=syntaxcomplete#Complete`
+http://vim.wikia.com/wiki/Omni_completion
+
 ### Visual mode 
 
 * `shift` + `v` = Select using visual line.
