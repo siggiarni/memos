@@ -82,6 +82,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
+set wildmode=longest,list,full
 set wildmenu
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
