@@ -17,21 +17,22 @@ execute pathogen#infect()
     call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     "Add your bundles here
-    Plugin 'https://github.com/sickill/vim-monokai'
-    Plugin 'https://github.com/tpope/vim-sensible'
-    Plugin 'https://github.com/tpope/vim-fugitive'
-    Plugin 'https://github.com/tpope/vim-surround'
-    Plugin 'https://github.com/tpope/vim-commentary'
-    Plugin 'https://github.com/airblade/vim-gitgutter'
-    Plugin 'https://github.com/vim-syntastic/syntastic'
-    "Plugin 'vim-airline/vim-airline'
+    Plugin 'sickill/vim-monokai'
+    Plugin 'tpope/vim-sensible'
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-surround'
+    Plugin 'tpope/vim-commentary'
+    Plugin 'airblade/vim-gitgutter'
+    Plugin 'vim-syntastic/syntastic'
     Plugin 'itchyny/lightline.vim'
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'scrooloose/nerdtree'
     Plugin 'davidhalter/jedi-vim'
     Plugin 'plasticboy/vim-markdown'
-    Plugin 'https://github.com/pangloss/vim-javascript'
+    Plugin 'pangloss/vim-javascript'
     Plugin 'ctrlpvim/ctrlp.vim'
+    Plugin 'google/vim-searchindex'
+
     "...All your other bundles...
     if iCanHazVundle == 0
         echo "Installing Vundles, please ignore key map error messages"
@@ -110,6 +111,7 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
+nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " Syntastic settings
 set statusline+=%#warningmsg#
