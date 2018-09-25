@@ -48,6 +48,12 @@ This will open test/Suite.java no matter where it is in the current directory hi
 
 Load a list of all files in the current directory into a buffer. Then you can use all the usual vim text manipulation tools to navigate/sort/trim the list, and `CTRL+W` gf to open the file under the cursor in a new pane.
 
+<https://stackoverflow.com/questions/3554719/find-a-file-via-recursive-directory-search-in-vim>
+
+* `:bd` Unload buffer and delete it from the bufferlist.
+* `:bw` Use caution. `w` stands for *wipeout*.
+
+<https://stackoverflow.com/questions/1269648/how-do-i-close-a-single-buffer-out-of-many-in-vim>
 
 ## Register
 

@@ -38,6 +38,28 @@
 | Landscape          | 736px | 414px |
 | Bookmarks bar open | 416px | 414px |
 
+
+# iPhone XR
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Portrait           | 414px | 719px |
+| Landscape          | 808px | 414px |
+
+# iPhone XS
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Portrait           | 375px | 635px |
+| Landscape          | 724px | 375px |
+
+# iPhone XS Max
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Portrait           | 414px | 719px |
+| Landscape          | 808px | 414px |
+
 # iPad 9.7"
 
 ## Landscape
@@ -84,5 +106,26 @@
 | Float to the right | 320px | 958px |
 | Split to the right | 504px | 998px |
 
-* iPad 10.5"
 * iPad 12.9"
+
+## Landscape
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Default            | 1366px| 954px |
+| Bookmarks bar      | 991px | 954px |
+| Tabs side by side  | 1366px| 922px |
+| Split to the left  | 375px | 910px |
+| Split centre       | 678px | 954px |
+| Float to the right | 375px | 870px |
+| Split to the right | 981px | 954px |
+
+## Portrait
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Default            | 1024px| 1296px|
+| Split to the left  | 375px | 1252px|
+| Float to the right | 375px | 1212px|
+| Split to the right | 639px | 1252px|
+
