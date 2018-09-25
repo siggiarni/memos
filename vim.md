@@ -40,6 +40,14 @@ the `!` at the end of the command in vim toggles the command on and off.
 * https://stackoverflow.com/a/103590
 * https://stackoverflow.com/a/21338192
 
+`:e **/test/Suite.java`
+
+This will open test/Suite.java no matter where it is in the current directory hierarchy.
+
+`:r! find . -type f`
+
+Load a list of all files in the current directory into a buffer. Then you can use all the usual vim text manipulation tools to navigate/sort/trim the list, and `CTRL+W` gf to open the file under the cursor in a new pane.
+
 
 ## Register
 
