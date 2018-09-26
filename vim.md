@@ -25,6 +25,9 @@ the `!` at the end of the command in vim toggles the command on and off.
 `D` or its equivalent `d$` will delete the rest of the line and leave you in *command mode*. 
 `C` or `c$` will delete the rest of the line and put you in *insert mode*, and new text will be appended to the line.
 
+
+`vert help` Open help in a vertical window.
+
 ## Buffers
 
 * A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
@@ -237,6 +240,12 @@ We can use Visual-Block mode to insert text into several lines of text simultane
 * `vit` = select the inner contents of a tag
 * `U` = converts the selected characters to uppercase
 
+### Omni complete
+
+* `<C-X>O` Open omni complete.
+* `<C-N>` Select next item.
+* `<C-P>` Select previous item.
+
 
 ## Ex commands
 
@@ -325,6 +334,9 @@ Open file explorer for the directory of the active buffe”
 ### Windows
 
 http://vimcasts.org/episodes/working-with-windows/
+
+* `<C-w>w` Cycle between open windows
+
 
 ### Tabs
 
