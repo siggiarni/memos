@@ -43,6 +43,20 @@ the `!` at the end of the command in vim toggles the command on and off.
 * https://stackoverflow.com/a/103590
 * https://stackoverflow.com/a/21338192
 
+`:e **/test/Suite.java`
+
+This will open test/Suite.java no matter where it is in the current directory hierarchy.
+
+`:r! find . -type f`
+
+Load a list of all files in the current directory into a buffer. Then you can use all the usual vim text manipulation tools to navigate/sort/trim the list, and `CTRL+W` gf to open the file under the cursor in a new pane.
+
+<https://stackoverflow.com/questions/3554719/find-a-file-via-recursive-directory-search-in-vim>
+
+* `:bd` Unload buffer and delete it from the bufferlist.
+* `:bw` Use caution. `w` stands for *wipeout*.
+
+<https://stackoverflow.com/questions/1269648/how-do-i-close-a-single-buffer-out-of-many-in-vim>
 
 ## Register
 
@@ -186,6 +200,16 @@ http://vimcasts.org/episodes/how-to-fold/
 * `<C-a>` command will look ahead for a digit on the current line.
 * `*` and/or `#` to search for the word under the cursor.
 * `noh` Turn off highlighting until the next search.
+
+### Omni stuff
+
+`filetype plugin on`
+`set omnifunc=syntaxcomplete#Complete`
+http://vim.wikia.com/wiki/Omni_completion
+
+* To use omni completion, type `<C-xo>` while open in Insert mode.
+* If matching names are found, a pop-up menu opens which can be navigated using the `<C-n>` and `<C-p>` keys. 
+
 
 ### Visual mode 
 
