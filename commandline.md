@@ -413,3 +413,19 @@ ps -p [PID] -o comm=
 <pre>
 xcrun simctl openurl booted https://www.apple.com
 </pre>
+
+## Clean dot files
+
+Remove dot-underscore files. Merges `._*` files with corresponding native files.
+
+<pre>
+$ dot_clean -mn /path/folder
+</pre>
+
+
+* `-m` Always delete dot underbar files.
+* `-n` Delete dot underbar file if there is no matching native file.
+
+<https://ss64.com/osx/dot_clean.html>
+
+
