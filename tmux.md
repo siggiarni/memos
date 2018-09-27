@@ -2,7 +2,7 @@
 
 ## The command prefix
 
-* `Ctrl-b`
+* `Ctrl-a`
 
 ## Sessions
 
@@ -10,43 +10,41 @@ Create a session called _fnord_.
 
 * `tmux new -s fnord`
 
-List sessions.
+### List sessions.
 
 * `tmux ls`
 
-Attach to a session named _session-name_
+### Attach to a session named _session-name_
 
 * `tmux attach -t session-name`
 
-Kill session
+### Kill session
 
 * `tmux kill-session -t session-name`
 
+## Windows
+
 To create a window in a current session, press Prefix c.
 
-Rename window
+### Rename window
 
-Prefix followed by `,`
+`Prefix-a ,`
 
+## Custom commands
 
+* Next window = `prefix-a Ctrl-h`
+* Next window = `prefix-a Ctrl-l`
 
-
-
-Custom commands
-
-Next window = `prefix-a Ctrl-h`
-Next window = `prefix-a Ctrl-l`
-
-Split horz = `prefix-a -`
-Split vert = `prefix-a |`
+* Split horz = `prefix-a -`
+* Split vert = `prefix-a |`
 
 Move between panes
 
-`prefix-a h,j,k,l`
+* `prefix-a h,j,k,l`
 
 Resize panes
 
-`prefix-a Ctrl-h,j,k,l`
+* `prefix-a Ctrl-h,j,k,l`
 
 
 
