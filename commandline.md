@@ -428,4 +428,10 @@ $ dot_clean -mn /path/folder
 
 <https://ss64.com/osx/dot_clean.html>
 
+## Configure iTerm2 to send clear command
 
+Preferences -> Keys -> + (add new global shortcut)
+
+* Keyboard shortcut: ⌘+k
+* Action: Send text
+* value: `clear\n`
