@@ -191,10 +191,13 @@ http://vimcasts.org/episodes/how-to-fold/
 * `<C-w>` = Delete back one *word*.
 * `<C-u>` = Delete back to *start of line*.
 
+* `u` = Undo
+* `<C-r>` = Redo
 
 #### Search
 
 * `f` = Find in line.
+* `;` and `,` go to next match in line.
 * `/`{pattern} = Find pattern.
 * `n/N` = Jump to pattern match.
 * `<C-a>` command will look ahead for a digit on the current line.
@@ -213,12 +216,23 @@ http://vim.wikia.com/wiki/Omni_completion
 
 ### Visual mode 
 
-* `shift` + `v` = Select using visual line.
+* `v` = Enable character-wise Visual mode.
+* `V` = Enable line-wise Visual mode.
+* `<C-v>` = Enable block-wise Visual mode.
 * `viw` = visually select word under cursor.
 * `vaw` = Visually select word under cursor using around.
+* `gv` = Reselects the range of text that was last selected in Visual mode.
+* `c` Deletes the selected text and then switches to Insert mode.
+* `o` = Toggle the free end of visual mode.
+
+### Slelect mode
+
+If we type any printable character in Select mode, it will replace the selection and switch to Insert mode.
+
+* `<C-g>` = Toggle between Visual and Select mode.
+
 
 ### Insert mode
-
 
 #### Edit
 
@@ -333,22 +347,22 @@ try opening your vimrc file, place your cursor on a setting, and then type `:hel
 
 ## Files
 
-The :edit command allows us to open files from within Vim.
+The `:edit` command allows us to open files from within Vim.
 
-The % symbol is a shorthand for the filepath of the active buffer.
+The `%` symbol is a shorthand for the filepath of the active buffer.
 
-“The :h modifier removes the filename while preserving the rest of the path”
+The `:h` modifier removes the filename while preserving the rest of the path
 
-“The ‘path’ option allows us to specify a set of directories inside of which Vim will search when the :find command is invoked”
+The `path` option allows us to specify a set of directories inside of which Vim will search when the `:find` command is invoked.
 
-:set path+=app/**
+`:set path+=app/**`
 
-“We can open the file explorer window with the :edit {path} command by supplying a directory name”
+We can open the file explorer window with the `:edit {path}` command by supplying a directory name
 
-“:e.
+`:e.`
 Open file explorer for current working directory”
 
-“:E
+`:E`
 Open file explorer for the directory of the active buffe”
 
 
