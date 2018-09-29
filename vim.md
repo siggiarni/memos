@@ -360,12 +360,23 @@ The `path` option allows us to specify a set of directories inside of which Vim 
 We can open the file explorer window with the `:edit {path}` command by supplying a directory name
 
 `:e.`
-Open file explorer for current working directory”
+Open file explorer for current working directory
 
 `:E`
-Open file explorer for the directory of the active buffe”
+Open file explorer for the directory of the active buffer
 
 
+:vsp . = Open a vertial split file explorer.
+
+:Vex = Open in vertical split at directory of current file
+
+% = Create a new file in file explorer.
+
+d = Create a new directory in file explorer.
+
+R = rename the file/directory under the cursor
+
+D = Delete the file/directory under the cursor
 
 ## Window management
 
