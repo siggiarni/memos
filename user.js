@@ -94,7 +94,7 @@ user_pref("browser.usedOnWindows10.introURL", "");
 // 0102: set start page (0=blank, 1=home, 2=resume previous session)
 // home = browser.startup.homepage preference
 // You can set all of this from Options>General>Startup
-user_pref("browser.startup.page", 2);
+user_pref("browser.startup.page", 3);
 
 /*** 0200: GEOLOCATION ***/
 // 0201: disable location-aware browsing
@@ -1054,6 +1054,7 @@ user_pref("browser.uitour.enabled", false);
 // 2629: disable remote JAR files being opened, regardless of content type
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1215235
 user_pref("network.jar.block-remote-files", true);
+
 // 2630: limit window.screen & CSS media queries providing large amounts of identifiable info.
    // POC: http://ip-check.info/?lang=en (screen, usable screen, and browser window will match)
    // https://bugzilla.mozilla.org/show_bug.cgi?id=418986
@@ -1068,8 +1069,11 @@ user_pref("network.jar.block-remote-files", true);
    // NOTE: This also spoofs screen orientation - https://bugzilla.mozilla.org/show_bug.cgi?id=1281949
    // NOTE: This will also SOON hide the contents of navigator.plugins and navigator.mimeTypes
    // https://bugzilla.mozilla.org/show_bug.cgi?id=1281963
-    // resistFingerprint breaks site specific zoom
-    // user_pref("privacy.resistFingerprinting", true); // (hidden pref)
+
+// resistFingerprint breaks site specific zoom
+// resistFingerprint will resize the browser on startup
+user_pref("privacy.resistFingerprinting", false); // (hidden pref)
+
 // 2650: start the browser in e10s mode (48+)
    // After restarting the browser, you can check whether it's enabled by visiting
    // about:support and checking that "Multiprocess Windows" = 1
@@ -1102,7 +1106,7 @@ user_pref("network.jar.block-remote-files", true);
 /*** 2800: SHUTDOWN ***/
 // 2802: enable FF to clear stuff on close
    // This setting is under Options>Privacy>Clear history when firefox closes
-user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("privacy.saniuizu.sanitizeOnShutdown", true);
 // 2803: what to clear on shutdown
    // These settings are under Options>Privacy>Clear history when firefox closes>Settings
    // These are the settings of the author of this user.js, chose your own
@@ -1111,7 +1115,7 @@ user_pref("privacy.clearOnShutdown.cookies", false);
 user_pref("privacy.clearOnShutdown.downloads", true);
 user_pref("privacy.clearOnShutdown.formdata", true);
 user_pref("privacy.clearOnShutdown.history", false);
-user_pref("privacy.clearOnShutdown.offlineApps", true);
+user_pref("privacy.clearOnShutdown.offlineApps", false);
 user_pref("privacy.clearOnShutdown.sessions", false);
 user_pref("privacy.clearOnShutdown.siteSettings", false);
 // 2804: (to match above) - auto selection of items to delete with Ctrl-Shift-Del
@@ -1119,7 +1123,7 @@ user_pref("privacy.cpd.cookies", false);
 user_pref("privacy.cpd.downloads", true);
 user_pref("privacy.cpd.formdata", true);
 user_pref("privacy.cpd.history", false);
-user_pref("privacy.cpd.offlineApps", true);
+user_pref("privacy.cpd.offlineApps", false);
 user_pref("privacy.cpd.sessions", false);
 user_pref("privacy.cpd.siteSettings", false);
 user_pref("privacy.cpd.cache", true);
