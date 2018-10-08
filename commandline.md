@@ -435,3 +435,9 @@ Preferences -> Keys -> + (add new global shortcut)
 * Keyboard shortcut: ⌘+k
 * Action: Send text
 * value: `clear\n`
+
+## Convert mp4 to GIF
+
+`ffmpeg -i input.mp4 -vf scale=160:-1 -r 24 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - output.gif`
+
+
