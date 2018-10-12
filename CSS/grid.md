@@ -4,9 +4,22 @@
 
 When we use `grid-template-columns` and `grid-template-rows` we create an Explicit Grid. However if we try and place an item outside of that grid the browser will create an Implicit Grid line or lines in order to hold that item.
 
+> The three properties grid-template-rows, grid-template-columns, and grid-template-areas together define the explicit grid. 
+
+
+The implicit grid, on the other hand, is essentially defined as "everything else" -
+
+> When grid items are positioned outside of [the explicit grid], the grid container generates implicit grid tracks by adding implicit grid lines to the grid. These lines together with the explicit grid form the implicit grid. 
+
+While the `grid-template-` properties are used to define both the *position and size* of grid cells, the `grid-auto-` properties are used only to define the *size* of grid cells.
+
+The `grid-template-` properties are used to create an explicit grid, whereas th `grid-auto-` properties are used to size an implicit grid (which is automatically created).
+
+* <https://bitsofco.de/understanding-the-difference-between-grid-template-and-grid-auto/>
 * <https://gridbyexample.com/examples/example10/>
 * <https://www.youtube.com/watch?v=FEnRpy9Xfes&t=12m14s>
 * <https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=22s>
+* <https://www.w3.org/TR/css-grid-1/#explicit-grids>
 
 ## Grid auto flow
 
