@@ -101,10 +101,35 @@
 
 | Viewport           | Width | Height|
 | ------------------ |-------|-------|
-| Default            | 834px | 1042px |
+| Default            | 834px | 1042px|
 | Split to the left  | 320px | 998px |
 | Float to the right | 320px | 958px |
 | Split to the right | 504px | 998px |
+
+
+# iPad 11"
+
+## Landscape
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Default            | 1194px| 760px |
+| Bookmarks bar      | 819px | 764px |
+| Tabs side by side  | 597px | 663px |
+| Split to the left  | 809px | 760px |
+| Split centre       | 592px | 695px |
+| Float to the right | 375px | 695px |
+| Split to the right | 375px | 647px |
+
+
+## Portrait
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Default            | 834px | 1120px|
+| Split to the left  | 504px | 834px |
+| Float to the right | 320px | 1055px|
+| Split to the right | 504px | 1007px|
 
 * iPad 12.9"
 
