@@ -431,3 +431,27 @@ unchanged until you write the buffer to the file.
 
 * https://imgur.com/fujVeHM
 * https://vim.rtorr.com/
+
+
+What's the quickest way to delete the entire foo method, given your cursor position:
+
+```
+def foo
+  bar_
+end
+```
+
+`dap` gets it done in three keystrokes.
+`d` - delete (note: the delete command waits for a subsequent motion or text object)
+`ap` - a paragraph (a sequence of lines surrounded by a newline)
+`:h ap` describes the "a paragraph" text object.
+
+---
+
+
+What's the quickest way to delete a sentence when your cursor is in the middle of it
+
+`das` does the trick.
+`d` - delete
+`as` - a sentence
+`:h as` describes the "a sentence" text object.
