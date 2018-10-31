@@ -131,7 +131,7 @@
 | Float to the right | 320px | 1055px|
 | Split to the right | 504px | 1007px|
 
-* iPad 12.9"
+# iPad 12.9"
 
 ## Landscape
 
