@@ -440,4 +440,15 @@ Preferences -> Keys -> + (add new global shortcut)
 
 `ffmpeg -i input.mp4 -vf scale=160:-1 -r 24 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - output.gif`
 
+## Hardcode subs to Mp4 file
+
+`ffmpeg -i t.mp4 -vf subtitles=es.vtt out.mp4`
+
+## Install FFMPEG with everything
+
+`brew install ffmpeg --with-vpx --with-vorbis --with-libvorbis --with-vpx --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid\n`
+
+## Download youtube vid with subs
+
+`youtube-dl --write-auto-sub https://www.youtube.com/watch?v=jNQXAC9IVRw`
 
