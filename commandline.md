@@ -452,3 +452,8 @@ Preferences -> Keys -> + (add new global shortcut)
 
 `youtube-dl --write-auto-sub https://www.youtube.com/watch?v=jNQXAC9IVRw`
 
+
+## Create 3rd party block list from log
+
+`awk -F',' '$2 != "Target Site" { print $1 }' hs.csv`
+
