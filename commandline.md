@@ -457,3 +457,13 @@ Preferences -> Keys -> + (add new global shortcut)
 
 `awk -F',' '$2 != "Target Site" { print $1 }' hs.csv`
 
+
+## Time Machine snapshots
+
+List snapshots
+
+`tmutil listlocalsnapshots /`
+
+Clean up snapshots
+
+`tmutil thinlocalsnapshots / 9999999999 1`
