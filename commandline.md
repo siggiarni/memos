@@ -467,3 +467,18 @@ List snapshots
 Clean up snapshots
 
 `tmutil thinlocalsnapshots / 9999999999 1`
+
+
+## Disk Usage
+
+`du -hsc /*`
+
+*du* Disk Usage
+
+*-h* Human readable
+
+*-s* Summary
+
+*-c* Display grand total
+
+*/** Chech whole disk
