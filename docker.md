@@ -200,3 +200,11 @@ The `.` indicates the current directory:
 `docker system prune`
 
 http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/
+
+`docker container prune`
+
+https://docs.docker.com/engine/reference/commandline/container_prune/
+
+`docker system prune`
+
+https://docs.docker.com/engine/reference/commandline/system_prune/
