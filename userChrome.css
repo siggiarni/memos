@@ -13,3 +13,9 @@
 @-moz-document url-prefix(about:blank) { *
     {background-color:#000000;}
 }   
+
+#context-navigation,
+#context-sep-navigation,
+#onepassword4_agilebits_com-menuitem-1 {
+    display: none !important
+}
