@@ -35,3 +35,9 @@
 > CSS Coverage is a set of commands for Firefox Developer tools that help untangle messy CSS by pointing out the CSS that isn't "used", and indicating the parts of your CSS files that are needed for initial rendering.
 
 `csscoverage` `start` `stop` `report`
+
+## Crash reporter
+
+Go to `about:crashes` and click `Clear All`.
+
+<https://www.reddit.com/r/firefox/comments/a95hkc/tip_clear_your_pending_crash_reports_to_free_disk/>
