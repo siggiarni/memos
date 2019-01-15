@@ -80,7 +80,11 @@ CSS variables can be made conditional with @media and other conditional rules.
 CSS variables can be used in HTML’s style attribute.
 
 
+---
 
+Another side-effect of the variables being scoped to an element is that they can’t be used outside CSS declarations. CSS variables can’t be used in other places such as with @media rules
+
+---
 
 
 
