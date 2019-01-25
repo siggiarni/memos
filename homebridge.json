@@ -1,0 +1,35 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "F8:1E:DF:EC:53:9B",
+        "port": 59817,
+        "pin": "031-45-154"
+    },
+
+    "platforms": [
+        {
+            "platform": "BraviaTV",
+            "name": "TV",
+            "ipadress": "10.0.1.42",
+            "psk": "4224"
+        },
+        {
+            "platform": "cmdSwitch2",
+            "name": "CMD Switch",
+            "switches": [
+                {
+                    "name" : "PS4",
+                    "on_cmd": "ps4-waker",
+                    "off_cmd": "ps4-waker standby",
+                    "state_cmd": "ps4-waker search | grep -i '200 Ok'",
+                    "polling": true,
+                    "interval": 5,
+                    "timeout": 2000,
+                    "manufacturer": "Sony Corporation",
+                    "model": "PS4",
+                    "serial": "PS4"
+                }
+            ]
+        }
+    ]
+}
