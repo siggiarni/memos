@@ -1,3 +1,4 @@
+set encoding=utf-8
 execute pathogen#infect()
 " Setting up Vundle - the vim plugin bundler
     let iCanHazVundle=1
