@@ -448,6 +448,10 @@ Preferences -> Keys -> + (add new global shortcut)
 
 `brew install ffmpeg --with-vpx --with-vorbis --with-libvorbis --with-vpx --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid`
 
+## Resize video to 540px wide
+
+`ffmpeg -i input.MP4 -vf scale=540:-1 output.mp4`
+
 ## Download youtube vid with subs
 
 `youtube-dl --write-auto-sub https://www.youtube.com/watch?v=jNQXAC9IVRw`
