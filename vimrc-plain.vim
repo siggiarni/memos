@@ -1,6 +1,12 @@
-set encoding=utf-8
+set encoding=utf-8 "Sets how vim shall represent characters internally.
+set fileencoding=utf-8 "Sets the encoding for the file that is written.
 
-syntax on
+syntax on "enable syntax highlighting
+
+" Turn on detection, plugin and indent at once.
+" Detection: recognize the type of the file and set the 'filetype' option.
+" Plugin: Loads ftplugin.vim in 'runtimepath'. When a file is edited its plugin file is loaded.
+" Indent: loads indent.vim in 'runtimepath'. When a file is edited its indent file is loaded.
 filetype plugin indent on
 
 set title "Set the document name in the window title.
