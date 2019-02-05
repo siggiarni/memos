@@ -1,7 +1,6 @@
 set encoding=utf-8
 
 syntax on
-colorscheme flatland
 filetype plugin indent on
 
 set title "Set the document name in the window title.
