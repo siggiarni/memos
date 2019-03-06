@@ -1,6 +1,6 @@
 # VMIN VMAX
 
-1vmax equals 1vh in portrait mode, whilst in landscape mode, 1vmax will equal 1vw.
+`1vmax` equals `1vh` in portrait mode, whilst in landscape mode, `1vmax` will equal `1vw`.
 
 IE9 uses vm instead of vmin. It does not support vmax.
 
