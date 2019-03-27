@@ -14,4 +14,4 @@ Pseudo-elements are very much like pseudo-classes, but they have differences. Th
 
 A CSS pseudo-element is a keyword added to a selector that lets you style a **specific part** of the selected element(s). For example, `::first-line` can be used to change the font of the first line of a paragraph.
 
-* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+* <https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements>
