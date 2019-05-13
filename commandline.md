@@ -237,7 +237,8 @@ find . -type f -name "*.mkv" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -
 
 ## Force eject CD
 
-<pre>$ /usr/bin/drutil eject</pre>
+    $ /usr/bin/drutil eject
+    $ drutil eject
 
 
 ### Gulp
