@@ -2,25 +2,25 @@
 
 ## The command prefix
 
-* `Ctrl-a`
+    Ctrl-a
 
 ## Sessions
 
 Create a session called _fnord_.
 
-* `tmux new -s fnord`
+    tmux new -s fnord
 
 ### List sessions.
 
-* `tmux ls`
+    tmux ls
 
 ### Attach to a session named _session-name_
 
-* `tmux attach -t session-name`
+    tmux attach -t session-name
 
 ### Kill session
 
-* `tmux kill-session -t session-name`
+    tmux kill-session -t session-name
 
 ## Windows
 
@@ -28,7 +28,7 @@ To create a window in a current session, press Prefix c.
 
 ### Rename window
 
-`Prefix-a ,`
+    Prefix-a ,
 
 ## Custom commands
 
