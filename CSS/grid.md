@@ -25,7 +25,7 @@ The `grid-template-` properties are used to create an explicit grid, whereas th 
 
 The `grid-auto-flow` CSS property controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid.
 
-* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow
+* <https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow>
 
 ## Auto-fill vs. Auto-fit
 

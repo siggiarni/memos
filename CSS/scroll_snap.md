@@ -5,13 +5,13 @@ Popular UX paradigms for scrollable content frequently employ paging through con
 
 To this end, we introduce scroll snap positions which enforce the scroll positions that a scroll container’s scrollport may end at after a scrolling operation has completed.
 
-* https://www.w3.org/TR/css-scroll-snap-1/#intro
-* https://developers.google.com/web/updates/2018/07/css-scroll-snap
+* <https://www.w3.org/TR/css-scroll-snap-1/#intro>
+* <https://developers.google.com/web/updates/2018/07/css-scroll-snap>
 
 ## scroll-snap-type
 
-* https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-type
-* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+* <https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-type>
+* <https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type>
 
 The scroll-snap-type property specifies whether a scroll container is a scroll snap container, how strictly it snaps, and which axes are considered. If no strictness value is specified, proximity is assumed.
 
@@ -31,7 +31,7 @@ Requires that the scroll position always be at a snap position when the scrollin
 
 ## Scroll-padding
 
-* https://www.w3.org/TR/css-scroll-snap-1/#scroll-padding
+* <https://www.w3.org/TR/css-scroll-snap-1/#scroll-padding>
 
 Values must be non-negative and represent inward offsets from the corresponding edge of the scrollport.
 
@@ -47,7 +47,7 @@ Specifies that each element’s snap area should align with a 100px offset from 
 
 ## scroll-snap-align
 
-* https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-align
+* <https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-align>
 
 The scroll-snap-align property specifies the box’s snap position as an alignment of its snap area within its snap container’s snapport.
 

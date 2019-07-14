@@ -65,7 +65,7 @@ In practice this means that you can, for example, change the variables based upo
 
 Another advantage of living in the DOM is that you can access the variables with JavaScript, and even update them, for example based upon used interactions.
 
----
+<hr>
 
 unlike variables from CSS preprocessors, CSS Variables are actually a part of the DOM, which has a lot of benefits.
 
@@ -80,11 +80,11 @@ CSS variables can be made conditional with @media and other conditional rules.
 CSS variables can be used in HTML’s style attribute.
 
 
----
+<hr>
 
 Another side-effect of the variables being scoped to an element is that they can’t be used outside CSS declarations. CSS variables can’t be used in other places such as with @media rules
 
----
+<hr>
 
 
 
