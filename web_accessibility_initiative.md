@@ -10,7 +10,7 @@ The Web Content Accessibility Guidelines Working Group produces guidelines, tech
 
 The working group consists of representatives from industry, accessibility consultancies, universities, organizations that represent end users, and other accessibility experts.
 
-https://en.wikipedia.org/wiki/Web_Accessibility_Initiative
+<https://en.wikipedia.org/wiki/Web_Accessibility_Initiative/>
 
 
 How WAI Develops Accessibility Guidelines through the W3C Process
@@ -21,19 +21,19 @@ The World Wide Web Consortium (W3C) develops Web standards such as HTML, XML, CS
 
 WAI's W3C Recommendations, Working Group Notes, and Resources are developed in WAI Working Groups with input from the community. WAI actively encourages broad participation from industry, disability organizations, accessibility researchers, government, and others interested in Web accessibility.
 
-http://www.w3.org/WAI/intro/w3c-process.php
+<http://www.w3.org/WAI/intro/w3c-process.php/>
 
 
 Web Content Accessibility Guidelines (WCAG) Overview
 
 Web Content Accessibility Guidelines (WCAG) is developed through the W3C process in cooperation with individuals and organizations around the world, with a goal of proving a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.
 
-http://www.w3.org/WAI/intro/wcag.php
+<http://www.w3.org/WAI/intro/wcag.php/>
 
 
 Web Content Accessibility Guidelines Working Group
 
-http://www.w3.org/WAI/GL/
+<http://www.w3.org/WAI/GL/>
 
 
 Understanding WCAG 2.0
@@ -45,7 +45,7 @@ WCAG 2.0 establishes a set of Success Criteria to define conformance to the WCAG
 Informative: for information purposes and not required for conformance.
 normative: required for conformance.
 
-http://www.w3.org/TR/UNDERSTANDING-WCAG20/
+<http://www.w3.org/TR/UNDERSTANDING-WCAG20/>
 
 
 Introduction to Understanding WCAG 2.0
@@ -54,7 +54,7 @@ The guidelines and Success Criteria are organized around the following four prin
 Anyone who wants to use the Web must have content that is: Perceivable, Operable, Understandable and Robust.
 If any of these are not true, users with disabilities will not be able to use the Web.
 
-http://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html
+<http://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html/>
 
 
 
