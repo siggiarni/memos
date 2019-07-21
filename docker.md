@@ -38,7 +38,7 @@ Running instances of Docker images — containers run the actual applications. A
 * Don’t run processes as a root user.
 * Don’t rely on IP addresses.
 
-https://developers.redhat.com/blog/2016/02/24/10-things-to-avoid-in-docker-containers/
+<https://developers.redhat.com/blog/2016/02/24/10-things-to-avoid-in-docker-containers/>
 
 ### 1.3 Dockerfile
 
@@ -85,7 +85,7 @@ The best part is that the commands you write in a Dockerfile are almost identica
 * There can only be **one CMD** per a Dockerfile/Image.
 * If you need to run multiple commands, the best way to do that is to have the CMD run a script.
 
-https://docs.docker.com/engine/reference/builder/
+<https://docs.docker.com/engine/reference/builder/>
 
 * Write `.dockerignore` file
 * Container should do one thing
@@ -99,7 +99,7 @@ https://docs.docker.com/engine/reference/builder/
 * Prefer `COPY` over `ADD`
 * Specify default environment variables, ports and volumes inside Dockerfile
 
-https://rock-it.pl/how-to-write-excellent-dockerfiles/
+<https://rock-it.pl/how-to-write-excellent-dockerfiles/>
 
 ### 1.3 Docker daemon
 
@@ -113,15 +113,15 @@ The command line tool that allows the user to interact with the Docker daemon.
 
 A registry of Docker images, where you can find trusted and enterprise ready containers, plugins, and Docker editions.
 
-https://store.docker.com
+<https://store.docker.com>
 
 ## 2. Common commands
 
-https://docs.docker.com/engine/reference/commandline/cli/
+<https://docs.docker.com/engine/reference/commandline/cli/> 
 
 ### 2.1 List containers
 
-https://docs.docker.com/engine/reference/commandline/ps/
+<https://docs.docker.com/engine/reference/commandline/ps/>
 
 `$ docker ps`
 
@@ -133,13 +133,13 @@ https://docs.docker.com/engine/reference/commandline/ps/
 
 ### 2.2 List images
 
-https://docs.docker.com/engine/reference/commandline/images/
+<https://docs.docker.com/engine/reference/commandline/images/>
 
 `$ docker images`
 
 ### 2.3 Run a command in a new container
 
-https://docs.docker.com/engine/reference/commandline/run/
+<https://docs.docker.com/engine/reference/commandline/run/>
 
 `$ docker run`
 
@@ -167,7 +167,7 @@ AUTHOR is the environment variable name and Your Name is the value that you can 
 
 ### 2.4 Manage containers
 
-https://docs.docker.com/engine/reference/commandline/container/
+<https://docs.docker.com/engine/reference/commandline/container/>
 
 `$ docker container COMMAND`
 
@@ -199,12 +199,12 @@ The `.` indicates the current directory:
 
 `docker system prune`
 
-http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/
+<http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/>
 
 `docker container prune`
 
-https://docs.docker.com/engine/reference/commandline/container_prune/
+<https://docs.docker.com/engine/reference/commandline/container_prune/>
 
 `docker system prune`
 
-https://docs.docker.com/engine/reference/commandline/system_prune/
+<https://docs.docker.com/engine/reference/commandline/system_prune/>

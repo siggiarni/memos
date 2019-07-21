@@ -343,7 +343,7 @@ docker build -t mozjpeg .
 Do not change the INPUT/OUTPUT `/img/` path to the current dir you are in.
 
 For details, see:  
-https://ariya.io/2016/03/using-mozjpeg-via-docker
+<https://ariya.io/2016/03/using-mozjpeg-via-docker>
 
 
 ### Check for CORS

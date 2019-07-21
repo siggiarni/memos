@@ -4,7 +4,7 @@
 
 `font, font-family, font-size, font-size-adjust, font-stretch, font-style, font-variant, font-weight, direction, letter-spacing, text-decoration, unincode-bidi, word-spacing, visibility, text-rendering, writing-mode, clip-path, mask-opacity, filter, pointer-events, image-rendering, clip, color, cursor, display, overflow`
 
-https://www.w3.org/TR/SVG2/styling.html#SVGStylingProperties
+<https://www.w3.org/TR/SVG2/styling.html#SVGStylingProperties>
 
 ## SVG-Only
 
@@ -54,7 +54,7 @@ The `<min-x>` and `<min-y>` values determine the upper left corner of the viewbo
 
 Note here that the width and height of the viewBox need *not* be the same as the width and height set on the parent <svg> element. A negative value for <width> or <height> is invalid. A value of zero disables rendering of the element.
 
-https://www.sarasoueidan.com/blog/svg-coordinate-systems/
+<https://www.sarasoueidan.com/blog/svg-coordinate-systems/>
 
 ## preserveAspectRatio
 
@@ -74,4 +74,4 @@ meet (the default) - Scale the graphic such that:
 * The entire viewBox is visible within the viewport.
 * The viewBox is scaled up as much as possible, while still meeting the other criteria.
 
-https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
+<https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio>

@@ -8,9 +8,9 @@ The vimrc file contains optional runtime configuration settings to initialize Vi
 ~/.vimrc
 </pre>
 
-http://vimdoc.sourceforge.net/htmldoc/usr_05.html#vimrc_example.vim
+<http://vimdoc.sourceforge.net/htmldoc/usr_05.html#vimrc_example.vim/>
 
-https://stackoverflow.com/questions/26708822/why-do-vim-experts-prefer-buffers-over-tabs
+<https://stackoverflow.com/questions/26708822/why-do-vim-experts-prefer-buffers-over-tabs/>
 
 While in insert mode hit CTRL-R `{register}`.
 
@@ -39,9 +39,9 @@ the `!` at the end of the command in vim toggles the command on and off.
 * Use `:bn`, `:bp`, `:b #`, `:b name`, and `ctrl-6` to switch between buffers. 
 * Use `:ls` to list buffers.
 
-* https://stackoverflow.com/a/26710166
-* https://stackoverflow.com/a/103590
-* https://stackoverflow.com/a/21338192
+* <https://stackoverflow.com/a/26710166/>
+* <https://stackoverflow.com/a/103590/>
+* <https://stackoverflow.com/a/21338192/>
 
 `:e **/test/Suite.java`
 
@@ -51,12 +51,12 @@ This will open test/Suite.java no matter where it is in the current directory hi
 
 Load a list of all files in the current directory into a buffer. Then you can use all the usual vim text manipulation tools to navigate/sort/trim the list, and `CTRL+W` gf to open the file under the cursor in a new pane.
 
-<https://stackoverflow.com/questions/3554719/find-a-file-via-recursive-directory-search-in-vim>
+<https://stackoverflow.com/questions/3554719/find-a-file-via-recursive-directory-search-in-vim/>
 
 * `:bd` Unload buffer and delete it from the bufferlist.
 * `:bw` Use caution. `w` stands for *wipeout*.
 
-<https://stackoverflow.com/questions/1269648/how-do-i-close-a-single-buffer-out-of-many-in-vim>
+<https://stackoverflow.com/questions/1269648/how-do-i-close-a-single-buffer-out-of-many-in-vim/>
 
 ## Register
 
@@ -155,7 +155,7 @@ Vim has one named register for each letter of the alphabet.
 * `>i}` indent inner block.
 * `>G` increases the indentation from the current line until the end of the file.   
 
-http://vimcasts.org/episodes/how-to-fold/
+<http://vimcasts.org/episodes/how-to-fold/>
 
 ### Indentation
 
@@ -208,7 +208,7 @@ http://vimcasts.org/episodes/how-to-fold/
 
 `filetype plugin on`
 `set omnifunc=syntaxcomplete#Complete`
-http://vim.wikia.com/wiki/Omni_completion
+<http://vim.wikia.com/wiki/Omni_completion/>
 
 * To use omni completion, type `<C-xo>` while open in Insert mode.
 * If matching names are found, a pop-up menu opens which can be navigated using the `<C-n>` and `<C-p>` keys. 
@@ -382,7 +382,7 @@ D = Delete the file/directory under the cursor
 
 ### Windows
 
-http://vimcasts.org/episodes/working-with-windows/
+<http://vimcasts.org/episodes/working-with-windows/>
 
 * `<C-w>w` Cycle between open windows
 
@@ -410,11 +410,11 @@ Tabs are numbered starting from 1. We can switch between tabs with the {N}gt com
 
 if the number is omitted, Vim advances to the next tab. The gT command does the same but in reverse.
 
-    http://vimcasts.org/episodes/how-to-use-tabs/
+    <http://vimcasts.org/episodes/how-to-use-tabs/>
 
 
-https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi  
-https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim  
+<https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/>  
+<https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim/>  
 
 If you notice that you have to make the same small change in a handful of places, you can attempt to compose your changes in such a way that they can be repeated with the dot command.
 
@@ -429,8 +429,8 @@ buffer, or several windows on different buffers.
 A buffer is a file loaded into memory for editing.  The original file remains
 unchanged until you write the buffer to the file.
 
-* https://imgur.com/fujVeHM
-* https://vim.rtorr.com/
+* <https://imgur.com/fujVeHM/>
+* <https://vim.rtorr.com/>
 
 
 What's the quickest way to delete the entire foo method, given your cursor position:
