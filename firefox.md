@@ -20,6 +20,8 @@
 
 `about:networking`
 
+`about:compat`
+
 ## GCLI
 
 `screenshot --fullpage nightly_test.png`
