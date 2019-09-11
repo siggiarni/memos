@@ -1,0 +1,3 @@
+# Eject CD
+
+	drutil eject

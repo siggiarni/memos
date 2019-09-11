@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css" media="all">
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    color: hsl(0,0,9);
+}
+
+body {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+h1 {
+    padding-bottom: .75rem;
+    font-weight: normal;
+    font-size: 1.75rem;
+    border-bottom: .125rem solid lightslategray;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: crimson;
+}
+
+a:link {
+    color: hsl(220,100,50);
+}
+
+a:visited {
+    color: hsl(280,100,50);
+}
+
+a:active {
+    color: hsl(20,100,50);
+}
+
+p {
+    line-height: 1.6666;
+}
+
+hr {
+    height: .125rem;
+    margin: 3em 0;
+    border: 0;
+    background-color: gainsboro;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+li {
+    margin: .5rem 0;
+    line-height: 1.4;
+}
+
+pre, code {
+    font-family: monospace;
+    background-color: whitesmoke;
+}
+
+pre {
+    padding: 1rem;
+    border-left: .125rem solid mediumorchid;
+}
+
+blockquote {
+    margin: 1rem 0;
+    padding: .0625rem 1rem;
+    font-style: italic;
+    border-left: .125rem solid darkkhaki;
+    background-color: whitesmoke;
+}
+
+blockquote + blockquote {
+    // margin-top: 1rem;
+}
+
+mark {
+    padding: .25rem;
+    background-color: gold;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<title>youtube_dl</title>
+</head>
+<body>
+<h1>youtube-dl</h1>
+<p><code>youtube-dl -c -f best --batch-file batchlist.txt</code></p>
+<p><code>youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 &lt;video URL&gt;</code></p>
+
+</body>
