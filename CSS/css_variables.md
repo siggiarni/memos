@@ -96,3 +96,12 @@ CSS custom properties are aware of the DOM’s structure and are dynamic.
 
 * <https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855>
 * <https://medium.freecodecamp.org/learn-css-variables-in-5-minutes-80cf63b4025d>
+
+
+<hr>
+
+[https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
+
+The main reason that :root is suggested is because CSS isn’t only used to style HTML documents. It is also used for XML and SVG files.
+
+In the case of XML and SVG files, :root isn’t selecting the html element, but rather their root (such as the svg tag in an SVG file). 
