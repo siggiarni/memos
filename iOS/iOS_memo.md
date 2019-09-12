@@ -90,6 +90,29 @@
 | Float to the right | 320px | 870px |
 | Split to the right | 320px | 910px |
 
+# iPad 10.2"
+
+## Landscape
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Default            | - | - |
+| Bookmarks bar      | - | - |
+| Tabs side by side  | - | - |
+| Split to the left  | - | - |
+| Split centre       | - | - |
+| Float to the right | - | - |
+| Split to the right | - | - |
+
+## Portrait
+
+| Viewport           | Width | Height|
+| ------------------ |-------|-------|
+| Default            | - | - |
+| Split to the left  | - | - |
+| Float to the right | - | - |
+| Split to the right | - | - |
+
 
 # iPad 10.5"
 
