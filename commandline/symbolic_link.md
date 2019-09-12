@@ -2,14 +2,14 @@
 
 	$ ln -s SOURCE TARGET
 
+<http://man7.org/linux/man-pages/man1/ln.1.html>
 
-* [http://man7.org/linux/man-pages/man1/ln.1.html](http://man7.org/linux/man-pages/man1/ln.1.html)
 * `-s` make symbolic links instead of hard links
 * Gott að vera í möppunni sem target-ið á að enda í.
 
 ## Dæmi
 
-### Vísa local möppu á utanáliggjandi HDD. 
+### Vísa local möppu á utanáliggjandi HDD.
 
 	$ cd
 	$ ln -s /Volumes/HDD/"Creative Cloud Files/" "Creative Cloud Files"

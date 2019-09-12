@@ -16,6 +16,4 @@
 
 	gifsicle --resize 300x200  -i animation.gif > animation-clipped.gif
 
----
-
-[https://davidwalsh.name/resize-animated-gif](https://davidwalsh.name/resize-animated-gif)
+<https://davidwalsh.name/resize-animated-gif>
