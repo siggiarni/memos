@@ -2,7 +2,7 @@
 
 SVG filter functions — known as primitives.
 
-A <filter> element is never rendered directly; its only usage is as something that can be referenced using the filter attribute in SVG, or the url() function in CSS. 
+A <filter> element is never rendered directly; its only usage is as something that can be referenced using the filter attribute in SVG, or the url() function in CSS.
 
 a filter requires a source image to work on, and unless you explicitly define that source image by calling the filter on that source image, it won’t have anything to render, and so it doesn’t.
 
@@ -10,12 +10,12 @@ the filter element is a container to a series of filter operations that, combine
 
 Each filter primitive performs a single fundamental graphical operation on one or more inputs, producing a graphical result.
 
-All primitives share the same prefix: fe, which is short for “filter effect”.
+All primitives share the same prefix: fe, which is short for _“filter effect”_.
 
 A filter primitive works by taking a source graphic as input and outputting another one.
 And the output of one filter effect can be used as input to another.
 
-Each filter primitive can take one or two inputs and output only one result. 
+Each filter primitive can take one or two inputs and output only one result.
 
 The input of a filter primitive is defined in an attribute called `in`.
 
@@ -30,7 +30,7 @@ If you don’t specify the result of a primitive, its result will automatically 
 In addition to using the result(s) of other primitives as input, a filter primitive also accepts other types of inputs, the most important of which are:
 
 - SourceGraphic: the element to which the entire filter is applied; for example, an image or a piece of text.
-- SourceAlpha: this is the same as the `SourceGraphic`, except that this graphic contains only the alpha channel of the element. 
+- SourceAlpha: this is the same as the `SourceGraphic`, except that this graphic contains only the alpha channel of the element.
 
 ## Filter
 
@@ -44,14 +44,14 @@ the units used in the `x`, `y`, `width` and `height` attributes are dependent on
 
 The `filterUnits` attribute defines the coordinate system for the `x`, `y`, `width` and `height` attributes. It takes one of two values:
 
-- `objectBoundingBox` this is the default value.  the values are percentages or fractions of the size of the element’s bounding box. 
+- `objectBoundingBox` this is the default value.  the values are percentages or fractions of the size of the element’s bounding box.
 - `userSpaceOnUse` attributes are set relative to the current user coordinate system in use which uses pixels as a unit.
 
 The `<feMerge>` filter primitive is used to merge together layers of elements or effects.
 
 The `<feMerge>` primitive does not have an in attribute. To merge layers, two or more `<feMergeNode>`s are used inside feMerge, each of which has its own in attribute that represents a layer that we want to add.
 
-the first `<feMergeNode>` will be rendered “behind” or “below” the second. 
+the first `<feMergeNode>` will be rendered “behind” or “below” the second.
 
 ## feComposite
 
@@ -68,8 +68,6 @@ To offset a layer in SVG, we use the `feOffset` primitive.
 
 this primitive takes two main attributes: `dx` and `dy`, which determine the distance by which you want to offset the layer along the x and y axes, respectively.
 
+<https://tympanus.net/codrops/2019/01/15/svg-filters-101/>
 
-
-[https://tympanus.net/codrops/2019/01/15/svg-filters-101/](https://tympanus.net/codrops/2019/01/15/svg-filters-101/)
-
-[https://www.sarasoueidan.com/blog/compositing-and-blending-in-css/](https://www.sarasoueidan.com/blog/compositing-and-blending-in-css/)
+<https://www.sarasoueidan.com/blog/compositing-and-blending-in-css/>

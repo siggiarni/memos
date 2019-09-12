@@ -1,10 +1,10 @@
 # SVG Notes
 
-`xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet"`
+    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet"
 
 The globally valid rule for SVG files is, that later elements are rendered atop previous elements. The further down an element is the more it will be visible.
 
-In SVG, elements have “regions” whose boundaries are defined by the borders of the element’s Bounding Box. The Bounding Box (also abbreviated “bbox“) is the smallest fitting rectangle around an element. 
+In SVG, elements have _“regions”_ whose boundaries are defined by the borders of the element’s Bounding Box. The Bounding Box _(also abbreviated “bbox“)_ is the smallest fitting rectangle around an element.
 
 ## viewBox
 
@@ -12,7 +12,7 @@ The `viewBox` is an attribute of the `<svg>` element.
 
 Its **value** is a list of four numbers, separated by whitespace or commas: `min-x`, `min-y`, `width` and `height`.
 
-The **width** is the width in user coordinates/px units, within the SVG code, that should be scaled to fill the width of the area into which you're drawing your SVG _(the viewport in SVG lingo)_. 
+The **width** is the width in user coordinates/px units, within the SVG code, that should be scaled to fill the width of the area into which you're drawing your SVG _(the viewport in SVG lingo)_.
 
 The **height** is the number of px/coordinates that should be scaled to fill the available height.
 
@@ -34,4 +34,4 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
 
 ## Links
 
-[https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed](https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed)
+https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed

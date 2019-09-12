@@ -2,23 +2,23 @@
 
 ## Shared with CSS
 
-`font, font-family, font-size, font-size-adjust, font-stretch, font-style, font-variant, font-weight, direction, letter-spacing, text-decoration, unincode-bidi, word-spacing, visibility, text-rendering, writing-mode, clip-path, mask-opacity, filter, pointer-events, image-rendering, clip, color, cursor, display, overflow`
+    font, font-family, font-size, font-size-adjust, font-stretch, font-style, font-variant, font-weight, direction, letter-spacing, text-decoration, unincode-bidi, word-spacing, visibility, text-rendering, writing-mode, clip-path, mask-opacity, filter, pointer-events, image-rendering, clip, color, cursor, display, overflow
 
 <https://www.w3.org/TR/SVG2/styling.html#SVGStylingProperties>
 
 ## SVG-Only
 
-`clip-rule, flood-color, flood-opacity, stop-opacity, kerning, tech-anchor, color-profile, color-rendering, fill, fill-opacity, fill-rule, marker, marker-end, marker-mid, marker-start, stroke, stroke-width, stop-color, lighting-color, enable-background, dominant-baseline, color-interpolation-filters, color-interpolation, glyph-orientation-horizontal, glyph-orientation-vertical, shape-rendering, baseline-shift, alignment-baseline, stroke-miterlimit, stroke-linejoin, stroke-linecap, stroke-dashoffset, stroke-dasharray, stroke-opacity`
+    clip-rule, flood-color, flood-opacity, stop-opacity, kerning, tech-anchor, color-profile, color-rendering, fill, fill-opacity, fill-rule, marker, marker-end, marker-mid, marker-start, stroke, stroke-width, stop-color, lighting-color, enable-background, dominant-baseline, color-interpolation-filters, color-interpolation, glyph-orientation-horizontal, glyph-orientation-vertical, shape-rendering, baseline-shift, alignment-baseline, stroke-miterlimit, stroke-linejoin, stroke-linecap, stroke-dashoffset, stroke-dasharray, stroke-opacity
 
 ## Style hierarchy
 
-User agent styles  
-presentation attributes  
-External styles  
-Document styles  
-Inline styles  
-Animation  
-Override styles  
+User agent styles
+presentation attributes
+External styles
+Document styles
+Inline styles
+Animation
+Override styles
 Computed styles
 
 Styles lower in the diagram override those above them
@@ -46,13 +46,13 @@ The sizes specified in the media queries refer to the size of the SVG viewport, 
 
 ## viewBox
 
-The viewBox attribute takes four parameters as a value: <min-x>, <min-y>, width and height.
+The viewBox attribute takes four parameters as a value: `<min-x>`, `<min-y>`, width and height.
 
-`viewBox = <min-x> <min-y> <width> <height>`
+    viewBox = <min-x> <min-y> <width> <height>
 
 The `<min-x>` and `<min-y>` values determine the upper left corner of the viewbox, and the width and height determine the width and height of that viewBox.
 
-Note here that the width and height of the viewBox need *not* be the same as the width and height set on the parent <svg> element. A negative value for <width> or <height> is invalid. A value of zero disables rendering of the element.
+Note here that the width and height of the viewBox need *not* be the same as the width and height set on the parent `<svg>` element. A negative value for `<width>` or `<height>` is invalid. A value of zero disables rendering of the element.
 
 <https://www.sarasoueidan.com/blog/svg-coordinate-systems/>
 
@@ -61,14 +61,14 @@ Note here that the width and height of the viewBox need *not* be the same as the
 ### xMinYMid
 
 * Force uniform scaling.
-* Align the <min-x> of the element's viewBox with the smallest X value of the viewport.
+* Align the `<min-x>` of the element's viewBox with the smallest X value of the viewport.
 * Align the midpoint Y value of the element's viewBox with the midpoint Y value of the viewport.
 
 **Think of this as being similar to background-position: 0% 50%;**
 
 ### The meet Attribute
 
-meet (the default) - Scale the graphic such that:
+meet _(the default)_ - Scale the graphic such that:
 
 * Aspect ratio is preserved.
 * The entire viewBox is visible within the viewport.

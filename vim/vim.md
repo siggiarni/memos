@@ -22,7 +22,7 @@ It's also possible to toggle the mode with a single key, by adding something lik
 
 the `!` at the end of the command in vim toggles the command on and off.
 
-`D` or its equivalent `d$` will delete the rest of the line and leave you in *command mode*. 
+`D` or its equivalent `d$` will delete the rest of the line and leave you in *command mode*.
 `C` or `c$` will delete the rest of the line and put you in *insert mode*, and new text will be appended to the line.
 
 
@@ -31,12 +31,12 @@ the `!` at the end of the command in vim toggles the command on and off.
 ## Buffers
 
 * A buffer is a file loaded into memory for editing. All opened files are associated with a buffer. There are also buffers not associated with any file.
-* Vim buffers are identified using a name and a number. The name of the buffer is the name of the file associated with that buffer. 
-* The buffer number is a unique sequential number assigned by Vim. This buffer number will not change in a single Vim session. 
+* Vim buffers are identified using a name and a number. The name of the buffer is the name of the file associated with that buffer.
+* The buffer number is a unique sequential number assigned by Vim. This buffer number will not change in a single Vim session.
 * When you open a file using any of the Vim commands, a buffer is automatically created.
 
 * :set hidden. = have edited buffers that aren't visible in a window somewhere.
-* Use `:bn`, `:bp`, `:b #`, `:b name`, and `ctrl-6` to switch between buffers. 
+* Use `:bn`, `:bp`, `:b #`, `:b name`, and `ctrl-6` to switch between buffers.
 * Use `:ls` to list buffers.
 
 * <https://stackoverflow.com/a/26710166/>
@@ -153,7 +153,7 @@ Vim has one named register for each letter of the alphabet.
 * `zv` Expand folds to reveal cursor.
 * `zo` Open fold.
 * `>i}` indent inner block.
-* `>G` increases the indentation from the current line until the end of the file.   
+* `>G` increases the indentation from the current line until the end of the file.
 
 <http://vimcasts.org/episodes/how-to-fold/>
 
@@ -166,7 +166,7 @@ Vim has one named register for each letter of the alphabet.
 
 ### Edit
 
-* `.` The dot  command lets us repeat the last change.   
+* `.` The dot  command lets us repeat the last change.
 * `cW` = Change word.
 
 * `yy` or `Y` = Jank the line.
@@ -177,8 +177,8 @@ Vim has one named register for each letter of the alphabet.
 * `p` = paste the copied or deleted text __after__ the current line.
 * `P` = paste the copied or deleted text __before__ the current line.
 
-* `x` deletes the character under the cursor. 
-* `dd` Deletes the current line. 
+* `x` deletes the character under the cursor.
+* `dd` Deletes the current line.
 * `db` = Delete backward.
 * `dw` = Delete forward.
 * `daw` = Delete an Entire Word.
@@ -211,10 +211,10 @@ Vim has one named register for each letter of the alphabet.
 <http://vim.wikia.com/wiki/Omni_completion/>
 
 * To use omni completion, type `<C-xo>` while open in Insert mode.
-* If matching names are found, a pop-up menu opens which can be navigated using the `<C-n>` and `<C-p>` keys. 
+* If matching names are found, a pop-up menu opens which can be navigated using the `<C-n>` and `<C-p>` keys.
 
 
-### Visual mode 
+### Visual mode
 
 * `v` = Enable character-wise Visual mode.
 * `V` = Enable line-wise Visual mode.
@@ -398,23 +398,23 @@ We can open a new tab page with the `:tabedit {filename}` command. If we omit th
 
 The :lcd {path} command lets us set the working directory locally for the current window
 
-if the current tab page contains more than one window, we can use the <C-w>T command, which moves the current window into a new tab page
+if the current tab page contains more than one window, we can use the `<C-w>T` command, which moves the current window into a new tab page
 
-If the active tab page contains only a single window, the :close command will close the window and the tab page with it.
+If the active tab page contains only a single window, the `:close` command will close the window and the tab page with it.
 
-we can use the :tabclose command, which closes the current tab page no matter how many windows it contains.
+we can use the `:tabclose` command, which closes the current tab page no matter how many windows it contains.
 
-if we want to close all tab pages except for the current one, we can use the :tabonly command.
+if we want to close all tab pages except for the current one, we can use the `:tabonly` command.
 
-Tabs are numbered starting from 1. We can switch between tabs with the {N}gt command
+Tabs are numbered starting from 1. We can switch between tabs with the `{N}gt` command
 
-if the number is omitted, Vim advances to the next tab. The gT command does the same but in reverse.
+if the number is omitted, Vim advances to the next tab. The `gT` command does the same but in reverse.
 
     <http://vimcasts.org/episodes/how-to-use-tabs/>
 
 
-<https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/>  
-<https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim/>  
+* <https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/>
+* <https://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim/>
 
 If you notice that you have to make the same small change in a handful of places, you can attempt to compose your changes in such a way that they can be repeated with the dot command.
 
@@ -435,23 +435,20 @@ unchanged until you write the buffer to the file.
 
 What's the quickest way to delete the entire foo method, given your cursor position:
 
-```
-def foo
-  bar_
-end
-```
+    def foo
+      bar_
+    end
 
 `dap` gets it done in three keystrokes.
-`d` - delete (note: the delete command waits for a subsequent motion or text object)
-`ap` - a paragraph (a sequence of lines surrounded by a newline)
-`:h ap` describes the "a paragraph" text object.
+`d` - delete _(note: the delete command waits for a subsequent motion or text object)_
+`ap` - a paragraph _(a sequence of lines surrounded by a newline)_
+`:h ap` describes the _"a paragraph"_ text object.
 
----
-
+<hr>
 
 What's the quickest way to delete a sentence when your cursor is in the middle of it
 
 `das` does the trick.
 `d` - delete
 `as` - a sentence
-`:h as` describes the "a sentence" text object.
+`:h as` describes the _"a sentence"_ text object.
