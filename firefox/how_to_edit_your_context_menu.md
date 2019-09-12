@@ -84,6 +84,8 @@ Like so
 
 2. This example will put the search of selected text on top of the context menu.
 
+Demo:
+
     #context-searchselect {
         -moz-box-ordinal-group: 0 !important;
     }
