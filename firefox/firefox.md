@@ -32,11 +32,11 @@
 
 ### CSS Coverage
 
-[CSS Coverage](https://developer.mozilla.org/en-US/docs/Tools/CSS_Coverage)
+<https://developer.mozilla.org/en-US/docs/Tools/CSS_Coverage>
 
 > CSS Coverage is a set of commands for Firefox Developer tools that help untangle messy CSS by pointing out the CSS that isn't "used", and indicating the parts of your CSS files that are needed for initial rendering.
 
-`csscoverage` `start` `stop` `report`
+    csscoverage start stop report
 
 ## Crash reporter
 

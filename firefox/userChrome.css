@@ -1,5 +1,3 @@
-
-
 .CodeMirror,
 .devtools-monospace {
     font-family: "Hack", "melno", "monaco", monospace !important;
@@ -10,5 +8,5 @@
 #context-navigation,
 #context-sep-navigation,
 #onepassword4_agilebits_com-menuitem-1 {
-    display: none !important
+    display: none !important;
 }
