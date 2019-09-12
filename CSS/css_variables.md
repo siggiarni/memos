@@ -2,60 +2,52 @@
 
 ## Global var
 
-```
-:root {
-  --font-size: 20px
-}
+    :root {
+      --font-size: 20px
+    }
 
-.test {
-  font-size: var(--font-size)
-}
-```
+    .test {
+      font-size: var(--font-size)
+    }
+
 
 ## Local var
 
-```
-.alert {
-  --alert-color: #ff6f69;
-}
+    .alert {
+      --alert-color: #ff6f69;
+    }
 
-.alert p {
-  color: var(--alert-color);
-  border: 1px solid var(--alert-color);
-}
-```
+    .alert p {
+      color: var(--alert-color);
+      border: 1px solid var(--alert-color);
+    }
 
-## resp var
 
-```
-:root {
-  --main-font-size: 16px;
-}
-media all and (max-width: 600px) {
-  :root {
-    --main-font-size: 12px;
-  }
-}
-```
+## Responsive var
+
+    :root {
+      --main-font-size: 16px;
+    }
+    media all and (max-width: 600px) {
+      :root {
+        --main-font-size: 12px;
+      }
+    }
+
 
 ## js
 
-```
-var root = document.querySelector(':root');
-var rootStyles = getComputedStyle(root);
-var mainColor = rootStyles.getPropertyValue('--main-color');
-console.log(mainColor); 
---> '#ffeead'
-```
+    var root = document.querySelector(':root');
+    var rootStyles = getComputedStyle(root);
+    var mainColor = rootStyles.getPropertyValue('--main-color');
+    console.log(mainColor);
+    --> '#ffeead'
 
 Update var using:
-```
-root.style.setProperty('--main-color', '#88d8b0')
-```
 
+    root.style.setProperty('--main-color', '#88d8b0')
 
-If you want it to be available globally, simply define it on the :root pseudo class.
-
+If you want it to be available globally, simply define it on the `:root` pseudo class.
 
 You can also create local variables, which are accessible only to the element it’s declared at and to its children.
 
@@ -71,14 +63,13 @@ unlike variables from CSS preprocessors, CSS Variables are actually a part of th
 
 Custom properties are ordinary properties, so they can be declared on any element.
 
-a CSS variable is any “property” whose name begins with two dashes.
+a CSS variable is any _“property”_ whose name begins with two dashes.
 
-CSS variables are resolved with the normal inheritance and cascade rules. 
+CSS variables are resolved with the normal inheritance and cascade rules.
 
-CSS variables can be made conditional with @media and other conditional rules. 
+CSS variables can be made conditional with `@media` and other conditional rules.
 
 CSS variables can be used in HTML’s style attribute.
-
 
 <hr>
 
@@ -86,22 +77,17 @@ Another side-effect of the variables being scoped to an element is that they can
 
 <hr>
 
-
-
-
-
-If you reassign a custom property’s value, the browser will recalculate all variables and calc() expressions where it’s applied.
+If you reassign a custom property’s value, the browser will recalculate all variables and `calc()` expressions where it’s applied.
 
 CSS custom properties are aware of the DOM’s structure and are dynamic.
 
 * <https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855>
 * <https://medium.freecodecamp.org/learn-css-variables-in-5-minutes-80cf63b4025d>
 
-
 <hr>
 
-[https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
+<https://www.w3.org/TR/css-variables-1/>
 
-The main reason that :root is suggested is because CSS isn’t only used to style HTML documents. It is also used for XML and SVG files.
+The main reason that `:root` is suggested is because CSS isn’t only used to style HTML documents. It is also used for XML and SVG files.
 
-In the case of XML and SVG files, :root isn’t selecting the html element, but rather their root (such as the svg tag in an SVG file). 
+In the case of XML and SVG files, `:root` isn’t selecting the html element, but rather their root _(such as the svg tag in an SVG file)_.

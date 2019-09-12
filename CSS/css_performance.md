@@ -2,7 +2,6 @@
 
 <https://csswizardry.com/2018/11/css-and-network-performance/>
 
-
 1. A browser can’t render a page until it has built the Render Tree.
 2. The Render Tree is the combined result of the DOM and the CSSOM.
 3. The DOM is HTML plus any blocking JavaScript that needs to act upon it.
@@ -15,6 +14,6 @@ If you are able, one of the most effective ways to cut down the time to Start Re
 
 A browser will not execute a `<script>` if there is any currently-in flight CSS.
 
-1. Split a single blocking CSS file into respective media query files. 
-2. Don't place `<link rel="stylesheet" />` before async snippets. 
+1. Split a single blocking CSS file into respective media query files.
+2. Don't place `<link rel="stylesheet" />` before async snippets.
 3. Place `<link rel="stylesheet" />` in <body>.

@@ -13,16 +13,16 @@ Stacking contexts — whether local or root — follow a set of rules that deter
 
 Two elements with the same stack level are layered based on their source order. Successive elements stack on top of their predecessors.
 
-[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+<https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context>
 
-[https://tiffanybbrown.com/2015/09/css-stacking-contexts-wtf/index.html](https://tiffanybbrown.com/2015/09/css-stacking-contexts-wtf/index.html)
+<https://tiffanybbrown.com/2015/09/css-stacking-contexts-wtf/index.html>
 
-[https://drafts.csswg.org/css2/zindex.html](https://drafts.csswg.org/css2/zindex.html)
+<https://drafts.csswg.org/css2/zindex.html>
 
-[https://philipwalton.com/articles/what-no-one-told-you-about-z-index/](https://philipwalton.com/articles/what-no-one-told-you-about-z-index/)
+<https://philipwalton.com/articles/what-no-one-told-you-about-z-index/>
 
 For CSS, setting `isolation` to `isolate` will turn the element into a stacking context.
 
 The `isolation` CSS property determines whether an element must create a new stacking context.
 
-[https://developer.mozilla.org/en-US/docs/Web/CSS/isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation)
+<https://developer.mozilla.org/en-US/docs/Web/CSS/isolation>
