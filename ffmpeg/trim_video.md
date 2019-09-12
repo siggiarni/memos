@@ -11,14 +11,14 @@
 
 This will cut out the section from about 1h19min to 2h18min losslessly, and will only take a few seconds to run.
 
-	-i
+`-i`
 
-	-ss
+`-ss`
 
-	-to
+`-to`
 
-	-c:v
+`-c:v`
 
-	-c:a
+`-c:a`
 
-	-copy
+`-copy`

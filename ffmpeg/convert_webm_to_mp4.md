@@ -2,7 +2,7 @@
 
 	ffmpeg -i video.webm -movflags faststart -profile:v high -level 4.2 video.mp4
 
-Scaled version
+## Scaled version
 
 	ffmpeg -i video.webm -movflags faststart -profile:v high -level 4.2 -vf "scale=iw/2:ih/2" video.mp4
 

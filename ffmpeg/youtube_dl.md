@@ -1,6 +1,9 @@
 # youtube-dl
 
-	youtube-dl -c -f best --batch-file batchlist.txt
+## Download using a batch list
 
-	youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 <video URL>
+youtube-dl -c -f best --batch-file batchlist.txt
 
+## Download MP3 version
+
+youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 <video URL>
