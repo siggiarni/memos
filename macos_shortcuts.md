@@ -1,5 +1,7 @@
 # MacOS keyboard shortcuts
 
+## Working with text
+
 | Shortcut | Action |
 |----------|--------|
 | `⌃a` | Go to start of a line |
@@ -11,3 +13,4 @@
 | `⌃b` | Back one char |
 | `⌃f` | Forward one char |
 | `⌃t` | Swap the left and right characters adjacent to cursor |
+|`⇧⌥⌘v` | Paste text without any formatting |
