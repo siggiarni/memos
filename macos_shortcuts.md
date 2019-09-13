@@ -14,3 +14,11 @@
 | `⌃f` | Forward one char |
 | `⌃t` | Swap the left and right characters adjacent to cursor |
 |`⇧⌥⌘v` | Paste text without any formatting |
+
+## Search
+
+| Shortcut | Action |
+|----------|--------|
+| `⌘e` | Put the selected text on the find clipboard |
+| `⌘g` | Search for the selected text |
+| `⌘⇧/` | Brings up help search |
