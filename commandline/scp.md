@@ -2,7 +2,7 @@
 
 ## Copy all from remote to local files with white space
 
-	scp user@server:"path/to\ folder/* .
+	scp user@server:"path/to\ folder/*" .
 
 ## Copy all from local to remove
 
