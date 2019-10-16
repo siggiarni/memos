@@ -1,6 +1,6 @@
 # MS Code
 
-`⌘B` Open sidebar.
+`⌘B` Open sidebar.  
 `⇧⌘E` Explorer.
 `⌘↓` Open file in Explorer.
 `⌃G` Go to line.
