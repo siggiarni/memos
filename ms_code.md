@@ -14,12 +14,12 @@
 `⌘E` Find with selection  
 `⌘F3` Find next selection  
 
-`⌥↑↓` Move line
-`⇧⌥↓` Duplicate line
-`⇧⌘K` Remove line
-`⌘K M` Change Language mode
-`⇧⌘M` Problems log
-`⌥Z` Word wrap toggle
+`⌥↑↓` Move line  
+`⇧⌥↓` Duplicate line  
+`⇧⌘K` Remove line  
+`⌘K M` Change Language mode  
+`⇧⌘M` Problems log  
+`⌥Z` Word wrap toggle  
 
 `⇧⌘O` Go to symbol in file
 
