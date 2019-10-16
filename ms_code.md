@@ -91,6 +91,17 @@ JS symbols is a variable.
 
 3 Set font size.
 
+## Add clear terminal shortcut
+
+1 Go to settings
+2 Look for
+
+`workbench.action.terminal`
+
+3 add `workbench.action.terminal.clear`
+4 Go to Keyboard Shortcuts
+5 Find `workbench.action.terminal.clear` add `Ctrl` + `k` as a shortcut.
+
 ## Turn off color dectations
 
 1 Go to settings
