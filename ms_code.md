@@ -1,7 +1,7 @@
 # MS Code
 
 `⌘B` Open sidebar.  
-`⇧⌘E` Explorer.
+`⇧⌘E` Explorer.  
 `⌘↓` Open file in Explorer.
 `⌃G` Go to line.
 `⌃`` Open terminal
