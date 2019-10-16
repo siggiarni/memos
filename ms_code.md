@@ -2,17 +2,17 @@
 
 `⌘B` Open sidebar.  
 `⇧⌘E` Explorer.  
-`⌘↓` Open file in Explorer.
-`⌃G` Go to line.
-`⌃`` Open terminal
+`⌘↓` Open file in Explorer.  
+`⌃G` Go to line.  
+`⌃`` Open terminal  
 
 
 ## Editor
 
-`⌘D` Select word
-`⇧⌘L` Select all occurrences of find math
-`⌘E` Find with selection
-`⌘F3` Find next selection
+`⌘D` Select word  
+`⇧⌘L` Select all occurrences of find math  
+`⌘E` Find with selection  
+`⌘F3` Find next selection  
 
 `⌥↑↓` Move line
 `⇧⌥↓` Duplicate line
