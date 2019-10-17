@@ -21,35 +21,35 @@
 `⇧⌘M` Problems log  
 `⌥Z` Word wrap toggle  
 
-`⇧⌘O` Go to symbol in file
+`⇧⌘O` Go to symbol in file  
 
-`⌘K ⌘←` View: Focus Left Editor Group
-`⌘K ⌘→` View: Focus Right Editor Group
+`⌘K ⌘←` View: Focus Left Editor Group  
+`⌘K ⌘→` View: Focus Right Editor Group  
 
-`⌘K ←` View: Move Editor Group Right
-`⌘K →` View: Move Editor Group Left
+`⌘K ←` View: Move Editor Group Right  
+`⌘K →` View: Move Editor Group Left  
 
-`⌥⌘→` Next Editor
-`⌥⌘←` Previous Editor
-`⌃⇥` Next used edtior in Group
+`⌥⌘→` Next Editor  
+`⌥⌘←` Previous Editor  
+`⌃⇥` Next used edtior in Group  
 
 
 ## Expand region
 
-`⌃⌥↑` Expand selection
-`⌃⌥↓` Undo selection
+`⌃⌥↑` Expand selection  
+`⌃⌥↓` Undo selection  
 
 
 ## Jumpy
 
-`⌘J` Toggle jumpy
+`⌘J` Toggle jumpy  
 
 
 ## Bookmarks
 
-`⌥⌘k` Add Bookmark
-`⌥⌘L` Next Bookmark
-`⌥⌘J` Previous Bookmark
+`⌥⌘k` Add Bookmark  
+`⌥⌘L` Next Bookmark  
+`⌥⌘J` Previous Bookmark  
 
 
 ## Misc
@@ -70,43 +70,43 @@
 
 ## Symbols
 
-CSS symbol is a selector.
-JS symbols is a variable.
+CSS symbol is a selector.  
+JS symbols is a variable.  
 
 ## Keep files open
 
-1 Go to settings
-2 Look for
+1. Go to settings
+2. Look for
 
-	workbench.editor.enablePreviewFromQuickOpen
+	`workbench.editor.enablePreviewFromQuickOpen`
 
-3 Uncheck box.
+3. Uncheck box.
 
 ## Terminal font size
 
-1 Go to settings
-2 Look for
+1. Go to settings
+2. Look for
 
-`terminal.integrated.fontSize`
+	`terminal.integrated.fontSize`
 
-3 Set font size.
+3. Set font size.
 
 ## Add clear terminal shortcut
 
-1 Go to settings
-2 Look for
+1. Go to settings
+2. Look for
 
-`workbench.action.terminal`
+	`workbench.action.terminal`
 
-3 add `workbench.action.terminal.clear`
-4 Go to Keyboard Shortcuts
-5 Find `workbench.action.terminal.clear` add `Ctrl` + `k` as a shortcut.
+3. add `workbench.action.terminal.clear`
+4. Go to Keyboard Shortcuts
+5. Find `workbench.action.terminal.clear` add `Ctrl` + `k` as a shortcut.
 
 ## Turn off color dectations
 
-1 Go to settings
-2 Look for
+1. Go to settings
+2. Look for
 	
-	editor.colorDecorators
+	`editor.colorDecorators`
 	
-3 Uncheck box
+3. Uncheck box
