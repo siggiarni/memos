@@ -22,18 +22,23 @@ Create a session called _fnord_.
 
 	tmux kill-session -t session-name
 
-
 ### Create a window in a current session
 
-	Prefix c
+	Prefix-a c
 
 ## Windows
 
-To create a window in a current session, press Prefix c.
+### Help window
+
+        h
 
 ### Rename window
 
 	Prefix-a ,
+
+### Kill window
+
+        Prefix-a x
 
 ## Custom commands
 
@@ -45,7 +50,10 @@ To create a window in a current session, press Prefix c.
 
 Move between panes
 
-	prefix-a h,j,k,l
+	prefix-a h = Move left
+        prefix-a j = Move up
+        prefix-a k = Move down
+        prefix-a l = Move right
 
 Resize panes
 
