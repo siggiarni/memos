@@ -1,10 +1,10 @@
 # Scroll jank
 
-* <https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/>
-* <https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/>
-* <https://www.html5rocks.com/en/tutorials/speed/layers/>
-* <https://www.html5rocks.com/en/tutorials/speed/scrolling/>
-* <https://developers.google.com/web/fundamentals/performance/rendering/>
+- <https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/>
+- <https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/>
+- <https://www.html5rocks.com/en/tutorials/speed/layers/>
+- <https://www.html5rocks.com/en/tutorials/speed/scrolling/>
+- <https://developers.google.com/web/fundamentals/performance/rendering/>
 
 when elements repaint, the dirty rectangle calculation is done per layer. So if an element is on its own layer then it won’t affect anything else. If you promote a fixed header – say – then when content appears at the bottom of the page there is only the new content that needs to be painted. Without the promotion the header needs to be repainted at the top of the page. You might wonder why we don’t automatically promote fixed position elements. The answer is: we do for high DPI screens, but we don’t for low DPI because we lose sub-pixel antialiasing on text, and that’s not something we want to by default. On high DPI screens you can’t tell, so it’s safe there.
 

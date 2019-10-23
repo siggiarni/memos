@@ -6,7 +6,6 @@
 - <https://www.keycdn.com/blog/resource-hints>
 - <https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/>
 
-
 * **Preload** resources you have high-confidence will be used in the current page.
 * **Prefetch** resources likely to be used for future navigations across multiple navigation boundaries.
 
@@ -22,10 +21,8 @@ The preconnect link relation type is used to indicate an origin that will be use
 
 Each open socket incurs costs both on the client and server, and you want to avoid opening sockets that might go unused.
 
-
 - <https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/>
 - <https://caniuse.com/#search=preconnect>
-
 
 ## DNS prefetch
 
@@ -42,7 +39,6 @@ We suggest using this on things such as Google fonts, Google Analytics, and your
 - <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control>
 - <https://caniuse.com/#search=dns-prefetch>
 
-
 ## Preload
 
     <link rel="preload" href="https://example.com/fonts/font.woff" as="font" crossorigin>
@@ -56,13 +52,11 @@ Allows the browser to set resource priority therefore allowing web developers to
 - <https://www.w3.org/TR/preload/>
 - <https://caniuse.com/#feat=link-rel-preload>
 
-
 ### AS attribute
 
 When the resource is declared via the Link header field, the resource's as attribute is defined via the as link-extension target attribute.
 
 - <https://www.w3.org/TR/preload/#as-attribute>
-
 
 ## Prefetch
 
@@ -78,7 +72,6 @@ There are three different types of prefetching: link, DNS, and prerendering.
 
 - <https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ>
 - <https://caniuse.com/#search=prefetch>
-
 
 ## Prerendering
 
