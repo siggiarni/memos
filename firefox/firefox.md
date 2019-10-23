@@ -43,3 +43,10 @@
 Go to `about:crashes` and click `Clear All`.
 
 <https://www.reddit.com/r/firefox/comments/a95hkc/tip_clear_your_pending_crash_reports_to_free_disk/>
+
+
+## Restart Firefox
+
+Press `Ctrl` + `shift` + `j` to open browser console then press `Ctrl` + `alt` + `r` to restart.
+
+Open `about:profiles` click restart normally button.
