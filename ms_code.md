@@ -1,55 +1,55 @@
 # MS Code
 
-`⌘B` Open sidebar.  
-`⇧⌘E` Explorer.  
-`⌘↓` Open file in Explorer.  
-`⌃G` Go to line.  
-`⌃`` Open terminal  
+`⌘B` Open sidebar.
+`⇧⌘E` Explorer.
+`⌘↓` Open file in Explorer.
+`⌃G` Go to line.
+`⌃`` Open terminal
 
 
 ## Editor
 
-`⌘D` Select word  
-`⇧⌘L` Select all occurrences of find math  
-`⌘E` Find with selection  
-`⌘F3` Find next selection  
+`⌘D` Select word
+`⇧⌘L` Select all occurrences of find math
+`⌘E` Find with selection
+`⌘F3` Find next selection
 
-`⌥↑↓` Move line  
-`⇧⌥↓` Duplicate line  
-`⇧⌘K` Remove line  
-`⌘K M` Change Language mode  
-`⇧⌘M` Problems log  
-`⌥Z` Word wrap toggle  
+`⌥↑↓` Move line
+`⇧⌥↓` Duplicate line
+`⇧⌘K` Remove line
+`⌘K M` Change Language mode
+`⇧⌘M` Problems log
+`⌥Z` Word wrap toggle
 
-`⇧⌘O` Go to symbol in file  
+`⇧⌘O` Go to symbol in file
 
-`⌘K ⌘←` View: Focus Left Editor Group  
-`⌘K ⌘→` View: Focus Right Editor Group  
+`⌘K ⌘←` View: Focus Left Editor Group
+`⌘K ⌘→` View: Focus Right Editor Group
 
-`⌘K ←` View: Move Editor Group Right  
-`⌘K →` View: Move Editor Group Left  
+`⌘K ←` View: Move Editor Group Right
+`⌘K →` View: Move Editor Group Left
 
-`⌥⌘→` Next Editor  
-`⌥⌘←` Previous Editor  
-`⌃⇥` Next used edtior in Group  
+`⌥⌘→` Next Editor
+`⌥⌘←` Previous Editor
+`⌃⇥` Next used edtior in Group
 
 
 ## Expand region
 
-`⌃⌥↑` Expand selection  
-`⌃⌥↓` Undo selection  
+`⌃⌥↑` Expand selection
+`⌃⌥↓` Undo selection
 
 
 ## Jumpy
 
-`⌘J` Toggle jumpy  
+`⌘J` Toggle jumpy
 
 
 ## Bookmarks
 
-`⌥⌘k` Add Bookmark  
-`⌥⌘L` Next Bookmark  
-`⌥⌘J` Previous Bookmark  
+`⌥⌘k` Add Bookmark
+`⌥⌘L` Next Bookmark
+`⌥⌘J` Previous Bookmark
 
 
 ## Misc
@@ -70,8 +70,8 @@
 
 ## Symbols
 
-CSS symbol is a selector.  
-JS symbols is a variable.  
+CSS symbol is a selector.
+JS symbols is a variable.
 
 ## Keep files open
 
@@ -106,7 +106,14 @@ JS symbols is a variable.
 
 1. Go to settings
 2. Look for
-	
+
 	`editor.colorDecorators`
-	
+
 3. Uncheck box
+
+## Add vertical guides
+
+1. Open Settings.
+2. Look for `editor.rulers`.
+3. Add `"editor.rulers": [80,120]`
+4. Add `"workbench.colorCustomizations": {"editorRuler.foreground": "#313131"}`
