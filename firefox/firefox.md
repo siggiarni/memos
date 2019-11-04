@@ -47,6 +47,7 @@ Go to `about:crashes` and click `Clear All`.
 
 ## Restart Firefox
 
-Press `Ctrl` + `shift` + `j` to open browser console then press `Ctrl` + `alt` + `r` to restart.
+1. Press <kbd>Ctrl</kbd> <kbd>shift</kbd> <kbd>j</kbd> to open browser console
+2. then press <kbd>Ctrl</kbd> <kbd>alt</kbd> <kbd>r</kbd> to restart.
 
 Open `about:profiles` click restart normally button.
