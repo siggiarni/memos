@@ -11,6 +11,11 @@
 
 To meet this requirement web compnents should at least support WCAG Level AA.
 
+
+* [WAI-ARIA exampels of design patterns and widgets](https://www.w3.org/TR/wai-aria-practices-1.1/#intro)
+* [Inclusive Components, designing inclusive web interfaces](https://inclusive-components.design/)
+
+
 ## The four principles
 
 All future NDS components should comply with the four principles of the Web Content Accessibility Guidelines.
@@ -161,3 +166,53 @@ https://www.w3.org/TR/WCAG21/#parsing
 https://www.w3.org/TR/WCAG21/#name-role-value
 
 > For all user interface components, the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+
+
+## Level AA requirements
+
+### Perceivable
+
+#### Captions
+https://www.w3.org/TR/WCAG21/#captions-live
+
+#### Audio description (pre-recorded)
+https://www.w3.org/TR/WCAG21/#audio-description-prerecorded
+
+
+### Operable
+
+#### Multiple ways
+https://www.w3.org/TR/WCAG21/#multiple-ways
+
+#### Headings and labels
+https://www.w3.org/TR/WCAG21/#headings-and-labels
+
+#### Focus visible
+https://www.w3.org/TR/WCAG21/#focus-visible
+
+
+### Understandable
+
+#### Language of parts
+https://www.w3.org/TR/WCAG21/#language-of-parts
+
+#### Consistent navigation
+https://www.w3.org/TR/WCAG21/#consistent-navigation
+
+#### Consistent identification
+https://www.w3.org/TR/WCAG21/#consistent-identification
+
+#### Labels or instructions
+https://www.w3.org/TR/WCAG21/#labels-or-instructions
+
+### Error suggestion
+https://www.w3.org/TR/WCAG21/#error-suggestion
+
+### Error prevention (legal, financial, data)
+https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data
+
+
+### Robust
+
+### Status messages
+https://www.w3.org/TR/WCAG21/#status-messages
