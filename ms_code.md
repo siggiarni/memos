@@ -68,6 +68,18 @@
 <https://medium.com/riow/vscode-show-full-path-in-title-bar-b0cb731b330>
 
 
+### Breadcrumbs navigation
+
+Add to settings.json
+
+	"breadcrumbs.enabled": true,
+
+<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>.</kbd> Focus on breadcrumbs
+
+Navigate breadcrumbs using arrow keys <kbd>←</kbd> <kbd>→</kbd>
+
+
+
 ## Symbols
 
 CSS symbol is a selector.
