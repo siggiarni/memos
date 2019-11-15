@@ -184,35 +184,51 @@ https://www.w3.org/TR/WCAG21/#audio-description-prerecorded
 #### Multiple ways
 https://www.w3.org/TR/WCAG21/#multiple-ways
 
-#### Headings and labels
+#### Headings and labels ❗
 https://www.w3.org/TR/WCAG21/#headings-and-labels
 
-#### Focus visible
+> Headings and labels describe topic or purpose.
+
+#### Focus visible ❗
 https://www.w3.org/TR/WCAG21/#focus-visible
+
+> Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
 
 
 ### Understandable
 
-#### Language of parts
+#### 3.1.2 Language of parts
 https://www.w3.org/TR/WCAG21/#language-of-parts
 
-#### Consistent navigation
+#### 3.2.3 Consistent navigation ❗
 https://www.w3.org/TR/WCAG21/#consistent-navigation
+
+> Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
 
 #### Consistent identification
 https://www.w3.org/TR/WCAG21/#consistent-identification
 
-#### Labels or instructions
+#### 3.3.2 Labels or instructions ❗
 https://www.w3.org/TR/WCAG21/#labels-or-instructions
 
-### Error suggestion
+> Labels or instructions are provided when content requires user input.
+
+### 3.3.3 Error suggestion ❗
 https://www.w3.org/TR/WCAG21/#error-suggestion
 
-### Error prevention (legal, financial, data)
+> If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user
+
+### Error prevention (legal, financial, data) ❗
 https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data
 
+> For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+> * **Reversible**: Submissions are reversible.
+> * **Checked**: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+> * **Confirmed**: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
 
 ### Robust
 
-### Status messages
+### 4.1.3 Status messages
 https://www.w3.org/TR/WCAG21/#status-messages
+
+> In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.
