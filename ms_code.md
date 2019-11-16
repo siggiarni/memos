@@ -76,7 +76,9 @@
 
 ## Misc
 
-### Command panel
+### Reload window
+
+On OSX VSCode isn't using CMD+R as a keybinding. I found it useful to set this up to reload the window. Click Code > Preferences > Keyboard Shortcuts (or press CMD+K+S) search for 'reload window' and hover over and click the plus then press CMD R ENTER. Now you can reload the window simply by pressing CMD+R.
 
 	>Reload Window
 
