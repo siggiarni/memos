@@ -42,13 +42,6 @@
 |<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>left</kbd>				||Previous Editor|
 |<kbd>⌃</kbd> <kbd>tab</kbd>							||Next used editor in Group|
 
-
-|Mac|Win|Command|
-|---|---|---|
-|<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↑</kbd>	||Expand selection|
-|<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>	||Undo selection|
-
-
 ## Breadcrumbs
 
 |Mac|Win|Command|
