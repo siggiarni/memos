@@ -1,25 +1,36 @@
 # MS Code
 
-`⌘B` Open sidebar.
-`⇧⌘E` Explorer.
-`⌘↓` Open file in Explorer.
-`⌃G` Go to line.
-`⌃`` Open terminal
+<kbd></kbd>
 
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>⌘</kbd> <kbd>B</kbd>				||Open sidebar|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>E</kbd>	||Explorer|
+|<kbd>⌘</kbd> <kbd>↓</kbd>				||Open file in Explorer|
+|<kbd>^</kbd> <kbd>G</kbd>				||Go to line|
+|<kbd>^</kbd> <kbd>`</kbd>				||Open terminal|
 
 ## Editor
 
-`⌘D` Select word
-`⇧⌘L` Select all occurrences of find math
-`⌘E` Find with selection
-`⌘F3` Find next selection
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>cmd</kbd> <kbd>D</kbd>||Select word|
+|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>L</kbd>||Select all occurrences of find match|
+|<kbd>cmd</kbd> <kbd>E</kbd>||Find with selection|
+|<kbd>cmd</kbd> <kbd>F3</kbd>||Find next selection|
 
-`⌥↑↓` Move line
-`⇧⌥↓` Duplicate line
-`⇧⌘K` Remove line
-`⌘K M` Change Language mode
-`⇧⌘M` Problems log
-`⌥Z` Word wrap toggle
+
+<kbd></kbd>
+
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>option</kbd> <kbd>Up arrow</kbd> <kbd>down arrow</kbd>||Move line|
+|<kbd>shift</kbd> <kbd>option</kbd> <kbd>down arrow</kbd>	||Duplicate line|
+|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>K</kbd>				||Remove line|
+|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>M</kbd>					||Change lang mode|
+|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>M</kbd>				||Problems log|
+|<kbd>option</kbd> <kbd>Z</kbd>								||Word wrap toggle|
+
 
 `⇧⌘O` Go to symbol in file
 
