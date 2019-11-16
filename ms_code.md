@@ -5,71 +5,71 @@
 |<kbd>⌘</kbd> <kbd>B</kbd>				||Open sidebar|
 |<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>E</kbd>	||Explorer|
 |<kbd>⌘</kbd> <kbd>↓</kbd>				||Open file in Explorer|
-|<kbd>^</kbd> <kbd>G</kbd>				||Go to line|
-|<kbd>^</kbd> <kbd>`</kbd>				||Open terminal|
+|<kbd>⌃</kbd> <kbd>G</kbd>				||Go to line|
+|<kbd>⌃</kbd> <kbd>`</kbd>				||Open terminal|
 
 ## Editor
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>cmd</kbd> <kbd>D</kbd>					||Select word|
-|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>L</kbd>	||Select all occurrences of find match|
-|<kbd>cmd</kbd> <kbd>E</kbd>					||Find with selection|
-|<kbd>cmd</kbd> <kbd>F3</kbd>					||Find next selection|
+|<kbd>⌘</kbd> <kbd>D</kbd>				||Select word|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>L</kbd>	||Select all occurrences of find match|
+|<kbd>⌘</kbd> <kbd>E</kbd>				||Find with selection|
+|<kbd>⌘</kbd> <kbd>F3</kbd>				||Find next selection|
 
 ---
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>option</kbd> <kbd>Up arrow</kbd> <kbd>down arrow</kbd>||Move line|
-|<kbd>shift</kbd> <kbd>option</kbd> <kbd>down arrow</kbd>	||Duplicate line|
-|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>K</kbd>				||Remove line|
-|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>M</kbd>					||Change lang mode|
-|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>M</kbd>				||Problems log|
-|<kbd>option</kbd> <kbd>Z</kbd>								||Word wrap toggle|
+|<kbd>⌥</kbd> <kbd>↑ arrow</kbd> <kbd>↓ arrow</kbd>	||Move line|
+|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓ arrow</kbd>		||D↑licate line|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>K</kbd>				||Remove line|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>			||Change lang mode|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>				||Problems log|
+|<kbd>⌥</kbd> <kbd>Z</kbd>							||Word wrap toggle|
 
 ---
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>O</kbd>						||Got to symbol in file|
-|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>cmd</kbd> <kbd>left arrow</kbd>	||Focus left Editor Group|
-|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>cmd</kbd> <kbd>right arrow</kbd>||Focus right Editor Group|
-|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>left arrow</kbd>				||Move Editor Group Right|
-|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>right arrow</kbd>				||Move Editor Group Left|
-|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>right</kbd>					||Next Editor|
-|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>left</kbd>					||Previous Editor|
-|<kbd>ctrl</kbd> <kbd>tab</kbd>										||Next used editor in Group|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>O</kbd>					||Got to symbol in file|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>⌘</kbd> <kbd>←</kbd>	||Focus left Editor Gro↑|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>⌘</kbd> <kbd>→</kbd>	||Focus right Editor Gro↑|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>←</kbd>				||Move Editor Gro↑ Right|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>→</kbd>				||Move Editor Gro↑ Left|
+|<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>right</kbd>				||Next Editor|
+|<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>left</kbd>				||Previous Editor|
+|<kbd>⌃</kbd> <kbd>tab</kbd>							||Next used editor in Gro↑|
 
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>up</kbd>	||Expand selection|
-|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>down</kbd>	||Undo selection|
+|<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↑</kbd>	||Expand selection|
+|<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>	||Undo selection|
 
 
 ## Expand region
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>up</kbd>	||Expand selection|
-|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>down</kbd>	||Undo selection|
+|<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↑</kbd>	||Expand selection|
+|<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>	||Undo selection|
 
 
 ## Jumpy
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>cmd</kbd> <kbd>J</kbd>||Toggle jumpy|
+|<kbd>⌘</kbd> <kbd>J</kbd>||Toggle jumpy|
 
 
 ## Bookmarks
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>K</kbd>||Add Bookmark|
-|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>L</kbd>||Next Bookmark|
-|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>J</kbd>||Previous Bookmark|
+|<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>K</kbd>||Add Bookmark|
+|<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>L</kbd>||Next Bookmark|
+|<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>J</kbd>||Previous Bookmark|
 
 
 ## Misc
@@ -132,7 +132,7 @@ JS symbols is a variable.
 
 3. add `workbench.action.terminal.clear`
 4. Go to Keyboard Shortcuts
-5. Find `workbench.action.terminal.clear` add `Ctrl` + `k` as a shortcut.
+5. Find `workbench.action.terminal.clear` add `⌃` + `k` as a shortcut.
 
 ## Turn off color dectations
 
