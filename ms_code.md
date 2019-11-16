@@ -1,7 +1,5 @@
 # MS Code
 
-<kbd></kbd>
-
 |Mac|Win|Command|
 |---|---|---|
 |<kbd>⌘</kbd> <kbd>B</kbd>				||Open sidebar|
@@ -14,13 +12,12 @@
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>cmd</kbd> <kbd>D</kbd>||Select word|
-|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>L</kbd>||Select all occurrences of find match|
-|<kbd>cmd</kbd> <kbd>E</kbd>||Find with selection|
-|<kbd>cmd</kbd> <kbd>F3</kbd>||Find next selection|
+|<kbd>cmd</kbd> <kbd>D</kbd>					||Select word|
+|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>L</kbd>	||Select all occurrences of find match|
+|<kbd>cmd</kbd> <kbd>E</kbd>					||Find with selection|
+|<kbd>cmd</kbd> <kbd>F3</kbd>					||Find next selection|
 
-
-<kbd></kbd>
+---
 
 |Mac|Win|Command|
 |---|---|---|
@@ -31,36 +28,48 @@
 |<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>M</kbd>				||Problems log|
 |<kbd>option</kbd> <kbd>Z</kbd>								||Word wrap toggle|
 
+---
 
-`⇧⌘O` Go to symbol in file
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>shift</kbd> <kbd>cmd</kbd> <kbd>O</kbd>						||Got to symbol in file|
+|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>cmd</kbd> <kbd>left arrow</kbd>	||Focus left Editor Group|
+|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>cmd</kbd> <kbd>right arrow</kbd>||Focus right Editor Group|
+|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>left arrow</kbd>				||Move Editor Group Right|
+|<kbd>cmd</kbd> <kbd>K</kbd> - <kbd>right arrow</kbd>				||Move Editor Group Left|
+|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>right</kbd>					||Next Editor|
+|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>left</kbd>					||Previous Editor|
+|<kbd>ctrl</kbd> <kbd>tab</kbd>										||Next used editor in Group|
 
-`⌘K ⌘←` View: Focus Left Editor Group
-`⌘K ⌘→` View: Focus Right Editor Group
 
-`⌘K ←` View: Move Editor Group Right
-`⌘K →` View: Move Editor Group Left
-
-`⌥⌘→` Next Editor
-`⌥⌘←` Previous Editor
-`⌃⇥` Next used edtior in Group
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>up</kbd>	||Expand selection|
+|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>down</kbd>	||Undo selection|
 
 
 ## Expand region
 
-`⌃⌥↑` Expand selection
-`⌃⌥↓` Undo selection
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>up</kbd>	||Expand selection|
+|<kbd>ctrl</kbd> <kbd>option</kbd> <kbd>down</kbd>	||Undo selection|
 
 
 ## Jumpy
 
-`⌘J` Toggle jumpy
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>cmd</kbd> <kbd>J</kbd>||Toggle jumpy|
 
 
 ## Bookmarks
 
-`⌥⌘k` Add Bookmark
-`⌥⌘L` Next Bookmark
-`⌥⌘J` Previous Bookmark
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>K</kbd>||Add Bookmark|
+|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>L</kbd>||Next Bookmark|
+|<kbd>option</kbd> <kbd>cmd</kbd> <kbd>J</kbd>||Previous Bookmark|
 
 
 ## Misc
