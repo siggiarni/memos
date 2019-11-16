@@ -17,35 +17,44 @@
 |<kbd>⌘</kbd> <kbd>E</kbd>				||Find with selection|
 |<kbd>⌘</kbd> <kbd>F3</kbd>				||Find next selection|
 
----
+## Selection
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>⌥</kbd> <kbd>↑ arrow</kbd> <kbd>↓ arrow</kbd>	||Move line|
-|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓ arrow</kbd>		||D↑licate line|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>K</kbd>				||Remove line|
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>			||Change lang mode|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>				||Problems log|
-|<kbd>⌥</kbd> <kbd>Z</kbd>							||Word wrap toggle|
+|<kbd>⌥</kbd> <kbd>↑</kbd> <kbd>↓</kbd>		||Move line|
+|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>		||Duplicate line|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>K</kbd>		||Remove line|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>D</kbd>		||Duplicate selection|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>	||Change lang mode|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>		||Problems log|
+|<kbd>⌥</kbd> <kbd>Z</kbd>					||Word wrap toggle|
 
----
+## Go
 
 |Mac|Win|Command|
 |---|---|---|
 |<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>O</kbd>					||Got to symbol in file|
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>⌘</kbd> <kbd>←</kbd>	||Focus left Editor Gro↑|
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>⌘</kbd> <kbd>→</kbd>	||Focus right Editor Gro↑|
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>←</kbd>				||Move Editor Gro↑ Right|
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>→</kbd>				||Move Editor Gro↑ Left|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>⌘</kbd> <kbd>←</kbd>	||Focus left Editor Group|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>⌘</kbd> <kbd>→</kbd>	||Focus right Editor Group|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>←</kbd>				||Move Editor Group Right|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>→</kbd>				||Move Editor Group Left|
 |<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>right</kbd>				||Next Editor|
 |<kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>left</kbd>				||Previous Editor|
-|<kbd>⌃</kbd> <kbd>tab</kbd>							||Next used editor in Gro↑|
+|<kbd>⌃</kbd> <kbd>tab</kbd>							||Next used editor in Group|
 
 
 |Mac|Win|Command|
 |---|---|---|
 |<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↑</kbd>	||Expand selection|
 |<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>	||Undo selection|
+
+
+## Breadcrumbs
+
+|Mac|Win|Command|
+|---|---|---|
+|<kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>.</kbd>	||Focus on breadcrumbs|
+|<kbd>←</kbd> <kbd>→</kbd>				||Navigate breadcrumbs|
 
 
 ## Expand region
@@ -93,12 +102,6 @@
 Add to settings.json
 
 	"breadcrumbs.enabled": true,
-
-<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>.</kbd> Focus on breadcrumbs
-
-Navigate breadcrumbs using arrow keys <kbd>←</kbd> <kbd>→</kbd>
-
-
 
 ## Symbols
 
