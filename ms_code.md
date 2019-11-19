@@ -27,7 +27,7 @@
 |<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>D</kbd>		||Duplicate selection|
 |<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>	||Change lang mode|
 |<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>		||Problems log|
-|<kbd>⌥</kbd> <kbd>Z</kbd>					||Word wrap toggle|
+|<kbd>⌥</kbd> <kbd>Z</kbd>					|<kbd>Alt</kbd> <kbd>Z</kbd>|Word wrap toggle|
 
 ## Go
 
