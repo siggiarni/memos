@@ -12,10 +12,10 @@
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>⌘</kbd> <kbd>D</kbd>				||Select word|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>L</kbd>	||Select all occurrences of find match|
+|<kbd>⌘</kbd> <kbd>D</kbd>				|<kbd>Ctrl</kbd> <kbd>D</kbd>|Select word|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>L</kbd>	|<kbd>⇧</kbd> <kbd>Ctrl</kbd> <kbd>L</kbd>|Select all occurrences of find match|
 |<kbd>⌘</kbd> <kbd>E</kbd>				||Find with selection|
-|<kbd>⌘</kbd> <kbd>F3</kbd>				||Find next selection|
+|<kbd>⌘</kbd> <kbd>F3</kbd>				|<kbd>Ctrl</kbd> <kbd>F3</kbd>|Find next selection|
 
 ## Selection
 
