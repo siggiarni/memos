@@ -2,32 +2,32 @@
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>⌘</kbd> <kbd>B</kbd>				|<kbd>Ctrl</kbd> <kbd>B</kbd>|Open sidebar|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>E</kbd>	|<kbd>Ctrl</kbd> <kbd>⇧</kbd> <kbd>E</kbd>|Explorer|
-|<kbd>⌘</kbd> <kbd>↓</kbd>				|<kbd>Enter</kbd>|Open file in Explorer|
-|<kbd>⌃</kbd> <kbd>G</kbd>				|<kbd>Ctrl</kbd> <kbd>G</kbd>|Go to line|
-|<kbd>⌃</kbd> <kbd>\`</kbd>				|<kbd>Ctrl</kbd> <kbd>\`</kbd>|Open terminal|
+|<kbd>⌘</kbd> <kbd>B</kbd>				|<kbd>Ctrl</kbd> <kbd>B</kbd>				|Open sidebar|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>E</kbd>	|<kbd>Ctrl</kbd> <kbd>⇧</kbd> <kbd>E</kbd>	|Explorer|
+|<kbd>⌘</kbd> <kbd>↓</kbd>				|<kbd>Enter</kbd>							|Open file in Explorer|
+|<kbd>⌃</kbd> <kbd>G</kbd>				|<kbd>Ctrl</kbd> <kbd>G</kbd>				|Go to line|
+|<kbd>⌃</kbd> <kbd>\`</kbd>				|<kbd>Ctrl</kbd> <kbd>\`</kbd>				|Open terminal|
 
 ## Editor
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>⌘</kbd> <kbd>D</kbd>				|<kbd>Ctrl</kbd> <kbd>D</kbd>|Select word|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>L</kbd>	|<kbd>⇧</kbd> <kbd>Ctrl</kbd> <kbd>L</kbd>|Select all occurrences of find match|
+|<kbd>⌘</kbd> <kbd>D</kbd>				|<kbd>Ctrl</kbd> <kbd>D</kbd>				|Select word|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>L</kbd>	|<kbd>⇧</kbd> <kbd>Ctrl</kbd> <kbd>L</kbd>	|Select all occurrences of find match|
 |<kbd>⌘</kbd> <kbd>E</kbd>				||Find with selection|
-|<kbd>⌘</kbd> <kbd>F3</kbd>				|<kbd>Ctrl</kbd> <kbd>F3</kbd>|Find next selection|
+|<kbd>⌘</kbd> <kbd>F3</kbd>				|<kbd>Ctrl</kbd> <kbd>F3</kbd>				|Find next selection|
 
 ## Selection
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>⌥</kbd> <kbd>↑</kbd> <kbd>↓</kbd>		|<kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd>	|Move line|
-|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>		|<kbd>⇧</kbd>+<kbd>Alt</kbd> / <kbd>↓</kbd>	|Duplicate line|
+|<kbd>⌥</kbd> <kbd>↑</kbd> <kbd>↓</kbd>		|<kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd>		|Move line|
+|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>		|<kbd>⇧</kbd>+<kbd>Alt</kbd> / <kbd>↓</kbd>		|Duplicate line|
 |<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>K</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd> / <kbd>K</kbd>	|Remove line|
 |<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>D</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd> / <kbd>D</kbd>	|Duplicate selection <sup>*</sup> |
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>	|<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>M</kbd>|Change Language Mode|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd>+<kbd>M</kbd>	|Problems log|
-|<kbd>⌥</kbd> <kbd>Z</kbd>					|<kbd>Alt</kbd>+<kbd>Z</kbd>				|Word wrap toggle|
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>	|<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>M</kbd>		|Change Language Mode|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd>+<kbd>M</kbd>		|Problems log|
+|<kbd>⌥</kbd> <kbd>Z</kbd>					|<kbd>Alt</kbd>+<kbd>Z</kbd>					|Word wrap toggle|
 
 <small>* Need to remap `View: Show Debug` to another shortcut.</small>
 
