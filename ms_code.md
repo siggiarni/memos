@@ -21,13 +21,15 @@
 
 |Mac|Win|Command|
 |---|---|---|
-|<kbd>⌥</kbd> <kbd>↑</kbd> <kbd>↓</kbd>		||Move line|
-|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>		||Duplicate line|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>K</kbd>		||Remove line|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>D</kbd>		||Duplicate selection|
-|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>	||Change lang mode|
-|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>		||Problems log|
-|<kbd>⌥</kbd> <kbd>Z</kbd>					|<kbd>Alt</kbd> <kbd>Z</kbd>|Word wrap toggle|
+|<kbd>⌥</kbd> <kbd>↑</kbd> <kbd>↓</kbd>		|<kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd>	|Move line|
+|<kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>↓</kbd>		|<kbd>⇧</kbd>+<kbd>Alt</kbd> / <kbd>↓</kbd>	|Duplicate line|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>K</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd> / <kbd>K</kbd>	|Remove line|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>D</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd> / <kbd>D</kbd>	|Duplicate selection <sup>*</sup> |
+|<kbd>⌘</kbd> <kbd>K</kbd> - <kbd>M</kbd>	|<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>M</kbd>|Change Language Mode|
+|<kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>M</kbd>		|<kbd>⇧</kbd>+<kbd>Ctrl</kbd>+<kbd>M</kbd>	|Problems log|
+|<kbd>⌥</kbd> <kbd>Z</kbd>					|<kbd>Alt</kbd>+<kbd>Z</kbd>				|Word wrap toggle|
+
+<small>* Need to remap `View: Show Debug` to another shortcut.</small>
 
 ## Go
 
