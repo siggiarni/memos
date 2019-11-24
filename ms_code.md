@@ -146,3 +146,7 @@ JS symbols is a variable.
 2. Look for `editor.rulers`.
 3. Add `"editor.rulers": [80,120]`
 4. Add `"workbench.colorCustomizations": {"editorRuler.foreground": "#313131"}`
+
+## Keybindings
+
+    keybindings.json
