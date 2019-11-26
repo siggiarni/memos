@@ -194,6 +194,14 @@ JS symbols is a variable.
 
 ## Extensions
 
+<pre>
+Name: Auto Rename Tag
+Id: formulahendry.auto-rename-tag
+Description: Auto rename paired HTML/XML tag
+Version: 0.1.1
+Publisher: Jun Han
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+
 Name: Better Comments
 Id: aaron-bond.better-comments
 Description: Improve your code commenting by annotating with alert, informational, TODOs, and more!
@@ -229,12 +237,40 @@ Version: 0.4.6
 Publisher: Don Jayamanne
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
 
+Name: GitLens — Git supercharged
+Id: eamodio.gitlens
+Description: Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
+Version: 10.2.0
+Publisher: Eric Amodio
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
 Name: Import Cost
 Id: wix.vscode-import-cost
 Description: Display import/require package size in the editor
 Version: 2.12.0
 Publisher: Wix
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
+
+Name: Incrementor
+Id: nmsmith89.incrementor
+Description: Advanced increment / decrement actions for just about anything!
+Version: 0.1.0
+Publisher: Neil Smith
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=nmsmith89.incrementor
+
+Name: IntelliSense for CSS class names in HTML
+Id: zignd.html-css-class-completion
+Description: CSS class name completion for the HTML class attribute based on the definitions found in your workspace.
+Version: 1.19.0
+Publisher: Zignd
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
+
+Name: Live Server
+Id: ritwickdey.liveserver
+Description: Launch a development local Server with live reload feature for static & dynamic pages
+Version: 5.6.1
+Publisher: Ritwick Dey
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 Name: Material Icon Theme
 Id: pkief.material-icon-theme
@@ -243,9 +279,17 @@ Version: 3.9.2
 Publisher: Philipp Kief
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
 
-Name: vscode-icons
-Id: vscode-icons-team.vscode-icons
-Description: Icons for Visual Studio Code
-Version: 9.6.0
-Publisher: VSCode Icons Team
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+Name: Prettier - Code formatter
+Id: esbenp.prettier-vscode
+Description: Code formatter using prettier
+Version: 3.9.0
+Publisher: Esben Petersen
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+Name: Sort lines
+Id: tyriar.sort-lines
+Description: Sorts lines of text
+Version: 1.9.0
+Publisher: Daniel Imms
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines
+</pre>
