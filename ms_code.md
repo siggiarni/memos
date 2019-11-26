@@ -150,3 +150,102 @@ JS symbols is a variable.
 ## Keybindings
 
     keybindings.json
+
+<pre><code>
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    // MacOS specific shortcuts
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.clear",
+        "when": "isMacOS"
+    },
+    // Windows specific shortcuts
+    {
+        "key": "ctrl+k k",
+        "command": "workbench.action.terminal.clear",
+        "when": "isWindows"
+    },
+    {
+        "key": "ctrl+alt+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "isWindows"
+    },
+    {
+        "key": "ctrl+alt+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "isWindows"
+    },
+    // Shared shortcuts
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "ctrl+shift+alt+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug"
+    }
+]
+</code></pre>
+
+## Extensions
+
+Name: Better Comments
+Id: aaron-bond.better-comments
+Description: Improve your code commenting by annotating with alert, informational, TODOs, and more!
+Version: 2.0.5
+Publisher: Aaron Bond
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+Name: Bookmarks
+Id: alefragnani.bookmarks
+Description: Mark lines and jump to them
+Version: 10.6.0
+Publisher: Alessandro Fragnani
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
+
+Name: Bracket Pair Colorizer 2
+Id: coenraads.bracket-pair-colorizer-2
+Description: A customizable extension for colorizing matching brackets
+Version: 0.0.28
+Publisher: CoenraadS
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+
+Name: change-case
+Id: wmaurer.change-case
+Description: Quickly change the case (camelCase, CONSTANT_CASE, snake_case, etc) of the current selection or current word
+Version: 1.0.0
+Publisher: wmaurer
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case
+
+Name: Git History
+Id: donjayamanne.githistory
+Description: View git log, file history, compare branches or commits
+Version: 0.4.6
+Publisher: Don Jayamanne
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
+
+Name: Import Cost
+Id: wix.vscode-import-cost
+Description: Display import/require package size in the editor
+Version: 2.12.0
+Publisher: Wix
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
+
+Name: Material Icon Theme
+Id: pkief.material-icon-theme
+Description: Material Design Icons for Visual Studio Code
+Version: 3.9.2
+Publisher: Philipp Kief
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+
+Name: vscode-icons
+Id: vscode-icons-team.vscode-icons
+Description: Icons for Visual Studio Code
+Version: 9.6.0
+Publisher: VSCode Icons Team
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
