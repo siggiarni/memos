@@ -10,8 +10,8 @@
 
 <pre>/sbin/</pre>
 
-- Executables used for system maintenance and/or administrative tasks.
-- The sbin in <tt>/sbin</tt> is short for <em>system binaries</em>.
+-   Executables used for system maintenance and/or administrative tasks.
+-   The sbin in <tt>/sbin</tt> is short for <em>system binaries</em>.
 
 Host-specific system-wide configuration files
 
@@ -26,7 +26,8 @@ Variable files
 <pre>/var/</pre>
 
 — Files whose content is expected to continually change during normal operation of the system.
-- Contains files to which the system writes data during the course of its operation.
+
+-   Contains files to which the system writes data during the course of its operation.
 
 ## /usr/
 
@@ -42,10 +43,9 @@ Locally installed system administration programs
 
 Environmental variables are a class of variables that tell the shell how to behave as a user works at the command line (i.e., in all-text mode) or in scripts (i.e., short programs).
 
-- [Environment variable @ Wikipedia](http://en.wikipedia.org/wiki/Environment_variable)
+-   [Environment variable @ Wikipedia](http://en.wikipedia.org/wiki/Environment_variable)
 
 _When bash starts it reads the following files every time you login. For the purposes of OS X, this means every time you open a new Terminal window._
-
 
 HÆTTI HÉR
 
@@ -91,7 +91,7 @@ You can copy the content of a folder /source to another existing folder /dest wi
 
 <pre>$ cp -a /source/. /dest/</pre>
 
--a    Same as -pPR options. Preserves structure and attributes of files but not directory structure.
+-a Same as -pPR options. Preserves structure and attributes of files but not directory structure.
 
 ### Ping á vefþjón
 
@@ -136,7 +136,7 @@ curl -I https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272
 
 ## SSH
 
-https://stackoverflow.com/questions/3710946/copying-files-across-computers-using-ssh-and-mac-os-x-terminal#3710966  
+https://stackoverflow.com/questions/3710946/copying-files-across-computers-using-ssh-and-mac-os-x-terminal#3710966
 https://garron.me/en/articles/scp.html
 
 ### Tengjast vél
@@ -180,6 +180,7 @@ Note: Hvað er -s flag-ið? Eru til fleiri flögg?
 Gott að vera í möppunni sem target-ið á að enda í.
 
 Dæmi:
+
 <pre>$ ln -s /Volumes/HDD/"Creative Cloud Files/" "Creative Cloud Files"</pre>
 
 ## Validate Filevault recovery key
@@ -194,7 +195,7 @@ Dæmi:
 
 ## Extract MP3 from MP4
 
-### Usin Constant Bitrate Encoding (CBR)g 
+### Usin Constant Bitrate Encoding (CBR)g
 
 <pre>
 ffmpeg -i video.mp4 -vn \
@@ -202,7 +203,7 @@ ffmpeg -i video.mp4 -vn \
         audio.mp3
 </pre>
 
-### Using Variable Bitrate Encoding (VBR) 
+### Using Variable Bitrate Encoding (VBR)
 
 <pre>
 ffmpeg -i video.mp4 -vn \
@@ -234,23 +235,24 @@ Find all mkv files that are in the current directory and in all sub-folders and 
 find . -type f -name "*.mkv" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -c:a libmp3lame -y "${FILE%.mkv}.mp3";' _ '{}' \;
 </pre>
 
-
 ## Force eject CD
 
     $ /usr/bin/drutil eject
     $ drutil eject
 
-
 ### Gulp
 
 To check the CLI and local version
+
 <pre>$ gulp -v</pre>
 
 To check the Installed project version run: `npm ls` and look for gulp
+
 <pre>$ npm ls</pre>
 
 Update the project specific version to 3.3.4 to solve that issue.
 From a terminal in your project folder:
+
 <pre>$ npm install gulp@3.3.4 --save</pre>
 
 ### Delete all .DS_store files
@@ -335,16 +337,15 @@ docker build -t mozjpeg .
 
 #### Using MozJPEG in Docker
 
-1. CD to the JPEG.  
+1. CD to the JPEG.
 2. Use the command below to compress.
 
 `docker run -v $PWD:/img mozjpeg sh -c "/opt/mozjpeg/bin/cjpeg -quality 80 /img/INPUT.jpg > /img/OUTPUT.jpg”`
 
 Do not change the INPUT/OUTPUT `/img/` path to the current dir you are in.
 
-For details, see:  
+For details, see:
 <https://ariya.io/2016/03/using-mozjpeg-via-docker>
-
 
 ### Check for CORS
 
@@ -366,7 +367,7 @@ curl -H "Origin: http://example.com" \
   https://www.googleapis.com/discovery/v1/apis?fields=
 </pre>
 
-If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and  `Access-Control-Allow-Headers` response headers.
+If the preflight request is successful, the response should include the `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and `Access-Control-Allow-Headers` response headers.
 
 [How can you debug a CORS request with cURL?](http://stackoverflow.com/a/12179364/7616345)
 
@@ -384,7 +385,6 @@ $ brew update
 $ brew upgrade --all
 </pre>
 
-
 ### Windows Virtual machine activation
 
 **Show current licence**
@@ -399,13 +399,12 @@ $ slmgr /dlv
 $ slmgr /rearm
 </pre>
 
-* Requires reboot.
-* Does not work on WinXP.
+-   Requires reboot.
+-   Does not work on WinXP.
 
 Find PID name
 
 ps -p [PID] -o comm=
-
 
 ## iOS Simulator
 
@@ -423,9 +422,8 @@ Remove dot-underscore files. Merges `._*` files with corresponding native files.
 $ dot_clean -mn /path/folder
 </pre>
 
-
-* `-m` Always delete dot underbar files.
-* `-n` Delete dot underbar file if there is no matching native file.
+-   `-m` Always delete dot underbar files.
+-   `-n` Delete dot underbar file if there is no matching native file.
 
 <https://ss64.com/osx/dot_clean.html>
 
@@ -433,9 +431,9 @@ $ dot_clean -mn /path/folder
 
 Preferences -> Keys -> + (add new global shortcut)
 
-* Keyboard shortcut: ⌘+k
-* Action: Send text
-* value: `clear\n`
+-   Keyboard shortcut: ⌘+k
+-   Action: Send text
+-   value: `clear\n`
 
 ## Convert mp4 to GIF
 
@@ -457,11 +455,9 @@ Preferences -> Keys -> + (add new global shortcut)
 
 `youtube-dl --write-auto-sub https://www.youtube.com/watch?v=jNQXAC9IVRw`
 
-
 ## Create 3rd party block list from log
 
 `awk -F',' '$2 != "Target Site" { print $1 }' hs.csv`
-
 
 ## Time Machine snapshots
 
@@ -473,17 +469,31 @@ Clean up snapshots
 
 `tmutil thinlocalsnapshots / 9999999999 1`
 
-
 ## Disk Usage
 
 `du -hsc /*`
 
-*du* Disk Usage
+_du_ Disk Usage
 
-*-h* Human readable
+_-h_ Human readable
 
-*-s* Summary
+_-s_ Summary
 
-*-c* Display grand total
+_-c_ Display grand total
 
-*/** Chech whole disk
+\*/\*\* Chech whole disk
+
+## Add SSH key to remote
+
+You can do:
+
+(if not already done) generate a set of public and private ssh keys on your machine for your user with:
+
+    $ ssh-keygen
+
+Answer the questions in order to generate the set of keys.
+copy your public key to the remote host:
+
+    $ ssh-copy-id remote-user@remote-host
+
+This will enable login-in from your `username@host` to `remote-user@remote-host` without being prompt with p/w authentication.
