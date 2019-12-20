@@ -10,7 +10,7 @@
 
 <kbd>VO</kbd> <kbd>U</kbd> <kbd> </kbd>
 
-## Reading
+### Reading
 
 <kbd>VO</kbd> <kbd>a</kbd> Start reading
 
@@ -24,7 +24,7 @@
 
 <kbd>VO</kbd> <kbd>S</kbd> Read sentence
 
-## Navigation
+### Navigation
 
 <kbd>VO</kbd> <kbd>⌘</kbd> <kbd>L</kbd> Next link
 
@@ -44,35 +44,47 @@
 
 ## iOS
 
-Mute VoiceOver - Three-Finger Double Tap
+### Section 1
+
+Accessibility Shortcut - Triple-Click Power Button
+
+Back/Escape - Two-Finger "Z"
 
 Pause Speech - Two-Finger Tap
+
+Change Rotor Item - Two-Finger Rotate
+
+### Section 2
 
 Read All From Current Position - Two-Finger Swipe Down
 
 Read All From Top - Two-Finger Swipe Up
 
-Scroll - Three-Finger Swipe
+### Section 3
 
-Select First Item - Four-Finger Tap Top of Screen
+Scroll - Three-Finger Swipe
 
 Select Item - Tap
 
-Accessibility Shortcut - Triple-Click Power Button
+Select Next/Previous Item - Swipe Right or Left
 
-Activate Item - Double Tap or Split Tap
+### Section 4
 
-Item Chooser - Two-Finger Triple Tap
-
-Back/Escape - Two-Finger "Z"
-
-Change Rotor Item - Two-Finger Rotate
-
-Screen curtain on Three-finger triple tab
+Select First Item - Four-Finger Tap Top of Screen
 
 Select Last Item - Four-Finger Tap Bottom of Screen
 
-Select Next/Previous Item - Swipe Right or Left
+List items - Two-Finger Triple Tap
+
+Activate Item - Double Tap or Split Tap
+
+### Section 5
+
+Screen curtain on Three-finger triple tab
+
+Mute VoiceOver - Three-Finger Double Tap
+
+---
 
 https://support.apple.com/guide/iphone/learn-voiceover-gestures-iph3e2e2281/ios
 
