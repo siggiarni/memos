@@ -69,3 +69,13 @@ Back/Escape - Two-Finger "Z"
 Change Rotor Item - Two-Finger Rotate
 
 Screen curtain on Three-finger triple tab
+
+Select Last Item - Four-Finger Tap Bottom of Screen
+
+Select Next/Previous Item - Swipe Right or Left
+
+https://support.apple.com/guide/iphone/learn-voiceover-gestures-iph3e2e2281/ios
+
+http://pauljadam.com/demos/voiceovercommands.html
+
+https://dequeuniversity.com/screenreaders/voiceover-ios-shortcuts
