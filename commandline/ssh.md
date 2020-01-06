@@ -13,3 +13,7 @@ copy your public key to the remote host:
 
 This will enable login-in from your username@host to remote-user@remote-host without being prompt with p/w authentication.
 
+## Connect using a different port
+
+    $ ssh username@remote -p 1234
+

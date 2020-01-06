@@ -24,3 +24,8 @@
 	your_username@remote2.edu:/some/remote/directory/
 
 Source: <http://www.hypexr.org/linux_scp_help.php>
+
+## Copy files using a different port
+
+    $ scp -P 1234 foo.txt username@remote:/destinatino/folder/
+
