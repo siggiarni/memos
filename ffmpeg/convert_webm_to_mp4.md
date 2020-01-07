@@ -6,7 +6,7 @@
 
     ffmpeg -i input.webm -movflags faststart -profile:v high -level 4.2 -vf "scale=iw/2:ih/2" video.mp4
 
-    ffmpeg -i input.webm -movflags faststart -level 4.2 -vf scale=-1:640 output.mp4
+    ffmpeg -i input.webm -movflags faststart -level 4.2 -vf scale=640:-1 output.mp4
 
     for i in *.avi; do ffmpeg -i "$i" "${i%.*}.mp4"; done
 
