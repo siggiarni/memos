@@ -452,3 +452,8 @@ What's the quickest way to delete a sentence when your cursor is in the middle o
 `d` - delete
 `as` - a sentence
 `:h as` describes the _"a sentence"_ text object.
+
+## Leader
+
+The `<Leader>` key is mapped to `\` by default. So if you have a map of `<Leader>``t`, you can execute it by default with `\+t`. For more detail or re-assigning it using the mapleader variable see, `:help leader`
+
