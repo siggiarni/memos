@@ -20,8 +20,6 @@ JavaScript parsing is done during compile time or whenever the parser is invoked
 
 The compile time is the time from when the program is first loaded until the program is parsed.
 
-
-
 Timeline (Performance panel) > Bottom-Up/Call Tree/Event Log will let us drill into the amount of time spent in Parse/Compile.
 
 `about:tracing` — Chrome’s lower-level Tracing tool allows us to use the `disabled-by-default-v8.runtime_stats` category to get deeper insights into where V8 spends its time.
