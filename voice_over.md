@@ -42,6 +42,18 @@
 
 <kbd>VO</kbd> <kbd>⇧</kbd> <kbd>↑</kbd> / <kbd>↓</kbd> Interact with
 
+### Tables
+
+<kbd>VO</kbd> <kbd>|</kbd> Jump to Header
+
+<kbd>VO</kbd> <kbd>Cmd</kbd> <kbd>&#92;</kbd> Move to parent row
+
+<kbd>VO</kbd> <kbd>C</kbd> <kbd>C</kbd> Read Column Description
+
+<kbd>VO</kbd> <kbd>R</kbd> <kbd>R</kbd> Read Row Description
+
+<kbd>VO</kbd> <kbd>⇧</kbd> <kbd>T</kbd> <kbd>T</kbd> Read Row Description
+
 ## iOS
 
 ### Section 1
