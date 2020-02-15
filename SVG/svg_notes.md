@@ -30,6 +30,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
 
 -   https://css-tricks.com/scale-svg/
 -   https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
+-   http://www.codeblocq.com/2016/05/Understand-the-SVG-viewBox/
 
     preserveAspectRatio="xMinYMid meet"
 
