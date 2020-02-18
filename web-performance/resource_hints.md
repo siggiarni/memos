@@ -1,13 +1,13 @@
 # Resource Hints
 
-- <https://w3c.github.io/resource-hints/>
-- <https://www.w3.org/TR/resource-hints/#resource-hints>
-- <https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf>
-- <https://www.keycdn.com/blog/resource-hints>
-- <https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/>
+-   <https://w3c.github.io/resource-hints/>
+-   <https://www.w3.org/TR/resource-hints/#resource-hints>
+-   <https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf>
+-   <https://www.keycdn.com/blog/resource-hints>
+-   <https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/>
 
-* **Preload** resources you have high-confidence will be used in the current page.
-* **Prefetch** resources likely to be used for future navigations across multiple navigation boundaries.
+*   **Preload** resources you have high-confidence will be used in the current page.
+*   **Prefetch** resources likely to be used for future navigations across multiple navigation boundaries.
 
 ---
 
@@ -15,14 +15,18 @@
 
     <link rel="preconnect" href="//cdn.example.com" crossorigin>
 
+Consider adding preconnect resource hints to establish early connections to important third-party origins.
+
 Preconnect allows the browser to setup early connections before an HTTP request is actually sent to the server. This includes DNS lookups, TLS negotiations, TCP handshakes. This in turn eliminates roundtrip latency and saves time for users.
 
 The preconnect link relation type is used to indicate an origin that will be used to fetch required resources. Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation, allows the user agent to mask the high latency costs of establishing a connection.
 
 Each open socket incurs costs both on the client and server, and you want to avoid opening sockets that might go unused.
 
-- <https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/>
-- <https://caniuse.com/#search=preconnect>
+-   <https://web.dev/uses-rel-preconnect/>
+-   <https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect>
+-   <https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/>
+-   <https://caniuse.com/#search=preconnect>
 
 ## DNS prefetch
 
@@ -36,27 +40,30 @@ DNS prefetching allows the browser to perform DNS lookups on a page in the backg
 
 We suggest using this on things such as Google fonts, Google Analytics, and your CDN.
 
-- <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control>
-- <https://caniuse.com/#search=dns-prefetch>
+-   <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control>
+-   <https://caniuse.com/#search=dns-prefetch>
 
 ## Preload
 
     <link rel="preload" href="https://example.com/fonts/font.woff" as="font" crossorigin>
 
-Preloaded fonts without crossorigin will double fetch!
+<mark>Preloaded fonts without crossorigin will double fetch!</mark>
 
-Preload is a new web standard that offers more control on how particular resources are fetched for current navigation.
-Preload is different from prefetch in that it focuses on fetching a resource for the current navigation.
-Allows the browser to set resource priority therefore allowing web developers to optimize the delivery of certain resources.
+-   preload is a declarative fetch, allowing you to force the browser to make a request for a resource without blocking the document’s onload event.
+-   Preload is a new web standard that offers more control on how particular resources are fetched for current navigation.
+-   Preload is different from prefetch in that it focuses on fetching a resource for the current navigation.
+-   Allows the browser to set resource priority therefore allowing web developers to optimize the delivery of certain resources.
 
-- <https://www.w3.org/TR/preload/>
-- <https://caniuse.com/#feat=link-rel-preload>
+-   <https://www.w3.org/TR/preload/>
+-   <https://web.dev/uses-rel-preload/>
+-   <https://developers.google.com/web/fundamentals/performance/resource-prioritization#preload>
+-   <https://caniuse.com/#feat=link-rel-preload>
 
 ### AS attribute
 
 When the resource is declared via the Link header field, the resource's as attribute is defined via the as link-extension target attribute.
 
-- <https://www.w3.org/TR/preload/#as-attribute>
+-   <https://www.w3.org/TR/preload/#as-attribute>
 
 ## Prefetch
 
@@ -70,8 +77,8 @@ Once a page has finished loading it begins downloading additional resources and 
 
 There are three different types of prefetching: link, DNS, and prerendering.
 
-- <https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ>
-- <https://caniuse.com/#search=prefetch>
+-   <https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ>
+-   <https://caniuse.com/#search=prefetch>
 
 ## Prerendering
 
