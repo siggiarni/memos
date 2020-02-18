@@ -20,17 +20,34 @@ The `x` and `y` numbers specify the coordinate, in the scaled viewBox coordinate
 
 The viewBox does many things:
 
-- It defines the aspect ratio of the image.
-- It defines how all the lengths and coordinates used inside the SVG should be scaled to fit the total space available.
-- It defines the origin of the SVG coordinate system, the point where x=0 and y=0.
+-   It defines the aspect ratio of the image.
+-   It defines how all the lengths and coordinates used inside the SVG should be scaled to fit the total space available.
+-   It defines the origin of the SVG coordinate system, the point where x=0 and y=0.
 
 https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
 
-
 ## preserveAspectRatio
 
-- https://css-tricks.com/scale-svg/
-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
+-   https://css-tricks.com/scale-svg/
+-   https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
+-   http://www.codeblocq.com/2016/05/Understand-the-SVG-viewBox/
+
+    preserveAspectRatio="xMinYMid meet"
+
+The meet property is another possible value for preserveAspectRatio. It indicates that the aspect ration should be preserved and that all edges should remain contained within the viewBox.
+
+```
+Property	Place
+xMinYMin	Top Left
+xMidYMin	Center Left
+xMaxYMin	Bottom Left
+xMinYMid	Top Center
+xMidYMid	Middle
+xMaxYMid	Bottom Center
+xMinYMax	Top Right
+xMidYMax	Center Right
+xMaxYMax	Bottom Right
+```
 
 ## Links
 
