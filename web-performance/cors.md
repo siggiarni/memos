@@ -26,6 +26,10 @@
 
 - For newer resource types (e.g. fonts, fetch() requests, ES modules), the browser defaults to requesting those resources using CORS, failing the requests entirely if the server does not grant it permission to access them.
 
+- In the context of resource hints, usage of the crossorigin attribute enables them to match the CORS mode of the resources they are supposed to match and indicates the credentials to include in the request.
+
+- For example: `<link rel="prefetch" href="https://other-server.com/shopping-cart.css" crossorigin="anonymous">` enables CORS and indicates that no credentials should be included for those cross-origin requests.
+
 ---
 
 - <https://almanac.httparchive.org/en/2019/resource-hints>
