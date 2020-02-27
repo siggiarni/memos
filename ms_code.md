@@ -6,7 +6,18 @@
 | <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>E</kbd> | <kbd>Ctrl</kbd> <kbd>⇧</kbd> <kbd>E</kbd> | Explorer              |
 | <kbd>⌘</kbd> <kbd>↓</kbd>              | <kbd>Enter</kbd>                          | Open file in Explorer |
 | <kbd>⌃</kbd> <kbd>G</kbd>              | <kbd>Ctrl</kbd> <kbd>G</kbd>              | Go to line            |
-| <kbd>⌃</kbd> <kbd>\`</kbd>             | <kbd>Ctrl</kbd> <kbd>\`</kbd>             | Open terminal         |
+
+## Terminal
+
+{
+"key": "ctrl+shift+`",
+"command": "workbench.action.terminal.new"
+}
+
+| Mac                                     | Win                           | Command           |
+| --------------------------------------- | ----------------------------- | ----------------- |
+| <kbd>⌃</kbd> <kbd>\`</kbd>              | <kbd>Ctrl</kbd> <kbd>\`</kbd> | Open terminal     |
+| <kbd>⌃</kbd> <kbd>⇧</kbd> <kbd>\`</kbd> | <kbd>Ctrl</kbd> <kbd>\`</kbd> | Open new terminal |
 
 ## Editor
 
