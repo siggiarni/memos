@@ -1,10 +1,10 @@
 # Git
 
-In simple terms, a commit is a snapshot of your local files, written in your local repository. 
+In simple terms, a commit is a snapshot of your local files, written in your local repository.
 
 ## Remove files deleted with `rm`
 
-	$ git add -u
+    $ git add -u
 
 This tells git to automatically stage tracked files, including deleting the previously tracked files.
 
@@ -12,9 +12,8 @@ This tells git to automatically stage tracked files, including deleting the prev
 
 ## Undo `git add`
 
-	$ git reset <file>
-	$ git reset
-
+    $ git reset <file>
+    $ git reset
 
 <https://stackoverflow.com/questions/348170/how-to-undo-git-add-before-commit>
 
@@ -22,3 +21,7 @@ This tells git to automatically stage tracked files, including deleting the prev
 
     $ git branch -vv
     $ git remote show origin
+
+## Discard changes in working directory
+
+    $ git checkout -- <file>
