@@ -8,14 +8,14 @@ An image is a lightweight, stand-alone, executable package that includes everyth
 
 Images are read-only and come in layers.
 
-The file system and configuration of our application which are used to create containers. 
+The file system and configuration of our application which are used to create containers.
 
 For simplicity, you can think of an image akin to a git repository - images can be committed with changes and have multiple versions. When you do not provide a specific version number, the client defaults to latest.
 
-* **Base images** are images that have no parent images, usually images with an OS like ubuntu, alpine or debian.
-* **Child images** are images that build on base images and add additional functionality.
-* **Official images** are Docker sanctioned images.
-* **User images** are images created and shared by users like you. They build on base images and add additional functionality.
+-   **Base images** are images that have no parent images, usually images with an OS like ubuntu, alpine or debian.
+-   **Child images** are images that build on base images and add additional functionality.
+-   **Official images** are Docker sanctioned images.
+-   **User images** are images created and shared by users like you. They build on base images and add additional functionality.
 
 ### 1.2 Container
 
@@ -25,18 +25,18 @@ Containers, then, are the “machines” that run these images and add the layer
 
 Running instances of Docker images — containers run the actual applications. A container includes an application and all of its dependencies.
 
-* Containers are immutable.
-* Containers are disposable.
-* Containers are ephemeral.
-* Don’t store data in containers.  If you need to store data, do it in a volume
-* Don’t create large images
-* Don’t use a single layer image
-* Don’t create images from running containers. In other terms, don’t use “docker commit” to create an image.
-* Don’t use only the “latest” tag. 
-* Don’t run more than one process in a single container.
-* Don’t store credentials in the image. Use environment variables.
-* Don’t run processes as a root user.
-* Don’t rely on IP addresses.
+-   Containers are immutable.
+-   Containers are disposable.
+-   Containers are ephemeral.
+-   Don’t store data in containers. If you need to store data, do it in a volume
+-   Don’t create large images
+-   Don’t use a single layer image
+-   Don’t create images from running containers. In other terms, don’t use “docker commit” to create an image.
+-   Don’t use only the “latest” tag.
+-   Don’t run more than one process in a single container.
+-   Don’t store credentials in the image. Use environment variables.
+-   Don’t run processes as a root user.
+-   Don’t rely on IP addresses.
 
 <https://developers.redhat.com/blog/2016/02/24/10-things-to-avoid-in-docker-containers/>
 
@@ -52,52 +52,53 @@ The best part is that the commands you write in a Dockerfile are almost identica
 
 ---
 
-* `FROM` starts the Dockerfile. It is a requirement that the Dockerfile must start with the `FROM` command. Images are created in layers.
-* The `FROM` command defines your base layer. As arguments, it takes the name of the image.
-* You can add the Docker Cloud username of the maintainer and image version, in the format `username/imagename:version`.
+-   `FROM` starts the Dockerfile. It is a requirement that the Dockerfile must start with the `FROM` command. Images are created in layers.
+-   The `FROM` command defines your base layer. As arguments, it takes the name of the image.
+-   You can add the Docker Cloud username of the maintainer and image version, in the format `username/imagename:version`.
 
 ---
 
-* `RUN` is used to build up the Image you're creating.
-* For each `RUN` command, Docker will run the command then **create a new layer** of the image.
+-   `RUN` is used to build up the Image you're creating.
+-   For each `RUN` command, Docker will run the command then **create a new layer** of the image.
 
 ---
 
-* `EXPOSE` creates a hint for users of an image which ports provide services.
-* It is included in the information which can be retrieved via `$ docker inspect <container-id>`.
+-   `EXPOSE` creates a hint for users of an image which ports provide services.
+-   It is included in the information which can be retrieved via `$ docker inspect <container-id>`.
 
 ---
 
-* `PUSH` pushes your image to Docker Cloud, or alternately to a private registry.	
----
-
-* `ADD` The `ADD` instruction **copies** new files, directories or remote file URLs from `<src>` and adds them to the filesystem of the image at the path `<dest>`.
+-   `PUSH` pushes your image to Docker Cloud, or alternately to a private registry.
 
 ---
 
-* `COPY` copies local files into the container.
-* `COPY` The `COPY` instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.
+-   `ADD` The `ADD` instruction **copies** new files, directories or remote file URLs from `<src>` and adds them to the filesystem of the image at the path `<dest>`.
 
 ---
 
-* `CMD` defines the commands that will run on the Image at **start-up**.
-* Unlike a `RUN`, this does not create a new layer for the Image, but simply runs the command.
-* There can only be **one CMD** per a Dockerfile/Image.
-* If you need to run multiple commands, the best way to do that is to have the CMD run a script.
+-   `COPY` copies local files into the container.
+-   `COPY` The `COPY` instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.
+
+---
+
+-   `CMD` defines the commands that will run on the Image at **start-up**.
+-   Unlike a `RUN`, this does not create a new layer for the Image, but simply runs the command.
+-   There can only be **one CMD** per a Dockerfile/Image.
+-   If you need to run multiple commands, the best way to do that is to have the CMD run a script.
 
 <https://docs.docker.com/engine/reference/builder/>
 
-* Write `.dockerignore` file
-* Container should do one thing
-* Understand Docker caching! Use `COPY` and `RUN` commands in proper order to utilize that.
-* Merge multiple `RUN` commands into one
-* Remove unneeded files after each step
-* Use proper base image (alpine versions should be enough)
-* Set `WORKDIR` and `CMD`
-* Use `ENTRYPOINT` when you have more than one command and/or need to update files using runtime data
-* Use `exec` inside entrypoint script
-* Prefer `COPY` over `ADD`
-* Specify default environment variables, ports and volumes inside Dockerfile
+-   Write `.dockerignore` file
+-   Container should do one thing
+-   Understand Docker caching! Use `COPY` and `RUN` commands in proper order to utilize that.
+-   Merge multiple `RUN` commands into one
+-   Remove unneeded files after each step
+-   Use proper base image (alpine versions should be enough)
+-   Set `WORKDIR` and `CMD`
+-   Use `ENTRYPOINT` when you have more than one command and/or need to update files using runtime data
+-   Use `exec` inside entrypoint script
+-   Prefer `COPY` over `ADD`
+-   Specify default environment variables, ports and volumes inside Dockerfile
 
 <https://rock-it.pl/how-to-write-excellent-dockerfiles/>
 
@@ -105,7 +106,7 @@ The best part is that the commands you write in a Dockerfile are almost identica
 
 The background service running on the host that manages building, running and distributing Docker containers.
 
-### 1.4 Docker client 
+### 1.4 Docker client
 
 The command line tool that allows the user to interact with the Docker daemon.
 
@@ -117,7 +118,7 @@ A registry of Docker images, where you can find trusted and enterprise ready con
 
 ## 2. Common commands
 
-<https://docs.docker.com/engine/reference/commandline/cli/> 
+<https://docs.docker.com/engine/reference/commandline/cli/>
 
 ### 2.1 List containers
 
@@ -155,11 +156,11 @@ Running the `run` command with the `-it` flags attaches us to an interactive tty
 
 The -d flag enables detached mode, which detaches the running container from the terminal/shell and returns your prompt after the container starts.
 
--d will create a container with the process detached from our terminal.  
--P will publish all the exposed container ports to random ports on the Docker host.  
--e is how you pass environment variables to the container.  
---name allows you to specify a container name.  
-AUTHOR is the environment variable name and Your Name is the value that you can pass.  
+-d will create a container with the process detached from our terminal.
+-P will publish all the exposed container ports to random ports on the Docker host.
+-e is how you pass environment variables to the container.
+--name allows you to specify a container name.
+AUTHOR is the environment variable name and Your Name is the value that you can pass.
 
 #### 2.3.2 Example
 
