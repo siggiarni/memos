@@ -18,6 +18,18 @@ for i in *.mov; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2
 for i in *.mov; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2 -vf "scale=640:-1" "${i%.*}.mp4"; done
 ```
 
+```bash
+for i in *.mkv; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2 "${i%.*}.mp4"; done
+
+for i in *.mp4; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2 -vf "scale=iw/2:ih/2" "${i%.*}.mp4"; done
+
+for i in *.mp4; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2 -vf "scale=-1:720" "${i%.*}.m4v"; done
+
+for i in *.mp4; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2 -vf "scale=-1:960" "${i%.*}.mp4"; done
+
+for i in *.mp4; do ffmpeg -i "$i" -movflags faststart -profile:v high -level 4.2 -vf "scale=-1:1080" "${i%.*}.mp4"; done
+```
+
 Input
 
     -i
