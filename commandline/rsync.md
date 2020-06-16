@@ -65,3 +65,9 @@ The `-a` option is a combination flag. It stands for _“archive”_ and syncs r
     -u
 
 This forces rsync to skip any files which exist on the destination and have a modified time that is newer than the source file. _(If an existing destination file has a modification time equal to the source file's, it will be updated if the sizes are different.)_
+
+### Ignore existing
+
+    --ignore-existing
+
+This tells rsync to skip updating files that already exist on the destination (this does not ignore existing directories, or nothing would get done).
