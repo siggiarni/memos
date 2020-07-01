@@ -14,7 +14,7 @@ The vimrc file contains optional runtime configuration settings to initialize Vi
 
 While in insert mode hit <kbd>CTRL-R</kbd> `{register}`.
 
-For example, CTRL-R * will insert in the contents of the clipboard and CTRL-R " (the unnamed register) inserts the the last delete or yank.
+For example, <kbd>CTRL</kbd>-<kbd>R</kbd> <kbd>* </kbd> will insert in the contents of the clipboard and CTRL-R " (the unnamed register) inserts the the last delete or yank.
 
 `:set paste` This will prevent vim from re-tabbing your code. When done pasting, `:set nopaste` will return to the normal behavior.
 
