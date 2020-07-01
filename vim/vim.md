@@ -12,7 +12,7 @@ The vimrc file contains optional runtime configuration settings to initialize Vi
 
 <https://stackoverflow.com/questions/26708822/why-do-vim-experts-prefer-buffers-over-tabs/>
 
-While in insert mode hit CTRL-R `{register}`.
+While in insert mode hit <kbd>CTRL-R</kbd> `{register}`.
 
 For example, CTRL-R * will insert in the contents of the clipboard and CTRL-R " (the unnamed register) inserts the the last delete or yank.
 
